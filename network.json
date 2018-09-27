@@ -1,6 +1,11 @@
 {
     "collaborators": [
-        "christysato"
+        "christysato",
+        "xzhan147",
+        "agarge",
+        "woojinpark",
+        "jganatra07",
+        "saramasa"
     ],
     "created_at": "2018-09-27 15:14:06",
     "edges": [
@@ -36,6 +41,6 @@
             "name": "data.csv"
         }
     ],
-    "updated_at": "2018-09-27 15:14:06",
+    "updated_at": "2018-09-27 15:57:33",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
