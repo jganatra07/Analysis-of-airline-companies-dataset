@@ -12,35 +12,170 @@
         {
             "ports": [
                 {
-                    "input": "raw_data",
-                    "type": "csv"
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
                 }
             ],
-            "source": "raw_data.csv",
-            "target": "clean.R"
+            "source": "explore_dataset.R",
+            "target": "clean_dataset.R"
         },
         {
             "ports": [
                 {
-                    "output": "clean_data",
+                    "input": "unclean_data",
                     "type": "csv"
                 }
             ],
-            "source": "clean.R",
-            "target": "data.csv"
+            "source": "unclean_dataset.csv",
+            "target": "explore_dataset.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "data",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean_dataset.R",
+            "target": "clean_dataset.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean_dataset.csv",
+            "target": "analyze_data.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "analyze_data.R",
+            "target": "analysis_model1.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "analyze_data.R",
+            "target": "analysis_model2.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "analyze_data.R",
+            "target": "analysis_model3.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "analysis_model2.R",
+            "target": "perform_analysis.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "analysis_model1.R",
+            "target": "perform_analysis.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "analysis_model3.R",
+            "target": "perform_analysis.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "data",
+                    "type": "csv"
+                }
+            ],
+            "source": "perform_analysis.R",
+            "target": "evaluation_matrix.csv"
         }
     ],
     "nodes": [
         {
-            "name": "raw_data.csv"
+            "name": "unclean_dataset.csv"
         },
         {
-            "name": "clean.R"
+            "name": "clean_dataset.csv"
         },
         {
-            "name": "data.csv"
+            "desc": "analyze the clean data using different visualization tools and gain insight",
+            "name": "analyze_data.R"
+        },
+        {
+            "assigned_to": "not assigned",
+            "desc": "creating models for predictive analysis",
+            "name": "analysis_model1.R",
+            "task_status": "proposed"
+        },
+        {
+            "desc": "creating models for predictive analysis",
+            "name": "analysis_model3.R"
+        },
+        {
+            "name": "evaluation_matrix.csv"
+        },
+        {
+            "assigned_to": "not assigned",
+            "desc": "performing predictive analysis based on different analysis models",
+            "name": "perform_analysis.R",
+            "task_status": "proposed"
+        },
+        {
+            "assigned_to": "agarge",
+            "desc": "After exploring, cleaning the dataset to remove any missing values or unnecessary columns",
+            "name": "clean_dataset.R",
+            "task_status": "proposed"
+        },
+        {
+            "assigned_to": "not assigned",
+            "desc": "Explore the dataset and identify factors affecting the satisfaction of customers.\r\nDetermining the degree of impact of the independent variable on the dependent variable.",
+            "name": "explore_dataset.R",
+            "task_status": "proposed"
+        },
+        {
+            "assigned_to": "christysato",
+            "desc": "creating models for predictive analysis",
+            "name": "analysis_model2.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-09-27 15:57:33",
+    "updated_at": "2018-10-09 21:22:34",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
