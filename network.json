@@ -93,6 +93,17 @@
             ],
             "source": "analysis_model2.R",
             "target": "perform_analysis.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "analysis_model1.R",
+            "target": "perform_analysis.R"
         }
     ],
     "nodes": [
@@ -137,6 +148,6 @@
             "name": "perform_analysis.R"
         }
     ],
-    "updated_at": "2018-10-09 18:38:57",
+    "updated_at": "2018-10-09 18:39:04",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
