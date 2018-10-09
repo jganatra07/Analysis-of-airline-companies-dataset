@@ -49,6 +49,17 @@
             ],
             "source": "clean_dataset.csv",
             "target": "analyze_data.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "analyze_data.R",
+            "target": "visualization_model1.R"
         }
     ],
     "nodes": [
@@ -77,6 +88,6 @@
             "name": "visualization_model1.R"
         }
     ],
-    "updated_at": "2018-10-09 18:35:19",
+    "updated_at": "2018-10-09 18:35:48",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
