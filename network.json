@@ -44,8 +44,11 @@
         {
             "desc": "After exploring, cleaning the dataset to remove any missing values or unnecessary columns",
             "name": "clean_dataset.R"
+        },
+        {
+            "name": "clean_dataset.csv"
         }
     ],
-    "updated_at": "2018-10-09 18:27:07",
+    "updated_at": "2018-10-09 18:27:26",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
