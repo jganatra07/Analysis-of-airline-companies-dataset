@@ -17,7 +17,7 @@
                 }
             ],
             "source": "unclean_dataset.csv",
-            "target": "clean.R"
+            "target": "explore_dataset.R"
         },
         {
             "ports": [
@@ -26,7 +26,7 @@
                     "type": "csv"
                 }
             ],
-            "source": "clean.R",
+            "source": "explore_dataset.R",
             "target": "data.csv"
         }
     ],
@@ -35,12 +35,15 @@
             "name": "unclean_dataset.csv"
         },
         {
-            "name": "clean.R"
+            "name": "data.csv"
         },
         {
-            "name": "data.csv"
+            "assigned_to": "not assigned",
+            "desc": "Explore the dataset and identify factors affecting the satisfaction of customers",
+            "name": "explore_dataset.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-10-09 18:20:54",
+    "updated_at": "2018-10-09 18:23:44",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
