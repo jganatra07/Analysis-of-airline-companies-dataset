@@ -18,24 +18,11 @@
             ],
             "source": "unclean_dataset.csv",
             "target": "explore_dataset.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "clean_data",
-                    "type": "csv"
-                }
-            ],
-            "source": "explore_dataset.R",
-            "target": "data.csv"
         }
     ],
     "nodes": [
         {
             "name": "unclean_dataset.csv"
-        },
-        {
-            "name": "data.csv"
         },
         {
             "assigned_to": "not assigned",
@@ -44,6 +31,6 @@
             "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-10-09 18:23:44",
+    "updated_at": "2018-10-09 18:24:13",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
