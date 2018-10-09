@@ -84,16 +84,18 @@
             "name": "analyze_data.R"
         },
         {
-            "desc": "creating models for predictive analysis",
-            "name": "visualization_model2.R"
-        },
-        {
             "assigned_to": "not assigned",
             "desc": "creating models for predictive analysis",
             "name": "analysis_model1.R",
             "task_status": "proposed"
+        },
+        {
+            "assigned_to": "not assigned",
+            "desc": "creating models for predictive analysis",
+            "name": "analysis_model2.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-10-09 18:37:06",
+    "updated_at": "2018-10-09 18:37:15",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
