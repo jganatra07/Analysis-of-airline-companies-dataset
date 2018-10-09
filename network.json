@@ -115,6 +115,16 @@
             ],
             "source": "analysis_model3.R",
             "target": "perform_analysis.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "data",
+                    "type": "csv"
+                }
+            ],
+            "source": "perform_analysis.R",
+            "target": "evaluation_matrix.csv"
         }
     ],
     "nodes": [
@@ -162,6 +172,6 @@
             "name": "evaluation_matrix.csv"
         }
     ],
-    "updated_at": "2018-10-09 18:39:56",
+    "updated_at": "2018-10-09 18:40:04",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
