@@ -120,8 +120,12 @@
         {
             "desc": "creating models for predictive analysis",
             "name": "analysis_model3.R"
+        },
+        {
+            "desc": "performing predictive analysis based on different analysis models",
+            "name": "perform_analysis.R"
         }
     ],
-    "updated_at": "2018-10-09 18:37:54",
+    "updated_at": "2018-10-09 18:38:43",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
