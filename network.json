@@ -22,8 +22,8 @@
         {
             "ports": [
                 {
-                    "input": "clean_dataset",
-                    "output": "explore_dataset",
+                    "input": "data",
+                    "output": "data",
                     "type": "r_obj"
                 }
             ],
@@ -46,6 +46,6 @@
             "name": "clean_dataset.R"
         }
     ],
-    "updated_at": "2018-10-09 18:26:06",
+    "updated_at": "2018-10-09 18:26:49",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
