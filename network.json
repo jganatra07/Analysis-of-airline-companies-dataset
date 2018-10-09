@@ -60,6 +60,17 @@
             ],
             "source": "analyze_data.R",
             "target": "analysis_model1.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "analyze_data.R",
+            "target": "analysis_model2.R"
         }
     ],
     "nodes": [
@@ -96,6 +107,6 @@
             "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-10-09 18:37:15",
+    "updated_at": "2018-10-09 18:37:30",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
