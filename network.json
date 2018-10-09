@@ -29,8 +29,12 @@
             "desc": "Explore the dataset and identify factors affecting the satisfaction of customers",
             "name": "explore_dataset.R",
             "task_status": "proposed"
+        },
+        {
+            "desc": "After exploring, cleaning the dataset to remove any missing values or unnecessary columns",
+            "name": "clean_dataset.R"
         }
     ],
-    "updated_at": "2018-10-09 18:24:13",
+    "updated_at": "2018-10-09 18:25:21",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
