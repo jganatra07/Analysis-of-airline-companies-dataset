@@ -105,8 +105,12 @@
             "desc": "creating models for predictive analysis",
             "name": "analysis_model2.R",
             "task_status": "proposed"
+        },
+        {
+            "desc": "creating models for predictive analysis",
+            "name": "analysis_model3.R"
         }
     ],
-    "updated_at": "2018-10-09 18:37:30",
+    "updated_at": "2018-10-09 18:37:44",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
