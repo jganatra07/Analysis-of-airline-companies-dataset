@@ -57,8 +57,12 @@
         },
         {
             "name": "clean_dataset.csv"
+        },
+        {
+            "desc": "analyze the clean data using different visualization tools and gain insight",
+            "name": "analyze_data.R"
         }
     ],
-    "updated_at": "2018-10-09 18:27:43",
+    "updated_at": "2018-10-09 18:30:49",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
