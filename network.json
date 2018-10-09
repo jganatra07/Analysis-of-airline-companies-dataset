@@ -165,13 +165,15 @@
             "name": "analysis_model3.R"
         },
         {
-            "desc": "performing predictive analysis based on different analysis models",
-            "name": "perform_analysis.R"
+            "name": "evaluation_matrix.csv"
         },
         {
-            "name": "evaluation_matrix.csv"
+            "assigned_to": "not assigned",
+            "desc": "performing predictive analysis based on different analysis models",
+            "name": "perform_analysis.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-10-09 18:40:04",
+    "updated_at": "2018-10-09 18:40:10",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
