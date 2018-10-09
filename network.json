@@ -71,8 +71,12 @@
         {
             "desc": "analyze the clean data using different visualization tools and gain insight",
             "name": "analyze_data.R"
+        },
+        {
+            "desc": "creating models for predictive analysis",
+            "name": "visualization_model1.R"
         }
     ],
-    "updated_at": "2018-10-09 18:34:27",
+    "updated_at": "2018-10-09 18:35:19",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
