@@ -86,8 +86,12 @@
         {
             "desc": "creating models for predictive analysis",
             "name": "visualization_model1.R"
+        },
+        {
+            "desc": "creating models for predictive analysis",
+            "name": "visualization_model2.R"
         }
     ],
-    "updated_at": "2018-10-09 18:35:48",
+    "updated_at": "2018-10-09 18:36:27",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
