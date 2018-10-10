@@ -132,29 +132,11 @@
             "name": "unclean_dataset.csv"
         },
         {
-            "assigned_to": "not assigned",
-            "desc": "Explore the dataset and identify factors affecting the satisfaction of customers",
-            "name": "explore_dataset.R",
-            "task_status": "proposed"
-        },
-        {
             "name": "clean_dataset.csv"
         },
         {
             "desc": "analyze the clean data using different visualization tools and gain insight",
             "name": "analyze_data.R"
-        },
-        {
-            "assigned_to": "not assigned",
-            "desc": "creating models for predictive analysis",
-            "name": "analysis_model1.R",
-            "task_status": "proposed"
-        },
-        {
-            "assigned_to": "not assigned",
-            "desc": "creating models for predictive analysis",
-            "name": "analysis_model2.R",
-            "task_status": "proposed"
         },
         {
             "desc": "creating models for predictive analysis",
@@ -174,8 +156,26 @@
             "desc": "After exploring, cleaning the dataset to remove any missing values or unnecessary columns",
             "name": "clean_dataset.R",
             "task_status": "proposed"
+        },
+        {
+            "assigned_to": "not assigned",
+            "desc": "Explore the dataset and identify factors affecting the satisfaction of customers.\r\nDetermining the degree of impact of the independent variable on the dependent variable.",
+            "name": "explore_dataset.R",
+            "task_status": "proposed"
+        },
+        {
+            "assigned_to": "christysato",
+            "desc": "creating models for predictive analysis",
+            "name": "analysis_model2.R",
+            "task_status": "proposed"
+        },
+        {
+            "assigned_to": "woojinpark",
+            "desc": "creating models for predictive analysis",
+            "name": "analysis_model1.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-10-09 20:36:04",
+    "updated_at": "2018-10-10 15:51:57",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
