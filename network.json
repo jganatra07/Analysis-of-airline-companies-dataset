@@ -138,12 +138,6 @@
             "name": "evaluation_matrix.csv"
         },
         {
-            "assigned_to": "not assigned",
-            "desc": "performing predictive analysis based on different analysis models",
-            "name": "perform_analysis.R",
-            "task_status": "proposed"
-        },
-        {
             "assigned_to": "agarge",
             "desc": "After exploring, cleaning the dataset to remove any missing values or unnecessary columns",
             "name": "clean_dataset.R",
@@ -178,8 +172,14 @@
             "desc": "analyze the clean data using different visualization tools and gain insight",
             "name": "analyze_data.R",
             "task_status": "proposed"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "performing predictive analysis based on different analysis models",
+            "name": "perform_analysis.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-10-11 15:09:42",
+    "updated_at": "2018-10-11 15:09:56",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
