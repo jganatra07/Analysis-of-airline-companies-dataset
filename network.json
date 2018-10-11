@@ -154,12 +154,6 @@
             "task_status": "proposed"
         },
         {
-            "assigned_to": "not assigned",
-            "desc": "Explore the dataset and identify factors affecting the satisfaction of customers.\r\nDetermining the degree of impact of the independent variable on the dependent variable.",
-            "name": "explore_dataset.R",
-            "task_status": "proposed"
-        },
-        {
             "assigned_to": "christysato",
             "desc": "creating models for predictive analysis",
             "name": "analysis_model2.R",
@@ -176,8 +170,14 @@
             "desc": "creating models for predictive analysis",
             "name": "analysis_model3.R",
             "task_status": "proposed"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "Explore the dataset and identify factors affecting the satisfaction of customers.\r\nDetermining the degree of impact of the independent variable on the dependent variable.",
+            "name": "explore_dataset.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-10-11 14:50:15",
+    "updated_at": "2018-10-11 15:09:10",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
