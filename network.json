@@ -135,10 +135,6 @@
             "name": "clean_dataset.csv"
         },
         {
-            "desc": "analyze the clean data using different visualization tools and gain insight",
-            "name": "analyze_data.R"
-        },
-        {
             "name": "evaluation_matrix.csv"
         },
         {
@@ -176,8 +172,14 @@
             "desc": "Explore the dataset and identify factors affecting the satisfaction of customers.\r\nDetermining the degree of impact of the independent variable on the dependent variable.",
             "name": "explore_dataset.R",
             "task_status": "proposed"
+        },
+        {
+            "assigned_to": "jganatra07",
+            "desc": "analyze the clean data using different visualization tools and gain insight",
+            "name": "analyze_data.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-10-11 15:09:10",
+    "updated_at": "2018-10-11 15:09:42",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
