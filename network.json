@@ -27,7 +27,7 @@
                     "type": "csv"
                 }
             ],
-            "source": "unclean_dataset.csv",
+            "source": "satisfactionSurvey.csv",
             "target": "explore_dataset.R"
         },
         {
@@ -129,7 +129,7 @@
     ],
     "nodes": [
         {
-            "name": "unclean_dataset.csv"
+            "name": "satisfactionSurvey.csv"
         },
         {
             "name": "clean_dataset.csv"
@@ -180,6 +180,6 @@
             "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-10-11 15:09:56",
+    "updated_at": "2018-10-16 23:06:26",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
