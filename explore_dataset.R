@@ -9,5 +9,7 @@ str(unclean_data)
 summary(unclean_data$Departure.Delay.in.Minutes)
 summary(unclean_data$Arrival.Delay.in.Minutes)
 summary(unclean_data$Flight.time.in.minutes)
+
 #Replacing the NA's
-unclean_data$Departure.Delay.in.Minutes[is.na(unclean_data$Departure.Delay.in.Minutes)] <- median(unclean_data$Departure.Delay.in.Minutes, na.rm=TRUE)
+unclean_data$Departure.Delay.in.Minutes[is.na(unclean_data$Departure.Delay.in.Minutes)] <- mean(unclean_data$Departure.Delay.in.Minutes, na.rm=TRUE)
+unclean_data$Arrival.Delay.in.Minutes[is.na(unclean_data$Departure.Delay.in.Minutes)] <- mean(unclean_data$Arrival.Delay.in.Minutes, na.rm=TRUE)
