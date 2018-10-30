@@ -16,3 +16,6 @@ unclean_data$Arrival.Delay.in.Minutes[is.na(unclean_data$Departure.Delay.in.Minu
 unclean_data$Arrival.Delay.in.Minutes[is.na(unclean_data$Flight.time.in.minutes)] <- median(unclean_data$Flight.time.in.minutes, na.rm=TRUE)
 
 #Summary after removing NA's 
+summary(unclean_data$Departure.Delay.in.Minutes)
+summary(unclean_data$Arrival.Delay.in.Minutes)
+summary(unclean_data$Flight.time.in.minutes)
