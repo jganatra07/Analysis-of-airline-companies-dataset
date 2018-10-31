@@ -30,7 +30,7 @@ summary(unclean_data$Satisfaction)
 head(unclean_data$Flight.date)
 unclean_data$Flight.date<-mdy(unclean_data$Flight.date)
 
-clean_data<-unclean_data
+data<-unclean_data
 
 #Plot of Age v Satisfaction
 plot(unclean_data$Age, unclean_data$Satisfaction)
