@@ -136,6 +136,16 @@
             ],
             "source": "clean_dataset.R",
             "target": "Plot1.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "agesat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot1.R",
+            "target": "agesat.png"
         }
     ],
     "nodes": [
@@ -200,6 +210,6 @@
             "name": "agesat.png"
         }
     ],
-    "updated_at": "2018-10-31 23:00:09",
+    "updated_at": "2018-10-31 23:00:21",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
