@@ -125,6 +125,16 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "explore_dataset.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "flight_cancel",
+                    "type": "png"
+                }
+            ],
+            "source": "explore_dataset.R",
+            "target": "flight_cancel.png"
         }
     ],
     "nodes": [
@@ -183,6 +193,6 @@
             "name": "flight_cancel.png"
         }
     ],
-    "updated_at": "2018-10-31 18:06:29",
+    "updated_at": "2018-10-31 18:06:45",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
