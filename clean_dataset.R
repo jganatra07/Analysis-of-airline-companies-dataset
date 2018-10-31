@@ -1,6 +1,7 @@
 
 library(dplyr)
 library(maps)
+library(ggplot)
 
 str(data)
 #Plot of Age v Satisfaction
