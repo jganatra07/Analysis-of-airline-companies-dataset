@@ -125,16 +125,6 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "explore_dataset.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "flight_cancel_plot",
-                    "type": "png"
-                }
-            ],
-            "source": "explore_dataset.R",
-            "target": "flight_cancel.png"
         }
     ],
     "nodes": [
@@ -188,11 +178,8 @@
             "desc": "Explore the dataset and identify factors affecting the satisfaction of customers.\r\nDetermining the degree of impact of the independent variable on the dependent variable.",
             "name": "explore_dataset.R",
             "task_status": "in progress"
-        },
-        {
-            "name": "flight_cancel.png"
         }
     ],
-    "updated_at": "2018-10-31 18:07:04",
+    "updated_at": "2018-10-31 18:08:23",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
