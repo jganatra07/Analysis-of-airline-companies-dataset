@@ -21,5 +21,8 @@ summary(unclean_data$Arrival.Delay.in.Minutes)
 summary(unclean_data$Flight.time.in.minutes)
 
 #Checking the values of the Dependent Variable
+summary(unclean_data$Satisfaction)
+
+
 unclean_data$Satisfaction[38898]
 
