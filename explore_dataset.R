@@ -23,6 +23,9 @@ summary(unclean_data$Flight.time.in.minutes)
 #Checking the values of the Dependent Variable
 summary(unclean_data$Satisfaction)
 
+#Replacing the NA's with the mean
+
+
 
 unclean_data$Satisfaction[38898]
 
