@@ -191,10 +191,15 @@
             "task_status": "in progress"
         },
         {
+            "assigned_to": "saramasa",
             "desc": "Plots of the first five variables that would provide a pictorial representation of the data.",
-            "name": "Plot1.R"
+            "name": "Plot1.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "agesat.png"
         }
     ],
-    "updated_at": "2018-10-31 22:56:15",
+    "updated_at": "2018-10-31 23:00:09",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
