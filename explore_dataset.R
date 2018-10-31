@@ -2,7 +2,7 @@
 library(ggplot2)
 library(dplyr)
 
-unclean_data$Satisfaction<-as.numeric(unclean_data$Satisfaction)
+unclean_data$Satisfaction<-as.numeric(as.character(unclean_data$Satisfaction))
 str(unclean_data)
 
 #Spread of the three variables with missing variables
@@ -24,6 +24,7 @@ summary(unclean_data$Flight.time.in.minutes)
 summary(unclean_data$Satisfaction)
 
 #Replacing the NA's with the mean
+
 
 
 
