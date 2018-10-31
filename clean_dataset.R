@@ -1,4 +1,6 @@
 
+library(dplyr)
+
 str(data)
 #Plot of Age v Satisfaction
 plot(data$Age, data$Satisfaction)
