@@ -32,28 +32,6 @@ unclean_data$Flight.date<-mdy(unclean_data$Flight.date)
 
 data<-unclean_data
 
-#Plot of Age v Satisfaction
-plot(unclean_data$Age, unclean_data$Satisfaction)
-
-unclean_data$Satisfaction<-tolower(unclean_data$Satisfaction)
-#Plot of Age vs Avg. Satisfaction
-agemean <- unclean_data %>%
-  group_by(Age) %>%
-  summarize(m1 = mean(Satisfaction))
-
-agemean<-as.data.frame(agemean)
-
-ggplot(agemean,aes(Age,m1)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-
-#Mean age for each Satisfaction score
-
-satmean <- unclean_data %>%
-  group_by(Satisfaction) %>%
-  summarize(m1 = mean(Age))
-
-agemean<-as.data.frame(satmean)
-
-ggplot(satmean,aes(Satisfaction,m1)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
 
 
