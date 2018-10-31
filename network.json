@@ -129,7 +129,7 @@
         {
             "ports": [
                 {
-                    "output": "flight_cancel",
+                    "output": "flight_cancel_plot",
                     "type": "png"
                 }
             ],
@@ -193,6 +193,6 @@
             "name": "flight_cancel.png"
         }
     ],
-    "updated_at": "2018-10-31 18:06:45",
+    "updated_at": "2018-10-31 18:07:04",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
