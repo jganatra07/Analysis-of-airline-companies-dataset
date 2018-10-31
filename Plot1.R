@@ -1,4 +1,5 @@
 
+str(data)
 #Plot of Age v Satisfaction
 library(ggplot2)
 library(dplyr)
