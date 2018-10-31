@@ -19,3 +19,6 @@ unclean_data$Flight.time.in.minutes[is.na(unclean_data$Flight.time.in.minutes)] 
 summary(unclean_data$Departure.Delay.in.Minutes)
 summary(unclean_data$Arrival.Delay.in.Minutes)
 summary(unclean_data$Flight.time.in.minutes)
+
+unclean_data$Satisfaction[38898]
+
