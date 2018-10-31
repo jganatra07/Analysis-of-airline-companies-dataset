@@ -2,7 +2,7 @@
 #Plot of Age v Satisfaction
 library(ggplot2)
 library(dplyr)
-plot(data$Age, data$Satisfaction)
+#plot(data$Age, data$Satisfaction)
 
 data$Satisfaction<-tolower(data$Satisfaction)
 #Plot of Age vs Avg. Satisfaction
@@ -16,10 +16,10 @@ agesat<-ggplot(agemean,aes(Age,m1)) + geom_bar(stat="identity") + theme(axis.tex
 
 #Mean age for each Satisfaction score
 
-satmean <- data %>%
-  group_by(Satisfaction) %>%
-  summarize(m1 = mean(Age))
+#satmean <- data %>%
+#  group_by(Satisfaction) %>%
+#  summarize(m1 = mean(Age))
 
-agemean<-as.data.frame(satmean)
+#agemean<-as.data.frame(satmean)
 
-ggplot(satmean,aes(Satisfaction,m1)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+#ggplot(satmean,aes(Satisfaction,m1)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
