@@ -12,17 +12,6 @@
         {
             "ports": [
                 {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "explore_dataset.R",
-            "target": "clean_dataset.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "data",
                     "type": "csv"
                 }
@@ -125,6 +114,17 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "explore_dataset.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "explore_dataset.R",
+            "target": "clean_dataset.R"
         }
     ],
     "nodes": [
@@ -180,6 +180,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-31 19:58:53",
+    "updated_at": "2018-10-31 21:07:07",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
