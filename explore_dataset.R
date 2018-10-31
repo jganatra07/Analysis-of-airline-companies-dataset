@@ -9,6 +9,7 @@ str(unclean_data)
 summary(unclean_data$Departure.Delay.in.Minutes)
 summary(unclean_data$Arrival.Delay.in.Minutes)
 summary(unclean_data$Flight.time.in.minutes)
+summary(unclean_data$Satisfaction)
 
 #Replacing the NA's
 unclean_data$Departure.Delay.in.Minutes[is.na(unclean_data$Departure.Delay.in.Minutes)] <- mean(unclean_data$Departure.Delay.in.Minutes, na.rm=TRUE)
@@ -19,8 +20,6 @@ unclean_data$Flight.time.in.minutes[is.na(unclean_data$Flight.time.in.minutes)] 
 summary(unclean_data$Departure.Delay.in.Minutes)
 summary(unclean_data$Arrival.Delay.in.Minutes)
 summary(unclean_data$Flight.time.in.minutes)
-
-#Checking the values of the Dependent Variable
 summary(unclean_data$Satisfaction)
 
 #Replacing the NA's with the mean
