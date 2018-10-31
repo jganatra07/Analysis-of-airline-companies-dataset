@@ -24,9 +24,9 @@ summary(unclean_data$Flight.time.in.minutes)
 summary(unclean_data$Satisfaction)
 
 #Replacing the NA's with the mean
+unclean_data$Satisfaction[is.na(unclean_data$Satisfaction)] <- mean(unclean_data$Satisfaction, na.rm=TRUE)
+
+#Checking the values of the Dependent Variable after removing the NA's
 
 
-
-
-unclean_data$Satisfaction[38898]
 
