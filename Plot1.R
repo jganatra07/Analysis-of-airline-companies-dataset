@@ -1,5 +1,7 @@
 
 #Plot of Age v Satisfaction
+library(ggplot2)
+
 plot(data$Age, data$Satisfaction)
 
 data$Satisfaction<-tolower(data$Satisfaction)
