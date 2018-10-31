@@ -171,15 +171,19 @@
             "assigned_to": "agarge",
             "desc": "After exploring, cleaning the dataset to remove any missing values or unnecessary columns",
             "name": "clean_dataset.R",
-            "task_status": "not started"
+            "task_status": "in progress"
         },
         {
             "assigned_to": "saramasa",
             "desc": "Explore the dataset and identify factors affecting the satisfaction of customers.\r\nDetermining the degree of impact of the independent variable on the dependent variable.",
             "name": "explore_dataset.R",
             "task_status": "in progress"
+        },
+        {
+            "desc": "Plots of the first five variables that would provide a pictorial representation of the data.",
+            "name": "Plot1.R"
         }
     ],
-    "updated_at": "2018-10-31 21:07:07",
+    "updated_at": "2018-10-31 22:55:53",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
