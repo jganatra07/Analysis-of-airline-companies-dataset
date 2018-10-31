@@ -12,7 +12,7 @@ agemean <- data %>%
 
 agemean<-as.data.frame(agemean)
 
-ggplot(agemean,aes(Age,m1)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+agesat<-ggplot(agemean,aes(Age,m1)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
 #Mean age for each Satisfaction score
 
