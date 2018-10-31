@@ -27,6 +27,8 @@ summary(unclean_data$Satisfaction)
 unclean_data$Satisfaction[is.na(unclean_data$Satisfaction)] <- mean(unclean_data$Satisfaction, na.rm=TRUE)
 
 #Checking the values of the Dependent Variable after removing the NA's
+summary(unclean_data$Satisfaction)
+
 
 
 
