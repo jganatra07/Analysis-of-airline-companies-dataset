@@ -246,7 +246,7 @@
                 }
             ],
             "source": "plot4.R",
-            "target": "originCity.png"
+            "target": "plot16.png"
         },
         {
             "ports": [
@@ -409,7 +409,27 @@
                 }
             ],
             "source": "plot4.R",
-            "target": "origin_state.png"
+            "target": "plot17.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "destState",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "plot19.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "sdh",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "plot20.png"
         }
     ],
     "nodes": [
@@ -480,7 +500,7 @@
             "task_status": "in progress"
         },
         {
-            "name": "originCity.png"
+            "name": "plot16.png"
         },
         {
             "name": "flight_date.png"
@@ -564,9 +584,15 @@
             "task_status": "not started"
         },
         {
-            "name": "origin_state.png"
+            "name": "plot17.png"
+        },
+        {
+            "name": "plot19.png"
+        },
+        {
+            "name": "plot20.png"
         }
     ],
-    "updated_at": "2018-11-01 18:55:05",
+    "updated_at": "2018-11-01 19:11:57",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
