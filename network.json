@@ -419,6 +419,16 @@
             ],
             "source": "Plot5.R",
             "target": "class_plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot1_hist",
+                    "type": "png"
+                }
+            ],
+            "source": "preliminaryDataAnalysis.R",
+            "target": "plot1_histogram.png"
         }
     ],
     "nodes": [
@@ -582,6 +592,6 @@
             "name": "plot1_histogram.png"
         }
     ],
-    "updated_at": "2018-11-01 15:58:31",
+    "updated_at": "2018-11-01 15:58:50",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
