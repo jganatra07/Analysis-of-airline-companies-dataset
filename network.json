@@ -525,8 +525,11 @@
         },
         {
             "name": "loyalcardsat1.png"
+        },
+        {
+            "name": "arrival_delay__plot.png"
         }
     ],
-    "updated_at": "2018-11-01 15:54:33",
+    "updated_at": "2018-11-01 15:56:30",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
