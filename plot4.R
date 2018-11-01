@@ -39,4 +39,8 @@ destinationState <- ggplot(data, aes(x=Destination.State, y=Satisfaction)) + geo
 destinationState <- destinationState + ggtitle("Bar chart of customer satisfaction per Destination state")
 destinationState <- destinationState + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
+schDeptHour<-ggplot(data,aes(x=data$Scheduled.Departure.Hour,y=data$Satisfaction)) + geom_count(color="red")
+schDeptHour<-schDeptHour + labs(x="Scheduled Departure Hour (minutes)",y="Customer Satisfaction")
+schDeptHour
+
 
