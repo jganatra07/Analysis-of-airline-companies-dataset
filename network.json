@@ -12,27 +12,6 @@
         {
             "ports": [
                 {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "explore_dataset.R",
-            "target": "clean_dataset.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "unclean_data",
-                    "type": "csv"
-                }
-            ],
-            "source": "unclean_dataset.csv",
-            "target": "explore_dataset.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "data",
                     "type": "csv"
                 }
@@ -125,55 +104,304 @@
             ],
             "source": "perform_analysis.R",
             "target": "evaluation_matrix.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "unclean_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "explore_dataset.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "explore_dataset.R",
+            "target": "clean_dataset.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_dataset.R",
+            "target": "Plot1.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "agesat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot1.R",
+            "target": "agesat.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_dataset.R",
+            "target": "plot4.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "perflightsat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "perflightsat.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "explore_dataset.R",
+            "target": "Plot2.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "typetravelsat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "typetravelsat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "loyalcardsat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "loyalcardsat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "shoppingamtsat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "shoppingamtsat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "eatdrinksat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "eatdrinksat.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "explore_dataset.R",
+            "target": "Plot3.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "flightdatesat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot3.R",
+            "target": "flightdatesat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "airlinecodesat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot3.R",
+            "target": "airlinecodesat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "airlinenamesat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot3.R",
+            "target": "airlinenamesat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "dayofmonth",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot3.R",
+            "target": "dayofmonth.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "originCity",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "originCity.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "originState",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "originState.png"
         }
     ],
     "nodes": [
         {
-            "name": "unclean_dataset.csv"
-        },
-        {
-            "assigned_to": "not assigned",
-            "desc": "Explore the dataset and identify factors affecting the satisfaction of customers",
-            "name": "explore_dataset.R",
-            "task_status": "proposed"
-        },
-        {
-            "desc": "After exploring, cleaning the dataset to remove any missing values or unnecessary columns",
-            "name": "clean_dataset.R"
+            "name": "satisfactionSurvey.csv"
         },
         {
             "name": "clean_dataset.csv"
         },
         {
-            "desc": "analyze the clean data using different visualization tools and gain insight",
-            "name": "analyze_data.R"
+            "name": "evaluation_matrix.csv"
         },
         {
-            "assigned_to": "not assigned",
-            "desc": "creating models for predictive analysis",
-            "name": "analysis_model1.R",
-            "task_status": "proposed"
-        },
-        {
-            "assigned_to": "not assigned",
+            "assigned_to": "christysato",
             "desc": "creating models for predictive analysis",
             "name": "analysis_model2.R",
             "task_status": "proposed"
         },
         {
+            "assigned_to": "woojinpark",
             "desc": "creating models for predictive analysis",
-            "name": "analysis_model3.R"
+            "name": "analysis_model1.R",
+            "task_status": "proposed"
         },
         {
-            "name": "evaluation_matrix.csv"
+            "assigned_to": "xzhan147",
+            "desc": "creating models for predictive analysis",
+            "name": "analysis_model3.R",
+            "task_status": "proposed"
         },
         {
-            "assigned_to": "not assigned",
+            "assigned_to": "jganatra07",
+            "desc": "analyze the clean data using different visualization tools and gain insight",
+            "name": "analyze_data.R",
+            "task_status": "proposed"
+        },
+        {
+            "assigned_to": "saramasa",
             "desc": "performing predictive analysis based on different analysis models",
             "name": "perform_analysis.R",
             "task_status": "proposed"
+        },
+        {
+            "assigned_to": "agarge",
+            "desc": "After exploring, cleaning the dataset to remove any missing values or unnecessary columns",
+            "name": "clean_dataset.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "Explore the dataset and identify factors affecting the satisfaction of customers.\r\nDetermining the degree of impact of the independent variable on the dependent variable.",
+            "name": "explore_dataset.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "agesat.png"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "Plots of the first five variables that would provide a pictorial representation of the data.",
+            "name": "Plot1.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "woojinpark",
+            "desc": "Plots of the five variables (% of Flight with other Airlines, Type of Travel,No. of other Loyalty Cards, Shopping Amount at Airport and Eating and Drinking at Airport) that would provide a pictorial representation of the data.",
+            "name": "Plot2.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "perflightsat.png"
+        },
+        {
+            "name": "typetravelsat.png"
+        },
+        {
+            "name": "loyalcardsat.png"
+        },
+        {
+            "name": "shoppingamtsat.png"
+        },
+        {
+            "name": "eatdrinksat.png"
+        },
+        {
+            "name": "flightdatesat.png"
+        },
+        {
+            "name": "airlinecodesat.png"
+        },
+        {
+            "name": "airlinenamesat.png"
+        },
+        {
+            "assigned_to": "christysato",
+            "desc": "Plots of the four variables (day of month, flight date, airline code, and airline name) that provide a visualization of the data.",
+            "name": "Plot3.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "dayofmonth.png"
+        },
+        {
+            "assigned_to": "jganatra07",
+            "desc": "",
+            "name": "plot4.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "originCity.png"
+        },
+        {
+            "name": "originState.png"
         }
     ],
-    "updated_at": "2018-10-09 18:40:10",
+    "updated_at": "2018-11-01 06:57:09",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
