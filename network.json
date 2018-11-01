@@ -157,6 +157,17 @@
             ],
             "source": "clean_dataset.R",
             "target": "Plot2.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_dataset.R",
+            "target": "plot_16.R"
         }
     ],
     "nodes": [
@@ -231,6 +242,6 @@
             "name": "plot_16.R"
         }
     ],
-    "updated_at": "2018-11-01 03:22:39",
+    "updated_at": "2018-11-01 03:23:58",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
