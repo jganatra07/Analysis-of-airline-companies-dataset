@@ -410,16 +410,6 @@
             ],
             "source": "cleaning_dataset.R",
             "target": "Plot3.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "destState",
-                    "type": "png"
-                }
-            ],
-            "source": "plot4.R",
-            "target": "destinationState.png"
         }
     ],
     "nodes": [
@@ -494,9 +484,6 @@
         },
         {
             "name": "originState.png"
-        },
-        {
-            "name": "destinationState.png"
         },
         {
             "name": "flight_date.png"
@@ -580,6 +567,6 @@
             "task_status": "not started"
         }
     ],
-    "updated_at": "2018-11-01 18:54:15",
+    "updated_at": "2018-11-01 18:54:21",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
