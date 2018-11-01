@@ -38,10 +38,10 @@ osmean <- data %>%
 #Plotting graph for satisfaction vs origin state 
 osmean<-as.data.frame(osmean)
 osmean
-originState <- ggplot(osmean, aes(x=Origin.State, y=m1)) + geom_col()
-originState <- originState + ggtitle("Bar chart of customer satisfaction per Origin state")
-originState <- originState + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-originState
+#originState <- ggplot(osmean, aes(x=Origin.State, y=m1)) + geom_col()
+#originState <- originState + ggtitle("Bar chart of customer satisfaction per Origin state")
+#originState <- originState + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+#originState
 
 #calculating mean of satisfaction and grouping by destination state
 dsmean <- data %>%
