@@ -150,7 +150,8 @@
         {
             "ports": [
                 {
-                    "output": "data.R",
+                    "input": "undefined",
+                    "output": "data",
                     "type": "r_obj"
                 }
             ],
@@ -230,6 +231,6 @@
             "name": "plot_16.R"
         }
     ],
-    "updated_at": "2018-11-01 03:22:30",
+    "updated_at": "2018-11-01 03:22:39",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
