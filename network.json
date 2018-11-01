@@ -429,8 +429,11 @@
         },
         {
             "name": "air_status.png"
+        },
+        {
+            "name": "gender_sat.png"
         }
     ],
-    "updated_at": "2018-11-01 14:50:55",
+    "updated_at": "2018-11-01 14:51:09",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
