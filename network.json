@@ -251,16 +251,6 @@
         {
             "ports": [
                 {
-                    "output": "originState",
-                    "type": "png"
-                }
-            ],
-            "source": "plot4.R",
-            "target": "originState.png"
-        },
-        {
-            "ports": [
-                {
                     "output": "flight_date",
                     "type": "png"
                 }
@@ -483,9 +473,6 @@
             "name": "originCity.png"
         },
         {
-            "name": "originState.png"
-        },
-        {
             "name": "flight_date.png"
         },
         {
@@ -567,6 +554,6 @@
             "task_status": "not started"
         }
     ],
-    "updated_at": "2018-11-01 18:54:21",
+    "updated_at": "2018-11-01 18:54:26",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
