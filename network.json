@@ -452,8 +452,11 @@
         },
         {
             "name": "gender_sat.png"
+        },
+        {
+            "name": "scheduled_departure_hour.png"
         }
     ],
-    "updated_at": "2018-11-01 14:51:34",
+    "updated_at": "2018-11-01 15:15:42",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
