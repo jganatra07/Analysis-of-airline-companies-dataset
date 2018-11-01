@@ -10,4 +10,4 @@ library(ggplot2)
 
 
 # ggplot(satmean,aes(Satisfaction,m1)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-perflightsat <- ggplot(data, aes(x=jitter(data$% of Flight with other Airlines), y=Satisfaction, colour= "red"))+ geom_point()
+perflightsat <- ggplot(data, aes(x=jitter(data$X..of.Flight.with.other.Airlines), y=Satisfaction, colour= "red"))+ geom_point()
