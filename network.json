@@ -428,7 +428,7 @@
                 }
             ],
             "source": "preliminaryDataAnalysis.R",
-            "target": "plot1_histogram.png"
+            "target": "plot1_hist.png"
         }
     ],
     "nodes": [
@@ -589,9 +589,9 @@
             "name": "class_plot.png"
         },
         {
-            "name": "plot1_histogram.png"
+            "name": "plot1_hist.png"
         }
     ],
-    "updated_at": "2018-11-01 15:58:50",
+    "updated_at": "2018-11-01 15:58:58",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
