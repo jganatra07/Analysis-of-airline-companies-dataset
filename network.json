@@ -280,8 +280,11 @@
         },
         {
             "name": "typetravelsat.png"
+        },
+        {
+            "name": "loyalcardsat.png"
         }
     ],
-    "updated_at": "2018-11-01 04:04:55",
+    "updated_at": "2018-11-01 04:20:20",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
