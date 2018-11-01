@@ -409,6 +409,16 @@
             ],
             "source": "Plot5.R",
             "target": "flight_cancel_plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "class_plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "class_plot.png"
         }
     ],
     "nodes": [
@@ -572,6 +582,6 @@
             "name": "plot1_histogram.png"
         }
     ],
-    "updated_at": "2018-11-01 15:58:09",
+    "updated_at": "2018-11-01 15:58:31",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
