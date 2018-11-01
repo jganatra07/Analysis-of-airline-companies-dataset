@@ -227,6 +227,46 @@
             ],
             "source": "Plot2.R",
             "target": "eatdrinksat.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "explore_dataset.R",
+            "target": "Plot3.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "flightdatesat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot3.R",
+            "target": "flightdatesat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "airlinecodesat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot3.R",
+            "target": "airlinecodesat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "airlinenamesat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot3.R",
+            "target": "airlinenamesat.png"
         }
     ],
     "nodes": [
@@ -318,15 +358,24 @@
             "name": "shoppingamtsat.png"
         },
         {
-            "assigned_to": "woojinpark",
+            "name": "eatdrinksat.png"
+        },
+        {
+            "assigned_to": "christysato",
             "desc": "",
             "name": "Plot3.R",
             "task_status": "in progress"
         },
         {
-            "name": "eatdrinksat.png"
+            "name": "flightdatesat.png"
+        },
+        {
+            "name": "airlinecodesat.png"
+        },
+        {
+            "name": "airlinenamesat.png"
         }
     ],
-    "updated_at": "2018-11-01 04:35:46",
+    "updated_at": "2018-11-01 04:50:05",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
