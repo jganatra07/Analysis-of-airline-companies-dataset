@@ -400,6 +400,16 @@
             ],
             "source": "cleaning_dataset.R",
             "target": "Plot3.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "originState",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "origin_state.png"
         }
     ],
     "nodes": [
@@ -557,6 +567,6 @@
             "name": "origin_state.png"
         }
     ],
-    "updated_at": "2018-11-01 18:54:46",
+    "updated_at": "2018-11-01 18:55:05",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
