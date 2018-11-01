@@ -482,8 +482,12 @@
             "desc": "This section will be exploring the variables which are significantly associated with satisfaction. Then based on this preliminary findings, these variables might be considered as potential predictors to satisfaction.",
             "name": "preliminaryDataAnalysis.R",
             "task_status": "proposed"
+        },
+        {
+            "desc": "Pictorial analysis of five variables present",
+            "name": "Plot5.R"
         }
     ],
-    "updated_at": "2018-11-01 15:42:18",
+    "updated_at": "2018-11-01 15:46:28",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
