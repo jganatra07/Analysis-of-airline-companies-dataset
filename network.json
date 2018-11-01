@@ -426,8 +426,11 @@
         },
         {
             "name": "flight_date.png"
+        },
+        {
+            "name": "air_status.png"
         }
     ],
-    "updated_at": "2018-11-01 14:50:41",
+    "updated_at": "2018-11-01 14:50:55",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
