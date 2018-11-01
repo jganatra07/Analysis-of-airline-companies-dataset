@@ -277,6 +277,16 @@
             ],
             "source": "plot4.R",
             "target": "originCity.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "originState",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "originState.png"
         }
     ],
     "nodes": [
@@ -392,6 +402,6 @@
             "name": "originState.png"
         }
     ],
-    "updated_at": "2018-11-01 06:56:56",
+    "updated_at": "2018-11-01 06:57:09",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
