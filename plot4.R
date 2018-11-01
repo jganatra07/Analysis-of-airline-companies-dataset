@@ -55,3 +55,11 @@ destState <- destState + ggtitle("Bar chart of customer satisfaction per Destina
 destState <- destState + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 destState
 
+#calculating mean of scheduled departure hour and grouping by Satisfaction
+satmean <- unclean_data %>%
+  group_by(Satisfaction) %>%
+  summarize(m1 = mean(Scheduled.Departure.Hour))
+
+sdhmean<-as.data.frame(satmean)
+#plotting mean of scheduled departure hour vs Satisfaction
+ggplot(satmean,aes(Satisfaction,m1)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
