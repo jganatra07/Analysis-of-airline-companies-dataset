@@ -420,6 +420,16 @@
             ],
             "source": "explore_dataset.R",
             "target": "Plot3.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "shopping_plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "shopping_plot.png"
         }
     ],
     "nodes": [
@@ -583,6 +593,6 @@
             "name": "shopping_plot.png"
         }
     ],
-    "updated_at": "2018-11-01 16:13:58",
+    "updated_at": "2018-11-01 16:14:42",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
