@@ -440,6 +440,16 @@
             ],
             "source": "preliminaryDataAnalysis.R",
             "target": "plot_model1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plotByClass",
+                    "type": "png"
+                }
+            ],
+            "source": "preliminaryDataAnalysis.R",
+            "target": "plotByClass.png"
         }
     ],
     "nodes": [
@@ -609,6 +619,6 @@
             "name": "plotByClass.png"
         }
     ],
-    "updated_at": "2018-11-01 17:01:43",
+    "updated_at": "2018-11-01 17:01:53",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
