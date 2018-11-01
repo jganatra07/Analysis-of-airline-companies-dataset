@@ -1,12 +1,6 @@
 
-library(ggplot2)
-data$Orgin.City <- tolower(data$Orgin.City)
-us <- map_data("state")
-plot16 <- ggplot(data, aes(map_id = Orgin.City))
-#creating a map visualization
-plot16 <- plot16 + geom_map(map = us, aes(fill = factor(data$Satisfaction)))
-#defining the x and y axes values of the map
-#coord_map() handles the distortion and aspect ratio of the map
-plot16 <- plot16 + expand_limits(x = us$long, y = us$lat) + coord_map()
-#ggtitle() gives a title to the map
-plot16
+satisfactioncount <- data %>% group_by(Orgin.City) %>% summarize(mean1 = mean(satisfaction))
+satisfactioncount <- as.data.frame(satisfactioncount)
+#plotting average satisfaction per gender vs customer satisfaction
+plot16 <- ggplot(satisfactioncount,aes(Orgin.City,mean1)) 
+plot16<- plot16 + geom_point()
