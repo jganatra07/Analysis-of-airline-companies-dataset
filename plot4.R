@@ -54,3 +54,4 @@ destState <- ggplot(dsmean, aes(x=Destination.State, y=m1)) + geom_col()
 destState <- destState + ggtitle("Bar chart of customer satisfaction per Destination state")
 destState <- destState + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 destState
+
