@@ -499,12 +499,6 @@
             "name": "scheduled_departure_hour.png"
         },
         {
-            "assigned_to": "xzhan147",
-            "desc": "This section will be exploring the variables which are significantly associated with satisfaction. Then based on this preliminary findings, these variables might be considered as potential predictors to satisfaction.",
-            "name": "preliminaryDataAnalysis.R",
-            "task_status": "proposed"
-        },
-        {
             "assigned_to": "agarge",
             "desc": "Pictorial analysis of five variables present in the dataset.",
             "name": "Plot5.R",
@@ -512,8 +506,14 @@
         },
         {
             "name": "departure_delay__plot.png"
+        },
+        {
+            "assigned_to": "xzhan147",
+            "desc": "This section will be exploring the variables which are significantly associated with satisfaction based on the graphs created by the team. Then based on this preliminary findings, these variables might be considered as potential predictors to satisfaction.",
+            "name": "preliminaryDataAnalysis.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-11-01 15:50:21",
+    "updated_at": "2018-11-01 15:52:11",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
