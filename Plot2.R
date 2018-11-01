@@ -9,4 +9,4 @@ library(ggplot2)
 perflightsat <- ggplot(data, aes(x=jitter(data$X..of.Flight.with.other.Airlines), y=Satisfaction, colour= "red"))+ geom_point()
 
 # make scatter plot of independent variable : X..of.Flight.with.other.Airlines and dependent variable : Satisfaction 
-typetravvelsat <- ggplot(data, aes(x=jitter(data$Type.of.Travel ), y=Satisfaction, colour= "red")) + geom_boxplot(fill="grey")
+typetravelsat <- ggplot(data, aes(x=jitter(data$Type.of.Travel ), y=Satisfaction, colour= "red")) + geom_boxplot(fill="grey")
