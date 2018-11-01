@@ -430,6 +430,16 @@
             ],
             "source": "plot4.R",
             "target": "scheduled_departure_hour.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot_model1",
+                    "type": "png"
+                }
+            ],
+            "source": "preliminaryDataAnalysis.R",
+            "target": "plot_model1.png"
         }
     ],
     "nodes": [
@@ -596,6 +606,6 @@
             "name": "plot_model1.png"
         }
     ],
-    "updated_at": "2018-11-01 17:00:24",
+    "updated_at": "2018-11-01 17:00:35",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
