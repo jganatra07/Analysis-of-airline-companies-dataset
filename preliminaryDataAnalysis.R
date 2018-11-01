@@ -1,5 +1,7 @@
 
+library(ggplots)
 str(data)
+
 
 #Hypothesis - Male and Female passengers have significant differences in satisfaction.
 hist(data$Satisfaction)
