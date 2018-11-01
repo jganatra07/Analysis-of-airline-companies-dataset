@@ -337,6 +337,48 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "explore_dataset.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "explore_dataset.R",
+            "target": "preliminaryDataAnalysis.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "explore_dataset.R",
+            "target": "Plot5.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "departure_delay__plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "departure_delay__plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "loyalcardsat1",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "loyalcardsat1.png"
         }
     ],
     "nodes": [
@@ -465,8 +507,26 @@
         },
         {
             "name": "scheduled_departure_hour.png"
+        },
+        {
+            "assigned_to": "agarge",
+            "desc": "Pictorial analysis of five variables present in the dataset.",
+            "name": "Plot5.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "departure_delay__plot.png"
+        },
+        {
+            "assigned_to": "xzhan147",
+            "desc": "This section will be exploring the variables which are significantly associated with satisfaction based on the graphs created by the team. Then based on this preliminary findings, these variables might be considered as potential predictors to satisfaction.",
+            "name": "preliminaryDataAnalysis.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "loyalcardsat1.png"
         }
     ],
-    "updated_at": "2018-11-01 15:26:59",
+    "updated_at": "2018-11-01 15:54:33",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
