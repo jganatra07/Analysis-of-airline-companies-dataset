@@ -5,10 +5,10 @@ library(dplyr)
 
 mean(data$Satisfaction,na.rm=TRUE)
 
-data$Satisfaction[is.na(clean_data$Satisfaction)] <- 3.5 #closest to mean
+data$Satisfaction[is.na(data$Satisfaction)] <- 3.5 #closest to mean
 fltmean1 <- data %>% group_by(Orgin.City) %>% summarize(mean1 = mean(Satisfaction))
 fltmean1 <- as.data.frame(fltmean1)
-fltmean1$place <- toString(paste(clean_data$Orgin.City,",",clean_data$Origin.State))
+fltmean1$place <- toString(paste(data$Orgin.City,",",data$Origin.State))
 fltmean1 <- as.data.frame(fltmean1)
 us <- map_data("state")
 
