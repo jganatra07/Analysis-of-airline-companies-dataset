@@ -108,22 +108,12 @@
         {
             "ports": [
                 {
-                    "input": "unclean_data",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "explore_dataset.R"
-        },
-        {
-            "ports": [
-                {
                     "input": "data",
                     "output": "data",
                     "type": "r_obj"
                 }
             ],
-            "source": "explore_dataset.R",
+            "source": "cleaning_dataset.R",
             "target": "clean_dataset.R"
         },
         {
@@ -175,7 +165,7 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "explore_dataset.R",
+            "source": "cleaning_dataset.R",
             "target": "Plot2.R"
         },
         {
@@ -221,26 +211,6 @@
         {
             "ports": [
                 {
-                    "input": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "explore_dataset.R",
-            "target": "Plot3.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "flightdatesat",
-                    "type": "png"
-                }
-            ],
-            "source": "Plot3.R",
-            "target": "flightdatesat.png"
-        },
-        {
-            "ports": [
-                {
                     "output": "airlinecodesat",
                     "type": "png"
                 }
@@ -281,22 +251,165 @@
         {
             "ports": [
                 {
+                    "output": "flight_date",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot1.R",
+            "target": "flight_date.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "air_status",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot1.R",
+            "target": "air_status.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "gender_sat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot1.R",
+            "target": "gender_sat.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "unclean_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "cleaning_dataset.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleaning_dataset.R",
+            "target": "preliminaryDataAnalysis.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleaning_dataset.R",
+            "target": "Plot5.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "departure_delay__plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "departure_delay__plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "loyalcardsat1",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "loyalcardsat1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "arrival_delay__plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "arrival_delay__plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "flight_time_plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "flight_time_plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "flight_cancel_plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "flight_cancel_plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "class_plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "class_plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "shopping_plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "shopping_plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "loyalcardsat2",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "loyalcardsat2.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleaning_dataset.R",
+            "target": "Plot3.R"
+        },
+        {
+            "ports": [
+                {
                     "output": "originState",
                     "type": "png"
                 }
             ],
             "source": "plot4.R",
-            "target": "originState.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "destinationState",
-                    "type": "png"
-                }
-            ],
-            "source": "plot4.R",
-            "target": "destinationState.png"
+            "target": "origin_state.png"
         }
     ],
     "nodes": [
@@ -310,45 +423,9 @@
             "name": "evaluation_matrix.csv"
         },
         {
-            "assigned_to": "christysato",
-            "desc": "creating models for predictive analysis",
-            "name": "analysis_model2.R",
-            "task_status": "proposed"
-        },
-        {
-            "assigned_to": "woojinpark",
-            "desc": "creating models for predictive analysis",
-            "name": "analysis_model1.R",
-            "task_status": "proposed"
-        },
-        {
-            "assigned_to": "xzhan147",
-            "desc": "creating models for predictive analysis",
-            "name": "analysis_model3.R",
-            "task_status": "proposed"
-        },
-        {
-            "assigned_to": "jganatra07",
-            "desc": "analyze the clean data using different visualization tools and gain insight",
-            "name": "analyze_data.R",
-            "task_status": "proposed"
-        },
-        {
-            "assigned_to": "saramasa",
-            "desc": "performing predictive analysis based on different analysis models",
-            "name": "perform_analysis.R",
-            "task_status": "proposed"
-        },
-        {
             "assigned_to": "agarge",
             "desc": "After exploring, cleaning the dataset to remove any missing values or unnecessary columns",
             "name": "clean_dataset.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "saramasa",
-            "desc": "Explore the dataset and identify factors affecting the satisfaction of customers.\r\nDetermining the degree of impact of the independent variable on the dependent variable.",
-            "name": "explore_dataset.R",
             "task_status": "in progress"
         },
         {
@@ -382,9 +459,6 @@
             "name": "eatdrinksat.png"
         },
         {
-            "name": "flightdatesat.png"
-        },
-        {
             "name": "airlinecodesat.png"
         },
         {
@@ -409,12 +483,90 @@
             "name": "originCity.png"
         },
         {
-            "name": "originState.png"
+            "name": "flight_date.png"
         },
         {
-            "name": "destinationState.png"
+            "name": "air_status.png"
+        },
+        {
+            "name": "gender_sat.png"
+        },
+        {
+            "assigned_to": "agarge",
+            "desc": "Pictorial analysis of five variables present in the dataset.",
+            "name": "Plot5.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "departure_delay__plot.png"
+        },
+        {
+            "name": "loyalcardsat1.png"
+        },
+        {
+            "name": "arrival_delay__plot.png"
+        },
+        {
+            "name": "flight_time_plot.png"
+        },
+        {
+            "name": "flight_cancel_plot.png"
+        },
+        {
+            "name": "class_plot.png"
+        },
+        {
+            "name": "shopping_plot.png"
+        },
+        {
+            "name": "loyalcardsat2.png"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "Cleaning the dataset by replacing the NA values with appropriate values without disturbing the spread of the data.",
+            "name": "cleaning_dataset.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "xzhan147",
+            "desc": "This section will be exploring the variables which might be associated with satisfaction based on the graphs created by the team using T-tests, Anovas and ect. Based on the preliminary findings in this section, we will be able to know whether the differences or association are reaching the significant level in statistics or not. These findings will be helping us in making the decision of  considering these variables as potential predictors to satisfaction and including them in our model.",
+            "name": "preliminaryDataAnalysis.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "jganatra07",
+            "desc": "analyze the clean data using different visualization tools and gain insight",
+            "name": "analyze_data.R",
+            "task_status": "not started"
+        },
+        {
+            "assigned_to": "woojinpark",
+            "desc": "creating models for predictive analysis",
+            "name": "analysis_model1.R",
+            "task_status": "not started"
+        },
+        {
+            "assigned_to": "xzhan147",
+            "desc": "creating models for predictive analysis",
+            "name": "analysis_model3.R",
+            "task_status": "not started"
+        },
+        {
+            "assigned_to": "christysato",
+            "desc": "creating models for predictive analysis",
+            "name": "analysis_model2.R",
+            "task_status": "not started"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "performing predictive analysis based on different analysis models",
+            "name": "perform_analysis.R",
+            "task_status": "not started"
+        },
+        {
+            "name": "origin_state.png"
         }
     ],
-    "updated_at": "2018-11-01 07:04:34",
+    "updated_at": "2018-11-01 18:55:05",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
