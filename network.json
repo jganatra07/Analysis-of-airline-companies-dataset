@@ -247,6 +247,16 @@
             ],
             "source": "Plot3.R",
             "target": "flightdatesat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "airlinecodesat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot3.R",
+            "target": "airlinecodesat.png"
         }
     ],
     "nodes": [
@@ -353,6 +363,6 @@
             "name": "airlinecodesat.png"
         }
     ],
-    "updated_at": "2018-11-01 04:49:30",
+    "updated_at": "2018-11-01 04:49:38",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
