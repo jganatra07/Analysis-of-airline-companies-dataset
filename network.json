@@ -430,6 +430,16 @@
             ],
             "source": "Plot5.R",
             "target": "shopping_plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "loyalcardsat2",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "loyalcardsat2.png"
         }
     ],
     "nodes": [
@@ -591,8 +601,11 @@
         },
         {
             "name": "shopping_plot.png"
+        },
+        {
+            "name": "loyalcardsat2.png"
         }
     ],
-    "updated_at": "2018-11-01 16:14:42",
+    "updated_at": "2018-11-01 16:16:56",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }

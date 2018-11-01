@@ -29,4 +29,4 @@ class_plot<-class_plot+labs(x="Class",y="Customer Satisfaction")
 # Bubble plot for shopping amount at airport and customer satisfaction.
 shopping_plot<-ggplot(data,aes(x=data$Shopping.Amount.at.Airport,y=data$Satisfaction))+geom_count()
 shopping_plot<-shopping_plot+labs(x="Shopping Amount",y="Customer Satisfaction")
-shopping_plot
+
