@@ -17,7 +17,7 @@ agemean<-as.data.frame(satmean)
 agesat<-ggplot(agemean,aes(Satisfaction,m1)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
 #Plotting Satisfaction against the Flight Date
-flightdate <- unclean_data %>%
+flightdate <- data %>%
   group_by(Flight.date) %>%
   summarize(m2 = mean(Satisfaction))
 
@@ -27,7 +27,7 @@ flight_date<-ggplot(flightdate, aes(Flight.date,m2))+geom_line()+labs(x="From 1s
 
 
 #Plotting Airline Status against Satisfaction
-air_status<-ggplot(unclean_data, aes(Airline.Status, Satisfaction))+geom_boxplot()+labs(x="Airline Status", y="Satisfaction")
+air_status<-ggplot(data, aes(Airline.Status, Satisfaction))+geom_boxplot()+labs(x="Airline Status", y="Satisfaction")
 
 #Plotting Gender against Satisfaction
-gender_sat<-ggplot(unclean_data, aes(Gender, Satisfaction))+geom_boxplot()+labs(x="Gender", y="Satisfaction")
+gender_sat<-ggplot(data, aes(Gender, Satisfaction))+geom_boxplot()+labs(x="Gender", y="Satisfaction")
