@@ -211,16 +211,6 @@
         {
             "ports": [
                 {
-                    "input": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "explore_dataset.R",
-            "target": "Plot3.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "flightdatesat",
                     "type": "png"
                 }
@@ -379,6 +369,57 @@
             ],
             "source": "Plot2.R",
             "target": "loyalcardsat1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "arrival_delay__plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "arrival_delay__plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "flight_time_plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "flight_time_plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "flight_cancel_plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "flight_cancel_plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "class_plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "class_plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "undefined",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "explore_dataset.R",
+            "target": "Plot3.R"
         }
     ],
     "nodes": [
@@ -525,8 +566,20 @@
         },
         {
             "name": "loyalcardsat1.png"
+        },
+        {
+            "name": "arrival_delay__plot.png"
+        },
+        {
+            "name": "flight_time_plot.png"
+        },
+        {
+            "name": "flight_cancel_plot.png"
+        },
+        {
+            "name": "class_plot.png"
         }
     ],
-    "updated_at": "2018-11-01 15:54:33",
+    "updated_at": "2018-11-01 16:07:56",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
