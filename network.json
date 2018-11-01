@@ -369,6 +369,16 @@
             ],
             "source": "Plot5.R",
             "target": "departure_delay__plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "loyalcardsat1",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "loyalcardsat1.png"
         }
     ],
     "nodes": [
@@ -517,6 +527,6 @@
             "name": "loyalcardsat1.png"
         }
     ],
-    "updated_at": "2018-11-01 15:54:19",
+    "updated_at": "2018-11-01 15:54:33",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
