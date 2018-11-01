@@ -108,16 +108,6 @@
         {
             "ports": [
                 {
-                    "input": "unclean_data",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "explore_dataset.R"
-        },
-        {
-            "ports": [
-                {
                     "input": "data",
                     "output": "data",
                     "type": "r_obj"
@@ -146,6 +136,207 @@
             ],
             "source": "Plot1.R",
             "target": "agesat.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_dataset.R",
+            "target": "plot4.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "perflightsat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "perflightsat.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "explore_dataset.R",
+            "target": "Plot2.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "typetravelsat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "typetravelsat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "loyalcardsat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "loyalcardsat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "shoppingamtsat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "shoppingamtsat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "eatdrinksat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "eatdrinksat.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "explore_dataset.R",
+            "target": "Plot3.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "flightdatesat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot3.R",
+            "target": "flightdatesat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "airlinecodesat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot3.R",
+            "target": "airlinecodesat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "airlinenamesat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot3.R",
+            "target": "airlinenamesat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "dayofmonth",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot3.R",
+            "target": "dayofmonth.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "originCity",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "originCity.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "originState",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "originState.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "destinationState",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "destinationState.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "flight_date",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot1.R",
+            "target": "flight_date.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "air_status",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot1.R",
+            "target": "air_status.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "gender_sat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot1.R",
+            "target": "gender_sat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "schDeptHour",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "scheduled_departure_hour.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "unclean_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "explore_dataset.R"
         }
     ],
     "nodes": [
@@ -208,8 +399,74 @@
             "desc": "Plots of the first five variables that would provide a pictorial representation of the data.",
             "name": "Plot1.R",
             "task_status": "in progress"
+        },
+        {
+            "assigned_to": "woojinpark",
+            "desc": "Plots of the five variables (% of Flight with other Airlines, Type of Travel,No. of other Loyalty Cards, Shopping Amount at Airport and Eating and Drinking at Airport) that would provide a pictorial representation of the data.",
+            "name": "Plot2.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "perflightsat.png"
+        },
+        {
+            "name": "typetravelsat.png"
+        },
+        {
+            "name": "loyalcardsat.png"
+        },
+        {
+            "name": "shoppingamtsat.png"
+        },
+        {
+            "name": "eatdrinksat.png"
+        },
+        {
+            "name": "flightdatesat.png"
+        },
+        {
+            "name": "airlinecodesat.png"
+        },
+        {
+            "name": "airlinenamesat.png"
+        },
+        {
+            "assigned_to": "christysato",
+            "desc": "Plots of the four variables (day of month, flight date, airline code, and airline name) that provide a visualization of the data.",
+            "name": "Plot3.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "dayofmonth.png"
+        },
+        {
+            "assigned_to": "jganatra07",
+            "desc": "",
+            "name": "plot4.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "originCity.png"
+        },
+        {
+            "name": "originState.png"
+        },
+        {
+            "name": "destinationState.png"
+        },
+        {
+            "name": "flight_date.png"
+        },
+        {
+            "name": "air_status.png"
+        },
+        {
+            "name": "gender_sat.png"
+        },
+        {
+            "name": "scheduled_departure_hour.png"
         }
     ],
-    "updated_at": "2018-11-01 02:57:02",
+    "updated_at": "2018-11-01 15:26:59",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
