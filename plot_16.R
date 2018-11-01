@@ -9,4 +9,4 @@ plot16 <- plot16 + geom_map(map = us, aes(fill = factor(data$Satisfaction)))
 #coord_map() handles the distortion and aspect ratio of the map
 plot16 <- plot16 + expand_limits(x = us$long, y = us$lat) + coord_map()
 #ggtitle() gives a title to the map
-biplot3
+plot16
