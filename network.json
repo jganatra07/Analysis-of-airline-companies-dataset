@@ -337,6 +337,17 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "explore_dataset.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "explore_dataset.R",
+            "target": "preliminaryDataAnalysis.R"
         }
     ],
     "nodes": [
@@ -471,6 +482,6 @@
             "name": "preliminaryDataAnalysis.R"
         }
     ],
-    "updated_at": "2018-11-01 15:40:21",
+    "updated_at": "2018-11-01 15:41:58",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
