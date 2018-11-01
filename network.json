@@ -430,16 +430,6 @@
             ],
             "source": "plot4.R",
             "target": "scheduled_departure_hour.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "plotByClass",
-                    "type": "png"
-                }
-            ],
-            "source": "preliminaryDataAnalysis.R",
-            "target": "plotByClass.png"
         }
     ],
     "nodes": [
@@ -601,11 +591,8 @@
             "desc": "Cleaning the dataset by replacing the NA values with appropriate values without disturbing the spread of the data.",
             "name": "cleaning_dataset.R",
             "task_status": "in progress"
-        },
-        {
-            "name": "plotByClass.png"
         }
     ],
-    "updated_at": "2018-11-01 17:15:57",
+    "updated_at": "2018-11-01 17:16:04",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
