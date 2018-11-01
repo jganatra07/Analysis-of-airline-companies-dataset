@@ -211,16 +211,6 @@
         {
             "ports": [
                 {
-                    "output": "flightdatesat",
-                    "type": "png"
-                }
-            ],
-            "source": "Plot3.R",
-            "target": "flightdatesat.png"
-        },
-        {
-            "ports": [
-                {
                     "output": "airlinecodesat",
                     "type": "png"
                 }
@@ -519,9 +509,6 @@
             "name": "eatdrinksat.png"
         },
         {
-            "name": "flightdatesat.png"
-        },
-        {
             "name": "airlinecodesat.png"
         },
         {
@@ -606,6 +593,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 16:23:05",
+    "updated_at": "2018-11-01 16:47:15",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
