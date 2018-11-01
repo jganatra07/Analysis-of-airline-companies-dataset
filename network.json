@@ -156,7 +156,7 @@
                 }
             ],
             "source": "clean_dataset.R",
-            "target": "plot_16.R"
+            "target": "plot4.R"
         },
         {
             "ports": [
@@ -185,7 +185,7 @@
                     "type": "png"
                 }
             ],
-            "source": "plot_16.R",
+            "source": "plot4.R",
             "target": "plot16.png"
         },
         {
@@ -347,12 +347,6 @@
             "task_status": "in progress"
         },
         {
-            "assigned_to": "jganatra07",
-            "desc": "",
-            "name": "plot_16.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "perflightsat.png"
         },
         {
@@ -387,8 +381,14 @@
         },
         {
             "name": "dayofmonth.png"
+        },
+        {
+            "assigned_to": "jganatra07",
+            "desc": "",
+            "name": "plot4.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 04:52:46",
+    "updated_at": "2018-11-01 06:38:22",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
