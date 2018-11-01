@@ -327,6 +327,16 @@
             ],
             "source": "Plot1.R",
             "target": "gender_sat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "schDeptHour",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "scheduled_departure_hour.png"
         }
     ],
     "nodes": [
@@ -457,6 +467,6 @@
             "name": "scheduled_departure_hour.png"
         }
     ],
-    "updated_at": "2018-11-01 15:15:42",
+    "updated_at": "2018-11-01 15:16:06",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
