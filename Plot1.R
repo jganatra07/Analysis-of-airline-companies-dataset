@@ -5,6 +5,7 @@ library(ggplot2)
 library(dplyr)
 #plot(data$Age, data$Satisfaction)
 
+sum(is.na(data$Age)
 data$Satisfaction<-tolower(data$Satisfaction)
 #Plot of Age vs Avg. Satisfaction
 agemean <- data %>%
