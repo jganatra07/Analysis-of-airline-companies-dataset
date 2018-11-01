@@ -591,8 +591,11 @@
         },
         {
             "name": "shopping_plot.png"
+        },
+        {
+            "name": "loyalcardsat2.png"
         }
     ],
-    "updated_at": "2018-11-01 16:14:42",
+    "updated_at": "2018-11-01 16:16:40",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
