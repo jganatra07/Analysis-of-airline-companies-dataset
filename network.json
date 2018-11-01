@@ -208,8 +208,12 @@
             "desc": "Plots of the first five variables that would provide a pictorial representation of the data.",
             "name": "Plot1.R",
             "task_status": "in progress"
+        },
+        {
+            "desc": "",
+            "name": "plot6.R"
         }
     ],
-    "updated_at": "2018-11-01 02:57:02",
+    "updated_at": "2018-11-01 03:15:55",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
