@@ -311,16 +311,6 @@
         {
             "ports": [
                 {
-                    "output": "schDeptHour",
-                    "type": "png"
-                }
-            ],
-            "source": "plot4.R",
-            "target": "scheduled_departure_hour.png"
-        },
-        {
-            "ports": [
-                {
                     "input": "unclean_data",
                     "type": "csv"
                 }
@@ -440,6 +430,16 @@
             ],
             "source": "explore_dataset.R",
             "target": "Plot3.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "sdh",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "scheduled_departure_hour.png"
         }
     ],
     "nodes": [
@@ -606,6 +606,6 @@
             "name": "loyalcardsat2.png"
         }
     ],
-    "updated_at": "2018-11-01 16:20:13",
+    "updated_at": "2018-11-01 16:20:49",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
