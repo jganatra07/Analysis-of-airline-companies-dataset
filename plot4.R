@@ -14,7 +14,7 @@ us <- map_data("state")
 
 lat <- data.frame()
 lon <- data.frame()
-get the latitude and longitude of NYC from the datasciencetoolkit
+#get the latitude and longitude of NYC from the datasciencetoolkit
 for(i in 1:nrow(fltmean1)){
 
 x <- geocode(as.character(fltmean1[i,1]),source="dsk")
