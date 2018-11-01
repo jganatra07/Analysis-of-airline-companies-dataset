@@ -34,4 +34,4 @@ originCity <- originCity + geom_point(data=latlon, aes(x=lon, y=lat, size=mean1)
 originState <- ggplot(data, aes(x=Origin.State, y=Satisfaction))
 originState <- originState + geom_col()
 originState <- originState + ggtitle("Bar chart of customer satisfaction per state")
-originState
+originState <- originState + theme(axis.text.x = element_text(angle = 90, hjust = 1))
