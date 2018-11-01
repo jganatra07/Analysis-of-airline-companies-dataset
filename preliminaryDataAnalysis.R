@@ -4,6 +4,8 @@ str(data)
 
 
 #Hypothesis - Male and Female passengers have significant differences in satisfaction.
+#This line is for checking the distrubution of satisfaction to see if there is any outliers
+
 hist(data$Satisfaction)
-bp_satisByGender <- ggplot(data, aes(Gender,Satisfaction))+geom_boxplot(aes(col=Gender))+labs(title="Boxplot of Satisfaction by Gender")
-bp_satisByGender
+
+t.test(data$Satisfaction ~ data$Gender)
