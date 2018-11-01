@@ -177,6 +177,26 @@
             ],
             "source": "explore_dataset.R",
             "target": "Plot2.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot16",
+                    "type": "png"
+                }
+            ],
+            "source": "plot_16.R",
+            "target": "plot16.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "typetravelsat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "typetravelsat.png"
         }
     ],
     "nodes": [
@@ -254,8 +274,14 @@
         },
         {
             "name": "perflightsat.png"
+        },
+        {
+            "name": "plot16.png"
+        },
+        {
+            "name": "typetravelsat.png"
         }
     ],
-    "updated_at": "2018-11-01 03:53:10",
+    "updated_at": "2018-11-01 04:04:55",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
