@@ -62,4 +62,4 @@ satmean <- unclean_data %>%
 
 sdhmean<-as.data.frame(satmean)
 #plotting mean of scheduled departure hour vs Satisfaction
-ggplot(satmean,aes(Satisfaction,m1)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+sdh <- ggplot(satmean,aes(Satisfaction,m1)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
