@@ -30,8 +30,12 @@ originCity <- ggplot(us, aes(x=long, y=lat)) + expand_limits(x = us$long, y = us
 originCity <- originCity + geom_polygon() + coord_map()
 originCity <- originCity + geom_point(data=latlon, aes(x=lon, y=lat, size=mean1), color="orange")
 
+osmean <- data %>%
+  group_by(Origin.State) %>%
+  summarize(m1 = mean(Satisfaction))
 
-originState <- ggplot(data, aes(x=Origin.State, y=Satisfaction)) + geom_col()
+osmean<-as.data.frame(osmean)
+originState <- ggplot(osmean, aes(x=Origin.State, y=m1)) + geom_col()
 originState <- originState + ggtitle("Bar chart of customer satisfaction per Origin state")
 originState <- originState + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
@@ -39,12 +43,12 @@ originState <- originState + theme(axis.text.x = element_text(angle = 90, hjust 
 #destinationState <- destinationState + ggtitle("Bar chart of customer satisfaction per Destination state")
 #destinationState <- destinationState + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
-satmean <- unclean_data %>%
+satmean <- data %>%
   group_by(Satisfaction) %>%
-  summarize(m1 = mean(Scheduled.Departure.Hour))
+  summarize(m2 = mean(Scheduled.Departure.Hour))
 
 sdhmean<-as.data.frame(satmean)
 
-sdh <- ggplot(satmean,aes(Satisfaction,m1)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+sdh <- ggplot(satmean,aes(Satisfaction,m2)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 sdh
 
