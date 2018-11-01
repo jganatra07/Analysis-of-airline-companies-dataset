@@ -224,8 +224,12 @@
             "desc": "Plots of the five variables (% of Flight with other Airlines, Type of Travel,No. of other Loyalty Cards, Shopping Amount at Airport and Eating and Drinking at Airport) that would provide a pictorial representation of the data.",
             "name": "Plot2.R",
             "task_status": "proposed"
+        },
+        {
+            "desc": "",
+            "name": "plot_16.R"
         }
     ],
-    "updated_at": "2018-11-01 03:22:12",
+    "updated_at": "2018-11-01 03:22:30",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
