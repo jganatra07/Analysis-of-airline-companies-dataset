@@ -211,16 +211,6 @@
         {
             "ports": [
                 {
-                    "input": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "explore_dataset.R",
-            "target": "Plot3.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "flightdatesat",
                     "type": "png"
                 }
@@ -429,6 +419,17 @@
             ],
             "source": "preliminaryDataAnalysis.R",
             "target": "plot1_hist.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "undefined",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "explore_dataset.R",
+            "target": "Plot3.R"
         }
     ],
     "nodes": [
@@ -592,6 +593,6 @@
             "name": "plot1_hist.png"
         }
     ],
-    "updated_at": "2018-11-01 15:59:41",
+    "updated_at": "2018-11-01 15:59:43",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
