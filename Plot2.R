@@ -1,5 +1,5 @@
 
-
+library(arules)
 str(data)
 library(ggplot2)
 
