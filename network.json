@@ -227,6 +227,16 @@
             ],
             "source": "Plot2.R",
             "target": "eatdrinksat.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "explore_dataset.R",
+            "target": "Plot3.R"
         }
     ],
     "nodes": [
@@ -327,6 +337,6 @@
             "name": "eatdrinksat.png"
         }
     ],
-    "updated_at": "2018-11-01 04:35:46",
+    "updated_at": "2018-11-01 04:38:52",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
