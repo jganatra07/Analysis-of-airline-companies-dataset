@@ -31,9 +31,11 @@ originCity <- ggplot(us, aes(x=long, y=lat)) + expand_limits(x = us$long, y = us
 originCity <- originCity + geom_polygon() + coord_map()
 originCity <- originCity + geom_point(data=latlon, aes(x=lon, y=lat, size=mean1), color="orange")
 
+#Calculating mean of satisfaction and grouping it by Origin state
 osmean <- unclean_data %>%
   group_by(Origin.State) %>%
   summarize(m1 = mean(as.numeric(Satisfaction)))
+#Plotting graph for satisfaction vs origin state 
 osmean<-as.data.frame(osmean)
 osmean
 originState <- ggplot(osmean, aes(x=Origin.State, y=m1)) + geom_col()
