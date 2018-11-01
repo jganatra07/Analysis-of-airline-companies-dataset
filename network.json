@@ -146,6 +146,11 @@
             ],
             "source": "Plot1.R",
             "target": "agesat.png"
+        },
+        {
+            "ports": [],
+            "source": "clean_dataset.R",
+            "target": "Plot2.R"
         }
     ],
     "nodes": [
@@ -210,10 +215,12 @@
             "task_status": "in progress"
         },
         {
-            "desc": "",
-            "name": "plot6.R"
+            "assigned_to": "woojinpark",
+            "desc": "Plots of the five variables (% of Flight with other Airlines, Type of Travel,No. of other Loyalty Cards, Shopping Amount at Airport and Eating and Drinking at Airport) that would provide a pictorial representation of the data.",
+            "name": "Plot2.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-11-01 03:15:55",
+    "updated_at": "2018-11-01 03:20:16",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
