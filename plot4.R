@@ -35,6 +35,7 @@ osmean <- data %>%
   summarize(m1 = mean(Satisfaction))
 
 osmean<-as.data.frame(osmean)
+osmean
 originState <- ggplot(osmean, aes(x=Origin.State, y=m1)) + geom_col()
 originState <- originState + ggtitle("Bar chart of customer satisfaction per Origin state")
 originState <- originState + theme(axis.text.x = element_text(angle = 90, hjust = 1))
