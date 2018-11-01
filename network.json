@@ -148,9 +148,65 @@
             "target": "agesat.png"
         },
         {
-            "ports": [],
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
             "source": "clean_dataset.R",
+            "target": "plot_16.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "perflightsat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "perflightsat.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "explore_dataset.R",
             "target": "Plot2.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot16",
+                    "type": "png"
+                }
+            ],
+            "source": "plot_16.R",
+            "target": "plot16.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "typetravelsat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "typetravelsat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "loyalcardsat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "loyalcardsat.png"
         }
     ],
     "nodes": [
@@ -218,9 +274,27 @@
             "assigned_to": "woojinpark",
             "desc": "Plots of the five variables (% of Flight with other Airlines, Type of Travel,No. of other Loyalty Cards, Shopping Amount at Airport and Eating and Drinking at Airport) that would provide a pictorial representation of the data.",
             "name": "Plot2.R",
-            "task_status": "proposed"
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "jganatra07",
+            "desc": "",
+            "name": "plot_16.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "perflightsat.png"
+        },
+        {
+            "name": "plot16.png"
+        },
+        {
+            "name": "typetravelsat.png"
+        },
+        {
+            "name": "loyalcardsat.png"
         }
     ],
-    "updated_at": "2018-11-01 03:20:16",
+    "updated_at": "2018-11-01 04:20:34",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
