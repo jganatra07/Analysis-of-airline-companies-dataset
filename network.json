@@ -419,7 +419,7 @@
                 }
             ],
             "source": "plot4.R",
-            "target": "destState.png"
+            "target": "Destination_State.png"
         }
     ],
     "nodes": [
@@ -577,9 +577,9 @@
             "name": "origin_state.png"
         },
         {
-            "name": "destState.png"
+            "name": "Destination_State.png"
         }
     ],
-    "updated_at": "2018-11-01 19:09:43",
+    "updated_at": "2018-11-01 19:09:59",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
