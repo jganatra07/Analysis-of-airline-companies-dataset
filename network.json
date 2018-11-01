@@ -317,6 +317,16 @@
             ],
             "source": "Plot1.R",
             "target": "air_status.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "gender_sat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot1.R",
+            "target": "gender_sat.png"
         }
     ],
     "nodes": [
@@ -444,6 +454,6 @@
             "name": "gender_sat.png"
         }
     ],
-    "updated_at": "2018-11-01 14:51:22",
+    "updated_at": "2018-11-01 14:51:34",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
