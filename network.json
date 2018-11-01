@@ -604,8 +604,11 @@
         },
         {
             "name": "plot_model1.png"
+        },
+        {
+            "name": "plotByClass.png"
         }
     ],
-    "updated_at": "2018-11-01 17:00:35",
+    "updated_at": "2018-11-01 17:01:43",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
