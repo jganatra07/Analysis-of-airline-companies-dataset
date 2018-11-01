@@ -552,8 +552,11 @@
             "desc": "performing predictive analysis based on different analysis models",
             "name": "perform_analysis.R",
             "task_status": "not started"
+        },
+        {
+            "name": "origin_state.png"
         }
     ],
-    "updated_at": "2018-11-01 18:54:26",
+    "updated_at": "2018-11-01 18:54:46",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
