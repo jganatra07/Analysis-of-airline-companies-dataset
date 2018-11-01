@@ -237,6 +237,16 @@
             ],
             "source": "explore_dataset.R",
             "target": "Plot3.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "flightdatesat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot3.R",
+            "target": "flightdatesat.png"
         }
     ],
     "nodes": [
@@ -340,6 +350,6 @@
             "name": "flightdatesat.png"
         }
     ],
-    "updated_at": "2018-11-01 04:49:00",
+    "updated_at": "2018-11-01 04:49:09",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
