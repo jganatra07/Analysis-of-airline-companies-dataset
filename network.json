@@ -261,16 +261,6 @@
         {
             "ports": [
                 {
-                    "output": "destinationState",
-                    "type": "png"
-                }
-            ],
-            "source": "plot4.R",
-            "target": "destinationState.png"
-        },
-        {
-            "ports": [
-                {
                     "output": "flight_date",
                     "type": "png"
                 }
@@ -430,6 +420,16 @@
             ],
             "source": "plot4.R",
             "target": "scheduled_departure_hour.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "destState",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "destinationState.png"
         }
     ],
     "nodes": [
@@ -593,6 +593,6 @@
             "task_status": "not started"
         }
     ],
-    "updated_at": "2018-11-01 18:13:34",
+    "updated_at": "2018-11-01 18:45:10",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
