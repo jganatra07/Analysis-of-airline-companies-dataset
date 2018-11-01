@@ -26,7 +26,6 @@ head(lon)
 
 latlon <- as.data.frame(cbind(lon,lat,fltmean1))
 
-     
-
-originCity <- ggplot(us, aes(x=long, y=lat)) + expand_limits(x = us$long, y = us$lat) + geom_point(data=latlon, aes(x=lon, y=lat, size=mean1), color="orange")
+originCity <- ggplot(us, aes(x=long, y=lat)) + expand_limits(x = us$long, y = us$lat) 
 originCity <- originCity + geom_polygon() + coord_map()
+originCity <- originCity + geom_point(data=latlon, aes(x=lon, y=lat, size=mean1), color="orange")
