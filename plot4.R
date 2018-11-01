@@ -1,7 +1,7 @@
 
 library("ggplot2")
 library("ggmap")
-library(dplyr)
+library("dplyr")
 
 mean(data$Satisfaction,na.rm=TRUE)
 
@@ -39,7 +39,12 @@ destinationState <- ggplot(data, aes(x=Destination.State, y=Satisfaction)) + geo
 destinationState <- destinationState + ggtitle("Bar chart of customer satisfaction per Destination state")
 destinationState <- destinationState + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
-schDeptHour <- ggplot(data,aes(x = Scheduled.Departure.Hour, y = Satisfaction)) + geom_count(color="red")
-schDeptHour <- schDeptHour + geom_col() + ggtitle("Bar chart of customer satisfaction vs Scheduled Departure Hour")
-schDeptHour
+satmean <- unclean_data %>%
+  group_by(Satisfaction) %>%
+  summarize(m1 = mean(Scheduled.Departure.Hour))
+
+sdhmean<-as.data.frame(satmean)
+
+sdh <- ggplot(satmean,aes(Satisfaction,m1)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+sdh
 
