@@ -348,6 +348,17 @@
             ],
             "source": "explore_dataset.R",
             "target": "preliminaryDataAnalysis.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "explore_dataset.R",
+            "target": "Plot5.R"
         }
     ],
     "nodes": [
@@ -488,6 +499,6 @@
             "name": "Plot5.R"
         }
     ],
-    "updated_at": "2018-11-01 15:46:28",
+    "updated_at": "2018-11-01 15:46:45",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
