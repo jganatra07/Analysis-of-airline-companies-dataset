@@ -511,9 +511,12 @@
             "assigned_to": "xzhan147",
             "desc": "This section will be exploring the variables which are significantly associated with satisfaction based on the graphs created by the team. Then based on this preliminary findings, these variables might be considered as potential predictors to satisfaction.",
             "name": "preliminaryDataAnalysis.R",
-            "task_status": "proposed"
+            "task_status": "in progress"
+        },
+        {
+            "name": "loyalcardsat1.png"
         }
     ],
-    "updated_at": "2018-11-01 15:52:11",
+    "updated_at": "2018-11-01 15:54:19",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
