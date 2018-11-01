@@ -1,11 +1,9 @@
 
 library(ggplot2)
+
 #day of month vs. satisfaction
 summary(data$Day.of.Month)
 dayofmonth <- ggplot(data=data, aes(x=Day.of.Month, y=Satisfaction)) + geom_bar(stat='identity')
-#flight date
-summary(data$Flight.date)
-flightdatesat <- ggplot(data=data, aes(x=Flight.date, y=Satisfaction)) +geom_bar(stat='identity')
 
 #airline code
 summary(data$Airline.Code)
