@@ -578,8 +578,11 @@
         },
         {
             "name": "class_plot.png"
+        },
+        {
+            "name": "shopping_plot.png"
         }
     ],
-    "updated_at": "2018-11-01 16:07:56",
+    "updated_at": "2018-11-01 16:13:58",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
