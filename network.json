@@ -601,11 +601,11 @@
         },
         {
             "assigned_to": "saramasa",
-            "desc": "Explore the dataset and identify factors affecting the satisfaction of customers.\r\nDetermining the degree of impact of the independent variable on the dependent variable.",
+            "desc": "Cleaning the dataset by replacing the NA values with appropriate values without disturbing the spread of the data.",
             "name": "cleaning_dataset.R",
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 16:21:17",
+    "updated_at": "2018-11-01 16:23:05",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
