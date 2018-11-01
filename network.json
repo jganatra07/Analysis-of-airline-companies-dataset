@@ -538,8 +538,11 @@
         },
         {
             "name": "arrival_delay__plot.png"
+        },
+        {
+            "name": "flight_time_plot.png"
         }
     ],
-    "updated_at": "2018-11-01 15:56:51",
+    "updated_at": "2018-11-01 15:57:09",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
