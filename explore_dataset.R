@@ -34,6 +34,8 @@ head(unclean_data$Flight.date)
 
 data<-unclean_data
 
+sum(is.na(unclean_data$Satisfaction)
+
 
 
 
