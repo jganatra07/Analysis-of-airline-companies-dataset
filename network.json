@@ -308,10 +308,15 @@
             "name": "shoppingamtsat.png"
         },
         {
+            "assigned_to": "woojinpark",
             "desc": "",
-            "name": "Plot3.R"
+            "name": "Plot3.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "eatdrinksat.png"
         }
     ],
-    "updated_at": "2018-11-01 04:30:41",
+    "updated_at": "2018-11-01 04:35:36",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
