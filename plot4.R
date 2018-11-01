@@ -32,7 +32,7 @@ originCity <- originCity + geom_polygon() + coord_map()
 originCity <- originCity + geom_point(data=latlon, aes(x=lon, y=lat, size=mean1), color="orange")
 
 #Calculating mean of satisfaction and grouping it by Origin state
-osmean <- unclean_data %>%
+osmean <- data %>%
   group_by(Origin.State) %>%
   summarize(m1 = mean(as.numeric(Satisfaction)))
 #Plotting graph for satisfaction vs origin state 
@@ -44,7 +44,7 @@ originState <- originState + theme(axis.text.x = element_text(angle = 90, hjust 
 originState
 
 #calculating mean of satisfaction and grouping by destination state
-dsmean <- unclean_data %>%
+dsmean <- data %>%
   group_by(Destination.State) %>%
   summarize(m1 = mean(as.numeric(Satisfaction)))
 #plotting graph of satisfaction vs destination state
@@ -56,7 +56,7 @@ destState <- destState + theme(axis.text.x = element_text(angle = 90, hjust = 1)
 destState
 
 #calculating mean of scheduled departure hour and grouping by Satisfaction
-satmean <- unclean_data %>%
+satmean <- data %>%
   group_by(Satisfaction) %>%
   summarize(m1 = mean(Scheduled.Departure.Hour))
 
