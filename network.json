@@ -211,16 +211,6 @@
         {
             "ports": [
                 {
-                    "output": "airlinecodesat",
-                    "type": "png"
-                }
-            ],
-            "source": "Plot3.R",
-            "target": "airlinecodesat.png"
-        },
-        {
-            "ports": [
-                {
                     "output": "airlinenamesat",
                     "type": "png"
                 }
@@ -430,6 +420,16 @@
             ],
             "source": "plot4.R",
             "target": "plot20.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "airlinecodesat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot3.R",
+            "target": "airlinecodesat.png"
         }
     ],
     "nodes": [
@@ -593,6 +593,6 @@
             "name": "plot20.png"
         }
     ],
-    "updated_at": "2018-11-01 19:11:57",
+    "updated_at": "2018-11-01 19:42:41",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
