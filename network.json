@@ -161,23 +161,22 @@
         {
             "ports": [
                 {
-                    "input": "data",
-                    "output": "undefined",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean_dataset.R",
-            "target": "Plot2.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "perflightsat",
                     "type": "png"
                 }
             ],
             "source": "Plot2.R",
             "target": "perflightsat.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "explore_dataset.R",
+            "target": "Plot2.R"
         }
     ],
     "nodes": [
@@ -248,13 +247,15 @@
             "task_status": "in progress"
         },
         {
+            "assigned_to": "jganatra07",
             "desc": "",
-            "name": "plot_16.R"
+            "name": "plot_16.R",
+            "task_status": "in progress"
         },
         {
             "name": "perflightsat.png"
         }
     ],
-    "updated_at": "2018-11-01 03:44:59",
+    "updated_at": "2018-11-01 03:53:10",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
