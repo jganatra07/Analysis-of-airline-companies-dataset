@@ -267,6 +267,16 @@
             ],
             "source": "Plot3.R",
             "target": "airlinenamesat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "dayofmonth",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot3.R",
+            "target": "dayofmonth.png"
         }
     ],
     "nodes": [
@@ -361,12 +371,6 @@
             "name": "eatdrinksat.png"
         },
         {
-            "assigned_to": "christysato",
-            "desc": "",
-            "name": "Plot3.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "flightdatesat.png"
         },
         {
@@ -374,8 +378,17 @@
         },
         {
             "name": "airlinenamesat.png"
+        },
+        {
+            "assigned_to": "christysato",
+            "desc": "Plots of the four variables (day of month, flight date, airline code, and airline name) that provide a visualization of the data.",
+            "name": "Plot3.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "dayofmonth.png"
         }
     ],
-    "updated_at": "2018-11-01 04:50:05",
+    "updated_at": "2018-11-01 04:52:46",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
