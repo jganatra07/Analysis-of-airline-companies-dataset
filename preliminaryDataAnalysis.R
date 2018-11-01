@@ -16,5 +16,4 @@ summary(model1)
 
 ## sig difference
 TukeyHSD(model1, conf.level = 0.99)
-plot_model1 <- plot(TukeyHSD(model1, conf.level = 0.99),las=1, col = "red")
 
