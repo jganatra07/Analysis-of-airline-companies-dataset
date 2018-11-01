@@ -181,16 +181,6 @@
         {
             "ports": [
                 {
-                    "output": "plot16",
-                    "type": "png"
-                }
-            ],
-            "source": "plot4.R",
-            "target": "plot16.png"
-        },
-        {
-            "ports": [
-                {
                     "output": "typetravelsat",
                     "type": "png"
                 }
@@ -350,9 +340,6 @@
             "name": "perflightsat.png"
         },
         {
-            "name": "plot16.png"
-        },
-        {
             "name": "typetravelsat.png"
         },
         {
@@ -389,6 +376,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 06:38:22",
+    "updated_at": "2018-11-01 06:46:19",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
