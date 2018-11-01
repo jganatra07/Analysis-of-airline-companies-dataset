@@ -113,7 +113,7 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "explore_dataset.R",
+            "source": "cleaning_dataset.R",
             "target": "clean_dataset.R"
         },
         {
@@ -165,7 +165,7 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "explore_dataset.R",
+            "source": "cleaning_dataset.R",
             "target": "Plot2.R"
         },
         {
@@ -316,7 +316,7 @@
                 }
             ],
             "source": "satisfactionSurvey.csv",
-            "target": "explore_dataset.R"
+            "target": "cleaning_dataset.R"
         },
         {
             "ports": [
@@ -326,7 +326,7 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "explore_dataset.R",
+            "source": "cleaning_dataset.R",
             "target": "preliminaryDataAnalysis.R"
         },
         {
@@ -337,7 +337,7 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "explore_dataset.R",
+            "source": "cleaning_dataset.R",
             "target": "Plot5.R"
         },
         {
@@ -428,7 +428,7 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "explore_dataset.R",
+            "source": "cleaning_dataset.R",
             "target": "Plot3.R"
         },
         {
@@ -486,12 +486,6 @@
             "assigned_to": "agarge",
             "desc": "After exploring, cleaning the dataset to remove any missing values or unnecessary columns",
             "name": "clean_dataset.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "saramasa",
-            "desc": "Explore the dataset and identify factors affecting the satisfaction of customers.\r\nDetermining the degree of impact of the independent variable on the dependent variable.",
-            "name": "explore_dataset.R",
             "task_status": "in progress"
         },
         {
@@ -604,8 +598,14 @@
         },
         {
             "name": "loyalcardsat2.png"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "Explore the dataset and identify factors affecting the satisfaction of customers.\r\nDetermining the degree of impact of the independent variable on the dependent variable.",
+            "name": "cleaning_dataset.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 16:20:49",
+    "updated_at": "2018-11-01 16:21:17",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
