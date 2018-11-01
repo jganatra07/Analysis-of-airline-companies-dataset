@@ -31,7 +31,12 @@ originCity <- originCity + geom_polygon() + coord_map()
 originCity <- originCity + geom_point(data=latlon, aes(x=lon, y=lat, size=mean1), color="orange")
 
 
-originState <- ggplot(data, aes(x=Origin.State, y=Satisfaction))
-originState <- originState + geom_col()
-originState <- originState + ggtitle("Bar chart of customer satisfaction per state")
+originState <- ggplot(data, aes(x=Origin.State, y=Satisfaction)) + geom_col()
+originState <- originState + ggtitle("Bar chart of customer satisfaction per Origin state")
 originState <- originState + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+destinationState <- ggplot(data, aes(x=Destination.State, y=Satisfaction)) + geom_col()
+destinationState <- destinationState + ggtitle("Bar chart of customer satisfaction per Destination state")
+destinationState <- destinationState + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+
