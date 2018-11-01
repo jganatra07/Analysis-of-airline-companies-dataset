@@ -211,16 +211,6 @@
         {
             "ports": [
                 {
-                    "input": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "explore_dataset.R",
-            "target": "Plot3.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "flightdatesat",
                     "type": "png"
                 }
@@ -337,6 +327,109 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "explore_dataset.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "explore_dataset.R",
+            "target": "preliminaryDataAnalysis.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "explore_dataset.R",
+            "target": "Plot5.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "departure_delay__plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "departure_delay__plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "loyalcardsat1",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "loyalcardsat1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "arrival_delay__plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "arrival_delay__plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "flight_time_plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "flight_time_plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "flight_cancel_plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "flight_cancel_plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "class_plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "class_plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot1_hist",
+                    "type": "png"
+                }
+            ],
+            "source": "preliminaryDataAnalysis.R",
+            "target": "plot1_hist.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "undefined",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "explore_dataset.R",
+            "target": "Plot3.R"
         }
     ],
     "nodes": [
@@ -465,8 +558,41 @@
         },
         {
             "name": "scheduled_departure_hour.png"
+        },
+        {
+            "assigned_to": "agarge",
+            "desc": "Pictorial analysis of five variables present in the dataset.",
+            "name": "Plot5.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "departure_delay__plot.png"
+        },
+        {
+            "assigned_to": "xzhan147",
+            "desc": "This section will be exploring the variables which are significantly associated with satisfaction based on the graphs created by the team. Then based on this preliminary findings, these variables might be considered as potential predictors to satisfaction.",
+            "name": "preliminaryDataAnalysis.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "loyalcardsat1.png"
+        },
+        {
+            "name": "arrival_delay__plot.png"
+        },
+        {
+            "name": "flight_time_plot.png"
+        },
+        {
+            "name": "flight_cancel_plot.png"
+        },
+        {
+            "name": "class_plot.png"
+        },
+        {
+            "name": "plot1_hist.png"
         }
     ],
-    "updated_at": "2018-11-01 15:26:59",
+    "updated_at": "2018-11-01 15:59:43",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
