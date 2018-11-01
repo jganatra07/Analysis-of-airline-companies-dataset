@@ -413,8 +413,11 @@
         },
         {
             "name": "destinationState.png"
+        },
+        {
+            "name": "flight_date.png"
         }
     ],
-    "updated_at": "2018-11-01 07:04:34",
+    "updated_at": "2018-11-01 14:50:26",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
