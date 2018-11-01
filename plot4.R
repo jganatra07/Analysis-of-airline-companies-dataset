@@ -1,21 +1,34 @@
 
-library(ggplot2)
-#library(dplyr)
-#satisfactioncount <- data %>% group_by(Orgin.City) %>% summarize(mean1 = mean(Satisfaction))
-#satisfactioncount <- as.data.frame(satisfactioncount)
-#plotting average satisfaction per gender vs customer satisfaction
-#plot16 <- ggplot(satisfactioncount,aes(Orgin.City,mean1)) 
-#plot16<- plot16 + geom_point()
+library("ggplot2")
+library("ggmap")
+library(dplyr)
 
-data$Origin.City <- tolower(data$Orgin.City)
-#turning data from the maps package into a data frame suitable for plotting with ggplot2
+mean(data$Satisfaction,na.rm=TRUE)
+
+data$Satisfaction[is.na(clean_data$Satisfaction)] <- 3.5 #closest to mean
+fltmean1 <- clean_data %>% group_by(Orgin.City) %>% summarize(mean1 = mean(Satisfaction))
+fltmean1 <- as.data.frame(fltmean1)
+fltmean1$place <- toString(paste(clean_data$Orgin.City,",",clean_data$Origin.State))
+fltmean1 <- as.data.frame(fltmean1)
 us <- map_data("state")
-biplot3 <- ggplot(data, aes(map_id = data$Orgin.City))
-#creating a map visualization
-biplot3 <- biplot3 + geom_map(map = us, aes(fill = mean(data$Satisfaction)))
-#defining the x and y axes values of the map
-#coord_map() handles the distortion and aspect ratio of the map
-biplot3 <- biplot3 + expand_limits(x = us$long, y = us$lat) + coord_map()
-#ggtitle() gives a title to the map
-biplot3 <- biplot3 + ggtitle("Map of color coded USA")
-biplot3
+
+lat <- data.frame()
+lon <- data.frame()
+get the latitude and longitude of NYC from the datasciencetoolkit
+for(i in 1:nrow(fltmean1)){
+
+x <- geocode(as.character(fltmean1[i,1]),source="dsk")
+lon[i,1] <- x[1]
+lat[i,1] <- x[2]
+}
+head(lat)
+head(lon)
+
+latlon <- as.data.frame(cbind(lon,lat,fltmean1))
+
+     
+
+ggplot(us, aes(x=long, y=lat)) + expand_limits(x = us$long, y = us$lat) +
+  geom_polygon() +
+  coord_map() +
+  geom_point(data=latlon, aes(x=lon, y=lat, size=mean1), color="orange")
