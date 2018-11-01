@@ -197,6 +197,16 @@
             ],
             "source": "Plot2.R",
             "target": "typetravelsat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "loyalcardsat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "loyalcardsat.png"
         }
     ],
     "nodes": [
@@ -280,8 +290,11 @@
         },
         {
             "name": "typetravelsat.png"
+        },
+        {
+            "name": "loyalcardsat.png"
         }
     ],
-    "updated_at": "2018-11-01 04:04:55",
+    "updated_at": "2018-11-01 04:20:34",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
