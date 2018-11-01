@@ -12,7 +12,7 @@ data$Origin.City <- tolower(data$Orgin.City)
 us <- map_data("state")
 biplot3 <- ggplot(data, aes(map_id = data$Orgin.City))
 #creating a map visualization
-biplot3 <- biplot3 + geom_map(map = us, aes(fill = mean(data$Orgin.City)))
+biplot3 <- biplot3 + geom_map(map = us, aes(fill = mean(data$Satisfaction)))
 #defining the x and y axes values of the map
 #coord_map() handles the distortion and aspect ratio of the map
 biplot3 <- biplot3 + expand_limits(x = us$long, y = us$lat) + coord_map()
