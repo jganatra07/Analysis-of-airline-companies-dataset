@@ -297,6 +297,16 @@
             ],
             "source": "plot4.R",
             "target": "destinationState.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "flight_date",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot1.R",
+            "target": "flight_date.png"
         }
     ],
     "nodes": [
@@ -418,6 +428,6 @@
             "name": "flight_date.png"
         }
     ],
-    "updated_at": "2018-11-01 14:50:26",
+    "updated_at": "2018-11-01 14:50:41",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
