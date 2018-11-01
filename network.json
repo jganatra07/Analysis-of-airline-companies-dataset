@@ -413,17 +413,6 @@
         {
             "ports": [
                 {
-                    "input": "data",
-                    "output": "undefined",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "explore_dataset.R",
-            "target": "Plot3.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "shopping_plot",
                     "type": "png"
                 }
@@ -440,6 +429,17 @@
             ],
             "source": "Plot2.R",
             "target": "loyalcardsat2.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "explore_dataset.R",
+            "target": "Plot3.R"
         }
     ],
     "nodes": [
@@ -606,6 +606,6 @@
             "name": "loyalcardsat2.png"
         }
     ],
-    "updated_at": "2018-11-01 16:16:56",
+    "updated_at": "2018-11-01 16:20:13",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
