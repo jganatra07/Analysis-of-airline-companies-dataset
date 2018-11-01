@@ -1,5 +1,4 @@
 
-
 str(data)
 library(ggplot2)
 
@@ -20,3 +19,4 @@ shoppingamtsat <- ggplot(data, aes(x=Shopping.Amount.at.Airport , y=Satisfaction
 
 # make a scatter plot of independent variable :Eating.and.Drinking.at.Airport and dependent variable : Satisfaction 
 eatdrinksat <- ggplot(data, aes(x=Eating.and.Drinking.at.Airport , y=Satisfaction, colour= "red")) +  geom_point()
+
