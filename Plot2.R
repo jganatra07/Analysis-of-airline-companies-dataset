@@ -11,5 +11,8 @@ perflightsat <- ggplot(data, aes(x=jitter(data$X..of.Flight.with.other.Airlines)
 # make a box plot of independent variable :Type.of.Travel and dependent variable : Satisfaction 
 typetravelsat <- ggplot(data, aes(x=Type.of.Travel, y=Satisfaction, colour= "red")) + geom_boxplot(fill="grey")
 
-# make a box plot of independent variable :No..of.other.Loyalty.Cards  and dependent variable : Satisfaction 
-typetravelsat <- ggplot(data, aes(x=No..of.other.Loyalty.Cards, y=Satisfaction, colour= "red")) + geom_boxplot(fill="grey")
+# make a scatter plot of independent variable :No..of.other.Loyalty.Cards  and dependent variable : Satisfaction 
+## No. Of other Loyalty Cards – it is kind of membership card of each customer, that for retail establishment to gain a benefits such as, discounts.  
+
+typetravelsat <- ggplot(data, aes(x=No..of.other.Loyalty.Cards, y=Satisfaction, colour= "red")) +  geom_point()
+
