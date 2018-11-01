@@ -108,16 +108,6 @@
         {
             "ports": [
                 {
-                    "input": "unclean_data",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "explore_dataset.R"
-        },
-        {
-            "ports": [
-                {
                     "input": "data",
                     "output": "data",
                     "type": "r_obj"
@@ -156,7 +146,7 @@
                 }
             ],
             "source": "clean_dataset.R",
-            "target": "plot_16.R"
+            "target": "plot4.R"
         },
         {
             "ports": [
@@ -177,16 +167,6 @@
             ],
             "source": "explore_dataset.R",
             "target": "Plot2.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "plot16",
-                    "type": "png"
-                }
-            ],
-            "source": "plot_16.R",
-            "target": "plot16.png"
         },
         {
             "ports": [
@@ -277,6 +257,86 @@
             ],
             "source": "Plot3.R",
             "target": "dayofmonth.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "originCity",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "originCity.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "originState",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "originState.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "destinationState",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "destinationState.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "flight_date",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot1.R",
+            "target": "flight_date.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "air_status",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot1.R",
+            "target": "air_status.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "gender_sat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot1.R",
+            "target": "gender_sat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "schDeptHour",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "scheduled_departure_hour.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "unclean_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "explore_dataset.R"
         }
     ],
     "nodes": [
@@ -347,16 +407,7 @@
             "task_status": "in progress"
         },
         {
-            "assigned_to": "jganatra07",
-            "desc": "",
-            "name": "plot_16.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "perflightsat.png"
-        },
-        {
-            "name": "plot16.png"
         },
         {
             "name": "typetravelsat.png"
@@ -387,8 +438,35 @@
         },
         {
             "name": "dayofmonth.png"
+        },
+        {
+            "assigned_to": "jganatra07",
+            "desc": "",
+            "name": "plot4.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "originCity.png"
+        },
+        {
+            "name": "originState.png"
+        },
+        {
+            "name": "destinationState.png"
+        },
+        {
+            "name": "flight_date.png"
+        },
+        {
+            "name": "air_status.png"
+        },
+        {
+            "name": "gender_sat.png"
+        },
+        {
+            "name": "scheduled_departure_hour.png"
         }
     ],
-    "updated_at": "2018-11-01 04:52:46",
+    "updated_at": "2018-11-01 15:26:59",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
