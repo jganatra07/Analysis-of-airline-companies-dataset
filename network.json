@@ -359,6 +359,16 @@
             ],
             "source": "explore_dataset.R",
             "target": "Plot5.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "departure_delay__plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "departure_delay__plot.png"
         }
     ],
     "nodes": [
@@ -504,6 +514,6 @@
             "name": "departure_delay__plot.png"
         }
     ],
-    "updated_at": "2018-11-01 15:50:11",
+    "updated_at": "2018-11-01 15:50:21",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
