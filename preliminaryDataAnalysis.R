@@ -1,5 +1,5 @@
 
-library(ggplots)
+library(ggplot2)
 str(data)
 
 
