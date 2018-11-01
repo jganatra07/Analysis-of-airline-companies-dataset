@@ -11,4 +11,4 @@ t.test(data$Satisfaction ~ data$Gender)
 
 #Hypothesis - Male and Female passengers have significant differences in 
 #satisfaction.
-t.test(data$Satisfaction ~ data$Gender)
+t.test(data$Satisfaction ~ data$Airline.Status)
