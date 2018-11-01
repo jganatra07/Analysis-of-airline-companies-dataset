@@ -306,8 +306,12 @@
         },
         {
             "name": "shoppingamtsat.png"
+        },
+        {
+            "desc": "",
+            "name": "Plot3.R"
         }
     ],
-    "updated_at": "2018-11-01 04:26:53",
+    "updated_at": "2018-11-01 04:30:41",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
