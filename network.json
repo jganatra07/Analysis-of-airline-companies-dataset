@@ -113,7 +113,7 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "explore_dataset.R",
+            "source": "cleaning_dataset.R",
             "target": "clean_dataset.R"
         },
         {
@@ -165,7 +165,7 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "explore_dataset.R",
+            "source": "cleaning_dataset.R",
             "target": "Plot2.R"
         },
         {
@@ -311,22 +311,12 @@
         {
             "ports": [
                 {
-                    "output": "schDeptHour",
-                    "type": "png"
-                }
-            ],
-            "source": "plot4.R",
-            "target": "scheduled_departure_hour.png"
-        },
-        {
-            "ports": [
-                {
                     "input": "unclean_data",
                     "type": "csv"
                 }
             ],
             "source": "satisfactionSurvey.csv",
-            "target": "explore_dataset.R"
+            "target": "cleaning_dataset.R"
         },
         {
             "ports": [
@@ -336,7 +326,7 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "explore_dataset.R",
+            "source": "cleaning_dataset.R",
             "target": "preliminaryDataAnalysis.R"
         },
         {
@@ -347,7 +337,7 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "explore_dataset.R",
+            "source": "cleaning_dataset.R",
             "target": "Plot5.R"
         },
         {
@@ -413,23 +403,43 @@
         {
             "ports": [
                 {
-                    "input": "data",
-                    "output": "undefined",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "explore_dataset.R",
-            "target": "Plot3.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "shopping_plot",
                     "type": "png"
                 }
             ],
             "source": "Plot5.R",
             "target": "shopping_plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "loyalcardsat2",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "loyalcardsat2.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleaning_dataset.R",
+            "target": "Plot3.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "sdh",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "scheduled_departure_hour.png"
         }
     ],
     "nodes": [
@@ -476,12 +486,6 @@
             "assigned_to": "agarge",
             "desc": "After exploring, cleaning the dataset to remove any missing values or unnecessary columns",
             "name": "clean_dataset.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "saramasa",
-            "desc": "Explore the dataset and identify factors affecting the satisfaction of customers.\r\nDetermining the degree of impact of the independent variable on the dependent variable.",
-            "name": "explore_dataset.R",
             "task_status": "in progress"
         },
         {
@@ -591,8 +595,17 @@
         },
         {
             "name": "shopping_plot.png"
+        },
+        {
+            "name": "loyalcardsat2.png"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "Cleaning the dataset by replacing the NA values with appropriate values without disturbing the spread of the data.",
+            "name": "cleaning_dataset.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 16:14:42",
+    "updated_at": "2018-11-01 16:23:05",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
