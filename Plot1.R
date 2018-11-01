@@ -8,7 +8,7 @@ library(dplyr)
 data$Satisfaction<-tolower(data$Satisfaction)
 
 #Plot of Age vs Avg. Satisfaction
-satmean <- unclean_data %>%
+satmean <- data %>%
   group_by(Satisfaction) %>%
   summarize(m1 = mean(Age))
 
