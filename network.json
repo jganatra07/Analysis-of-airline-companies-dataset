@@ -217,6 +217,16 @@
             ],
             "source": "Plot2.R",
             "target": "shoppingamtsat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "eatdrinksat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "eatdrinksat.png"
         }
     ],
     "nodes": [
@@ -306,8 +316,17 @@
         },
         {
             "name": "shoppingamtsat.png"
+        },
+        {
+            "assigned_to": "woojinpark",
+            "desc": "",
+            "name": "Plot3.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "eatdrinksat.png"
         }
     ],
-    "updated_at": "2018-11-01 04:26:53",
+    "updated_at": "2018-11-01 04:35:46",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
