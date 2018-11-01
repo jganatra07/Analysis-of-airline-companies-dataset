@@ -413,16 +413,6 @@
         {
             "ports": [
                 {
-                    "output": "plot1_hist",
-                    "type": "png"
-                }
-            ],
-            "source": "preliminaryDataAnalysis.R",
-            "target": "plot1_hist.png"
-        },
-        {
-            "ports": [
-                {
                     "input": "data",
                     "output": "undefined",
                     "type": "r_obj"
@@ -588,11 +578,8 @@
         },
         {
             "name": "class_plot.png"
-        },
-        {
-            "name": "plot1_hist.png"
         }
     ],
-    "updated_at": "2018-11-01 15:59:43",
+    "updated_at": "2018-11-01 16:07:56",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
