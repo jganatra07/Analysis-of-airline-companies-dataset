@@ -20,9 +20,12 @@ TukeyHSD(model1, conf.level = 0.99)
 #The results show that all the pairs of satisfaction are statistically 
 #significantly different from the Tukey’s Honestly Significant Differences.
 
-#Hypothesis3 -Customers with age have significant 
+#Hypothesis3 -Customers with younger age and older age have significant 
 #differences in satisfaction.
-
+.....
 summary(data$Age)
+
+#more similar analyses will be conducted for the rest of the variables 
+
 
 
