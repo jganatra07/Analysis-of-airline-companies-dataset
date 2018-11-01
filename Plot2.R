@@ -14,5 +14,5 @@ typetravelsat <- ggplot(data, aes(x=Type.of.Travel, y=Satisfaction, colour= "red
 # make a scatter plot of independent variable :No..of.other.Loyalty.Cards  and dependent variable : Satisfaction 
 ## No. Of other Loyalty Cards – it is kind of membership card of each customer, that for retail establishment to gain a benefits such as, discounts.  
 
-typetravelsat <- ggplot(data, aes(x=No..of.other.Loyalty.Cards, y=Satisfaction, colour= "red")) +  geom_point()
+loyalcardsat <- ggplot(data, aes(x=No..of.other.Loyalty.Cards, y=Satisfaction, colour= "red")) +  geom_point()
 
