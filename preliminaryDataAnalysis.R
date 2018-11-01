@@ -23,6 +23,6 @@ TukeyHSD(model1, conf.level = 0.99)
 #Hypothesis3 -Customers with age have significant 
 #differences in satisfaction.
 
-summary(age)
+summary(data$Age)
 
 
