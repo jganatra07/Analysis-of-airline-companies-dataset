@@ -564,8 +564,11 @@
         },
         {
             "name": "flight_cancel_plot.png"
+        },
+        {
+            "name": "class_plot.png"
         }
     ],
-    "updated_at": "2018-11-01 15:57:43",
+    "updated_at": "2018-11-01 15:58:07",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
