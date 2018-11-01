@@ -211,16 +211,6 @@
         {
             "ports": [
                 {
-                    "output": "airlinecodesat",
-                    "type": "png"
-                }
-            ],
-            "source": "Plot3.R",
-            "target": "airlinecodesat.png"
-        },
-        {
-            "ports": [
-                {
                     "output": "airlinenamesat",
                     "type": "png"
                 }
@@ -246,27 +236,7 @@
                 }
             ],
             "source": "plot4.R",
-            "target": "originCity.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "originState",
-                    "type": "png"
-                }
-            ],
-            "source": "plot4.R",
-            "target": "originState.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "destinationState",
-                    "type": "png"
-                }
-            ],
-            "source": "plot4.R",
-            "target": "destinationState.png"
+            "target": "plot16.png"
         },
         {
             "ports": [
@@ -424,12 +394,42 @@
         {
             "ports": [
                 {
+                    "output": "originState",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "plot17.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "destState",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "plot19.png"
+        },
+        {
+            "ports": [
+                {
                     "output": "sdh",
                     "type": "png"
                 }
             ],
             "source": "plot4.R",
-            "target": "scheduled_departure_hour.png"
+            "target": "plot20.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "airlinecodesat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot3.R",
+            "target": "airlinecodesat.png"
         }
     ],
     "nodes": [
@@ -441,36 +441,6 @@
         },
         {
             "name": "evaluation_matrix.csv"
-        },
-        {
-            "assigned_to": "christysato",
-            "desc": "creating models for predictive analysis",
-            "name": "analysis_model2.R",
-            "task_status": "proposed"
-        },
-        {
-            "assigned_to": "woojinpark",
-            "desc": "creating models for predictive analysis",
-            "name": "analysis_model1.R",
-            "task_status": "proposed"
-        },
-        {
-            "assigned_to": "xzhan147",
-            "desc": "creating models for predictive analysis",
-            "name": "analysis_model3.R",
-            "task_status": "proposed"
-        },
-        {
-            "assigned_to": "jganatra07",
-            "desc": "analyze the clean data using different visualization tools and gain insight",
-            "name": "analyze_data.R",
-            "task_status": "proposed"
-        },
-        {
-            "assigned_to": "saramasa",
-            "desc": "performing predictive analysis based on different analysis models",
-            "name": "perform_analysis.R",
-            "task_status": "proposed"
         },
         {
             "assigned_to": "agarge",
@@ -530,13 +500,7 @@
             "task_status": "in progress"
         },
         {
-            "name": "originCity.png"
-        },
-        {
-            "name": "originState.png"
-        },
-        {
-            "name": "destinationState.png"
+            "name": "plot16.png"
         },
         {
             "name": "flight_date.png"
@@ -548,9 +512,6 @@
             "name": "gender_sat.png"
         },
         {
-            "name": "scheduled_departure_hour.png"
-        },
-        {
             "assigned_to": "agarge",
             "desc": "Pictorial analysis of five variables present in the dataset.",
             "name": "Plot5.R",
@@ -558,12 +519,6 @@
         },
         {
             "name": "departure_delay__plot.png"
-        },
-        {
-            "assigned_to": "xzhan147",
-            "desc": "This section will be exploring the variables which are significantly associated with satisfaction based on the graphs created by the team. Then based on this preliminary findings, these variables might be considered as potential predictors to satisfaction.",
-            "name": "preliminaryDataAnalysis.R",
-            "task_status": "in progress"
         },
         {
             "name": "loyalcardsat1.png"
@@ -591,8 +546,53 @@
             "desc": "Cleaning the dataset by replacing the NA values with appropriate values without disturbing the spread of the data.",
             "name": "cleaning_dataset.R",
             "task_status": "in progress"
+        },
+        {
+            "assigned_to": "xzhan147",
+            "desc": "This section will be exploring the variables which might be associated with satisfaction based on the graphs created by the team using T-tests, Anovas and ect. Based on the preliminary findings in this section, we will be able to know whether the differences or association are reaching the significant level in statistics or not. These findings will be helping us in making the decision of  considering these variables as potential predictors to satisfaction and including them in our model.",
+            "name": "preliminaryDataAnalysis.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "jganatra07",
+            "desc": "analyze the clean data using different visualization tools and gain insight",
+            "name": "analyze_data.R",
+            "task_status": "not started"
+        },
+        {
+            "assigned_to": "woojinpark",
+            "desc": "creating models for predictive analysis",
+            "name": "analysis_model1.R",
+            "task_status": "not started"
+        },
+        {
+            "assigned_to": "xzhan147",
+            "desc": "creating models for predictive analysis",
+            "name": "analysis_model3.R",
+            "task_status": "not started"
+        },
+        {
+            "assigned_to": "christysato",
+            "desc": "creating models for predictive analysis",
+            "name": "analysis_model2.R",
+            "task_status": "not started"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "performing predictive analysis based on different analysis models",
+            "name": "perform_analysis.R",
+            "task_status": "not started"
+        },
+        {
+            "name": "plot17.png"
+        },
+        {
+            "name": "plot19.png"
+        },
+        {
+            "name": "plot20.png"
         }
     ],
-    "updated_at": "2018-11-01 16:47:15",
+    "updated_at": "2018-11-01 19:42:41",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
