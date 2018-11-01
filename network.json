@@ -168,6 +168,16 @@
             ],
             "source": "clean_dataset.R",
             "target": "Plot2.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "perflightsat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "perflightsat.png"
         }
     ],
     "nodes": [
@@ -245,6 +255,6 @@
             "name": "perflightsat.png"
         }
     ],
-    "updated_at": "2018-11-01 03:44:46",
+    "updated_at": "2018-11-01 03:44:59",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
