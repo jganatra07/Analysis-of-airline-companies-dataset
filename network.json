@@ -187,6 +187,16 @@
             ],
             "source": "plot_16.R",
             "target": "plot16.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "typetravelsat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "typetravelsat.png"
         }
     ],
     "nodes": [
@@ -272,6 +282,6 @@
             "name": "typetravelsat.png"
         }
     ],
-    "updated_at": "2018-11-01 04:04:42",
+    "updated_at": "2018-11-01 04:04:55",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
