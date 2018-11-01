@@ -6,21 +6,28 @@ library(dplyr)
 #plot(data$Age, data$Satisfaction)
 
 data$Satisfaction<-tolower(data$Satisfaction)
+
 #Plot of Age vs Avg. Satisfaction
-agemean <- data %>%
-  group_by(Age) %>%
-  summarize(m1 = mean(Satisfaction))
+satmean <- data %>%
+  group_by(Satisfaction) %>%
+  summarize(m1 = mean(Age))
 
-agemean<-as.data.frame(agemean)
+agemean<-as.data.frame(satmean)
 
-agesat<-ggplot(agemean,aes(Age,m1)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+agesat<-ggplot(agemean,aes(Satisfaction,m1)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
-#Mean age for each Satisfaction score
+#Plotting Satisfaction against the Flight Date
+flightdate <- data %>%
+  group_by(Flight.date) %>%
+  summarize(m2 = mean(Satisfaction))
 
-#satmean <- data %>%
-#  group_by(Satisfaction) %>%
-#  summarize(m1 = mean(Age))
+flightdate<-as.data.frame(flightdate)
 
-#agemean<-as.data.frame(satmean)
+flight_date<-ggplot(flightdate, aes(Flight.date,m2))+geom_line()+labs(x="From 1st Jan to 31st March 2014", y="Mean Satisfaction")
 
-#ggplot(satmean,aes(Satisfaction,m1)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+#Plotting Airline Status against Satisfaction
+air_status<-ggplot(data, aes(Airline.Status, Satisfaction))+geom_boxplot()+labs(x="Airline Status", y="Satisfaction")
+
+#Plotting Gender against Satisfaction
+gender_sat<-ggplot(data, aes(Gender, Satisfaction))+geom_boxplot()+labs(x="Gender", y="Satisfaction")

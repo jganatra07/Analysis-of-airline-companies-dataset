@@ -108,16 +108,6 @@
         {
             "ports": [
                 {
-                    "input": "unclean_data",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "explore_dataset.R"
-        },
-        {
-            "ports": [
-                {
                     "input": "data",
                     "output": "data",
                     "type": "r_obj"
@@ -337,6 +327,16 @@
             ],
             "source": "plot4.R",
             "target": "scheduled_departure_hour.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "unclean_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "explore_dataset.R"
         }
     ],
     "nodes": [
@@ -467,6 +467,6 @@
             "name": "scheduled_departure_hour.png"
         }
     ],
-    "updated_at": "2018-11-01 15:16:06",
+    "updated_at": "2018-11-01 15:26:59",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
