@@ -12,16 +12,6 @@
         {
             "ports": [
                 {
-                    "output": "data",
-                    "type": "csv"
-                }
-            ],
-            "source": "clean_dataset.R",
-            "target": "clean_dataset.csv"
-        },
-        {
-            "ports": [
-                {
                     "input": "data",
                     "type": "csv"
                 }
@@ -108,34 +98,12 @@
         {
             "ports": [
                 {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean_dataset.R",
-            "target": "Plot1.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "agesat",
                     "type": "png"
                 }
             ],
             "source": "Plot1.R",
             "target": "agesat.png"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean_dataset.R",
-            "target": "plot4.R"
         },
         {
             "ports": [
@@ -430,17 +398,6 @@
                 }
             ],
             "source": "cleaning_dataset.R",
-            "target": "clean_dataset.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleaning_dataset.R",
             "target": "Plot2.R"
         }
     ],
@@ -453,12 +410,6 @@
         },
         {
             "name": "evaluation_matrix.csv"
-        },
-        {
-            "assigned_to": "agarge",
-            "desc": "After exploring, cleaning the dataset to remove any missing values or unnecessary columns",
-            "name": "clean_dataset.R",
-            "task_status": "in progress"
         },
         {
             "name": "agesat.png"
@@ -611,6 +562,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-08 16:34:51",
+    "updated_at": "2018-11-08 16:37:49",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
