@@ -239,17 +239,6 @@
         {
             "ports": [
                 {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleaning_dataset.R",
-            "target": "Plot5.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "departure_delay__plot",
                     "type": "png"
                 }
@@ -399,6 +388,17 @@
             ],
             "source": "cleaning_dataset.R",
             "target": "correlation.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleaning_dataset.R",
+            "target": "Plot5.R"
         }
     ],
     "nodes": [
@@ -562,6 +562,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-08 16:40:19",
+    "updated_at": "2018-11-08 16:40:30",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
