@@ -560,8 +560,11 @@
             "desc": "",
             "name": "correlation.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "eatdrinksat1.png"
         }
     ],
-    "updated_at": "2018-11-08 16:40:30",
+    "updated_at": "2018-11-08 17:02:59",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
