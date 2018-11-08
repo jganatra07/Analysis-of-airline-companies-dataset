@@ -432,7 +432,12 @@
             "target": "airlinecodesat.png"
         },
         {
-            "ports": [],
+            "ports": [
+                {
+                    "input": "data",
+                    "type": "r_obj"
+                }
+            ],
             "source": "cleaning_dataset.R",
             "target": "correlation.R"
         }
@@ -604,6 +609,6 @@
             "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-11-08 16:24:17",
+    "updated_at": "2018-11-08 16:24:40",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
