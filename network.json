@@ -598,10 +598,12 @@
             "name": "plot20.png"
         },
         {
+            "assigned_to": "xzhan147",
             "desc": "",
-            "name": "correlation.R"
+            "name": "correlation.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-11-08 16:24:03",
+    "updated_at": "2018-11-08 16:24:17",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
