@@ -211,16 +211,6 @@
         {
             "ports": [
                 {
-                    "output": "airlinecodesat",
-                    "type": "png"
-                }
-            ],
-            "source": "Plot3.R",
-            "target": "airlinecodesat.png"
-        },
-        {
-            "ports": [
-                {
                     "output": "airlinenamesat",
                     "type": "png"
                 }
@@ -246,27 +236,7 @@
                 }
             ],
             "source": "plot4.R",
-            "target": "originCity.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "originState",
-                    "type": "png"
-                }
-            ],
-            "source": "plot4.R",
-            "target": "originState.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "destinationState",
-                    "type": "png"
-                }
-            ],
-            "source": "plot4.R",
-            "target": "destinationState.png"
+            "target": "plot16.png"
         },
         {
             "ports": [
@@ -424,12 +394,42 @@
         {
             "ports": [
                 {
+                    "output": "originState",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "plot17.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "destState",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "plot19.png"
+        },
+        {
+            "ports": [
+                {
                     "output": "sdh",
                     "type": "png"
                 }
             ],
             "source": "plot4.R",
-            "target": "scheduled_departure_hour.png"
+            "target": "plot20.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "airlinecodesat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot3.R",
+            "target": "airlinecodesat.png"
         }
     ],
     "nodes": [
@@ -500,13 +500,7 @@
             "task_status": "in progress"
         },
         {
-            "name": "originCity.png"
-        },
-        {
-            "name": "originState.png"
-        },
-        {
-            "name": "destinationState.png"
+            "name": "plot16.png"
         },
         {
             "name": "flight_date.png"
@@ -516,9 +510,6 @@
         },
         {
             "name": "gender_sat.png"
-        },
-        {
-            "name": "scheduled_departure_hour.png"
         },
         {
             "assigned_to": "agarge",
@@ -591,8 +582,17 @@
             "desc": "performing predictive analysis based on different analysis models",
             "name": "perform_analysis.R",
             "task_status": "not started"
+        },
+        {
+            "name": "plot17.png"
+        },
+        {
+            "name": "plot19.png"
+        },
+        {
+            "name": "plot20.png"
         }
     ],
-    "updated_at": "2018-11-01 18:13:34",
+    "updated_at": "2018-11-01 19:42:41",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
