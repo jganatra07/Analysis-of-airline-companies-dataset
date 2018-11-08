@@ -12,16 +12,6 @@
         {
             "ports": [
                 {
-                    "output": "data",
-                    "type": "csv"
-                }
-            ],
-            "source": "clean_dataset.R",
-            "target": "clean_dataset.csv"
-        },
-        {
-            "ports": [
-                {
                     "input": "data",
                     "type": "csv"
                 }
@@ -108,28 +98,6 @@
         {
             "ports": [
                 {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleaning_dataset.R",
-            "target": "clean_dataset.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean_dataset.R",
-            "target": "Plot1.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "agesat",
                     "type": "png"
                 }
@@ -140,33 +108,12 @@
         {
             "ports": [
                 {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean_dataset.R",
-            "target": "plot4.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "perflightsat",
                     "type": "png"
                 }
             ],
             "source": "Plot2.R",
             "target": "perflightsat.png"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleaning_dataset.R",
-            "target": "Plot2.R"
         },
         {
             "ports": [
@@ -288,17 +235,6 @@
             ],
             "source": "cleaning_dataset.R",
             "target": "preliminaryDataAnalysis.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleaning_dataset.R",
-            "target": "Plot5.R"
         },
         {
             "ports": [
@@ -430,6 +366,39 @@
             ],
             "source": "Plot3.R",
             "target": "airlinecodesat.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleaning_dataset.R",
+            "target": "Plot2.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleaning_dataset.R",
+            "target": "correlation.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleaning_dataset.R",
+            "target": "Plot5.R"
         }
     ],
     "nodes": [
@@ -441,12 +410,6 @@
         },
         {
             "name": "evaluation_matrix.csv"
-        },
-        {
-            "assigned_to": "agarge",
-            "desc": "After exploring, cleaning the dataset to remove any missing values or unnecessary columns",
-            "name": "clean_dataset.R",
-            "task_status": "in progress"
         },
         {
             "name": "agesat.png"
@@ -591,8 +554,14 @@
         },
         {
             "name": "plot20.png"
+        },
+        {
+            "assigned_to": "xzhan147",
+            "desc": "",
+            "name": "correlation.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 19:42:41",
+    "updated_at": "2018-11-08 16:40:30",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
