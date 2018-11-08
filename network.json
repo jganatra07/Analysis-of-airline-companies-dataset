@@ -12,16 +12,6 @@
         {
             "ports": [
                 {
-                    "output": "data",
-                    "type": "csv"
-                }
-            ],
-            "source": "clean_dataset.R",
-            "target": "clean_dataset.csv"
-        },
-        {
-            "ports": [
-                {
                     "input": "data",
                     "type": "csv"
                 }
@@ -108,45 +98,12 @@
         {
             "ports": [
                 {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleaning_dataset.R",
-            "target": "clean_dataset.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean_dataset.R",
-            "target": "Plot1.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "agesat",
                     "type": "png"
                 }
             ],
             "source": "Plot1.R",
             "target": "agesat.png"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean_dataset.R",
-            "target": "plot4.R"
         },
         {
             "ports": [
@@ -278,17 +235,6 @@
             ],
             "source": "cleaning_dataset.R",
             "target": "preliminaryDataAnalysis.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleaning_dataset.R",
-            "target": "Plot5.R"
         },
         {
             "ports": [
@@ -425,7 +371,7 @@
             "ports": [
                 {
                     "input": "data",
-                    "output": "undefined",
+                    "output": "data",
                     "type": "r_obj"
                 }
             ],
@@ -436,12 +382,33 @@
             "ports": [
                 {
                     "input": "data",
-                    "output": "undefined",
+                    "output": "data",
                     "type": "r_obj"
                 }
             ],
             "source": "cleaning_dataset.R",
             "target": "correlation.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleaning_dataset.R",
+            "target": "Plot5.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "eatdrinksat1",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "eatdrinksat1.png"
         }
     ],
     "nodes": [
@@ -453,12 +420,6 @@
         },
         {
             "name": "evaluation_matrix.csv"
-        },
-        {
-            "assigned_to": "agarge",
-            "desc": "After exploring, cleaning the dataset to remove any missing values or unnecessary columns",
-            "name": "clean_dataset.R",
-            "task_status": "in progress"
         },
         {
             "name": "agesat.png"
@@ -608,9 +569,12 @@
             "assigned_to": "xzhan147",
             "desc": "",
             "name": "correlation.R",
-            "task_status": "proposed"
+            "task_status": "in progress"
+        },
+        {
+            "name": "eatdrinksat1.png"
         }
     ],
-    "updated_at": "2018-11-08 16:25:02",
+    "updated_at": "2018-11-08 17:06:36",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
