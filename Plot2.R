@@ -18,8 +18,6 @@ loyalcardsat1 <- ggplot(data=data, aes(x=No..of.other.Loyalty.Cards, y=Satisfact
 shoppingamtsat <- ggplot(data, aes(x=Shopping.Amount.at.Airport , y=Satisfaction, colour= "red")) +  geom_point()
 
 # make a scatter plot of independent variable :Eating.and.Drinking.at.Airport and dependent variable : Satisfaction 
-eatdrinksat <- ggplot(data, aes(x=Eating.and.Drinking.at.Airport , y=Satisfaction, colour= "red")) +  geom_point()
-
 eatdrinksat1<-ggplot(data, aes(x=data$Eating.and.Drinking.at.Airport,y=data$Satisfaction))+geom_count()
 eatdrinksat1<-eatdrinksat1+labs(x="Eating.and.Drinking.at.Airport",y="Customer Satisfaction")
 eatdrinksat1
