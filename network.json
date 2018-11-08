@@ -113,17 +113,6 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "cleaning_dataset.R",
-            "target": "clean_dataset.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
             "source": "clean_dataset.R",
             "target": "Plot1.R"
         },
@@ -442,6 +431,17 @@
             ],
             "source": "cleaning_dataset.R",
             "target": "correlation.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleaning_dataset.R",
+            "target": "clean_dataset.R"
         }
     ],
     "nodes": [
@@ -608,9 +608,9 @@
             "assigned_to": "xzhan147",
             "desc": "",
             "name": "correlation.R",
-            "task_status": "proposed"
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-08 16:25:02",
+    "updated_at": "2018-11-08 16:33:22",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
