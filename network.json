@@ -161,16 +161,6 @@
         {
             "ports": [
                 {
-                    "input": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleaning_dataset.R",
-            "target": "Plot2.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "typetravelsat",
                     "type": "png"
                 }
@@ -440,6 +430,17 @@
             ],
             "source": "cleaning_dataset.R",
             "target": "correlation.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "undefined",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleaning_dataset.R",
+            "target": "Plot2.R"
         }
     ],
     "nodes": [
@@ -609,6 +610,6 @@
             "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-11-08 16:24:42",
+    "updated_at": "2018-11-08 16:24:43",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
