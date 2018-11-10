@@ -1,6 +1,5 @@
 
 library(ggplot2)
-library(extrafonts)
 library(plyr)
 library(scales)
 
