@@ -128,32 +128,12 @@
         {
             "ports": [
                 {
-                    "output": "loyalcardsat",
-                    "type": "png"
-                }
-            ],
-            "source": "Plot2.R",
-            "target": "loyalcardsat.png"
-        },
-        {
-            "ports": [
-                {
                     "output": "shoppingamtsat",
                     "type": "png"
                 }
             ],
             "source": "Plot2.R",
             "target": "shoppingamtsat.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "eatdrinksat",
-                    "type": "png"
-                }
-            ],
-            "source": "Plot2.R",
-            "target": "eatdrinksat.png"
         },
         {
             "ports": [
@@ -309,16 +289,6 @@
         {
             "ports": [
                 {
-                    "output": "loyalcardsat2",
-                    "type": "png"
-                }
-            ],
-            "source": "Plot2.R",
-            "target": "loyalcardsat2.png"
-        },
-        {
-            "ports": [
-                {
                     "input": "data",
                     "output": "data",
                     "type": "r_obj"
@@ -356,16 +326,6 @@
             ],
             "source": "plot4.R",
             "target": "plot20.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "airlinecodesat",
-                    "type": "png"
-                }
-            ],
-            "source": "Plot3.R",
-            "target": "airlinecodesat.png"
         },
         {
             "ports": [
@@ -409,6 +369,17 @@
             ],
             "source": "Plot2.R",
             "target": "eatdrinksat1.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleaning_dataset.R",
+            "target": "Plot1.R"
         }
     ],
     "nodes": [
@@ -450,9 +421,6 @@
         },
         {
             "name": "eatdrinksat.png"
-        },
-        {
-            "name": "airlinecodesat.png"
         },
         {
             "name": "airlinenamesat.png"
@@ -575,6 +543,6 @@
             "name": "eatdrinksat1.png"
         }
     ],
-    "updated_at": "2018-11-08 17:06:36",
+    "updated_at": "2018-11-10 17:48:05",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
