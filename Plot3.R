@@ -1,5 +1,5 @@
 
-library(ggthemes)
+library("ggthemes")
 library(ggplot2)
 library(extrafonts)
 library(plyr)
