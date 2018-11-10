@@ -1,6 +1,7 @@
 
 library(ggthemes)
 library(ggplot2)
+library(extrafonts)
 
 #day of month vs. satisfaction
 summary(data$Day.of.Month)
