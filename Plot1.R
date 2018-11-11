@@ -13,7 +13,8 @@ satmean <- data %>%
   summarize(m1 = mean(Age))
 
 agemean<-as.data.frame(satmean)
-print("structure of flightdate")str(agemean)
+print("structure of agemean")
+str(agemean)
 agesat<-ggplot(agemean,aes(Satisfaction,m1)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
 #Plotting Satisfaction against the Flight Date
