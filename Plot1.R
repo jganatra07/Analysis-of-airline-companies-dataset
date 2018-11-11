@@ -5,7 +5,6 @@ library(ggplot2)
 library(dplyr)
 #plot(data$Age, data$Satisfaction)
 
-data$Satisfaction<-tolower(data$Satisfaction)
 
 #Plot of Age vs Avg. Satisfaction
 satmean <- data %>%
