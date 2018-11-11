@@ -23,6 +23,7 @@ flightdate <- data %>%
 
 flightdate<-as.data.frame(flightdate)
 flightdate$Flight.date <- as.factor(flightdate$Flight.date)
+str(flightdate)
 flight_date<-ggplot(flightdate, aes(Flight.date,m2, group=1))+geom_line()+labs(x="From 1st Jan to 31st March 2014", y="Mean Satisfaction")
 
 
@@ -33,4 +34,3 @@ air_status<-ggplot(data, aes(Airline.Status, Satisfaction))+geom_boxplot()+labs(
 data1 <- data
 data1$genderFactor <- as.factor(data1$Gender)
 gender_sat<-ggplot(data1, aes(GenderFactor, Satisfaction))+geom_boxplot()+labs(x="Gender", y="Satisfaction")
-str(data1)
