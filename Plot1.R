@@ -33,3 +33,4 @@ air_status<-ggplot(data, aes(Airline.Status, Satisfaction))+geom_boxplot()+labs(
 data1 <- data
 data1$genderFactor <- as.factor(data1$Gender)
 gender_sat<-ggplot(data1, aes(GenderFactor, Satisfaction))+geom_boxplot()+labs(x="Gender", y="Satisfaction")
+str(data1)
