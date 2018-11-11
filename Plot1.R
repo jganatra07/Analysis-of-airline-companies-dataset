@@ -34,6 +34,6 @@ flight_date<-ggplot(flightdate, aes(Flight.date,m2, group=1))+geom_line()+labs(x
 air_status<-ggplot(data, aes(Airline.Status, Satisfaction))+geom_boxplot()+labs(x="Airline Status", y="Satisfaction")
 
 #Plotting Gender against Satisfaction
-data1 <- data
-data1$genderFactor <- as.factor(data1$Gender)
-gender_sat<-ggplot(data1, aes(GenderFactor, Satisfaction))+geom_boxplot()+labs(x="Gender", y="Satisfaction")
+#data1 <- data
+#data1$genderFactor <- as.factor(data1$Gender)
+gender_sat<-ggplot(data, aes(Gender, Satisfaction))+geom_boxplot()+labs(x="Gender", y="Satisfaction")
