@@ -21,9 +21,9 @@ flightdate <- data %>%
   group_by(Flight.date) %>%
   summarize(m2 = mean(Satisfaction, na.rm=TRUE))
 
-flightdate$Satisfaction <- as.numeric(flightdate$Satisfaction)
 str(flightdate)
 flightdate<-as.data.frame(flightdate)
+flightdate$Satisfaction <- as.numeric(flightdate$Satisfaction)
 str(flightdate)
 flight_date<-ggplot(flightdate, aes(Flight.date,m2, group=1))+geom_line()+labs(x="From 1st Jan to 31st March 2014", y="Mean Satisfaction")
 
