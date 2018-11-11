@@ -33,9 +33,6 @@ head(unclean_data$Flight.date)
 #unclean_data$Flight.date<-mdy(unclean_data$Flight.date)
 head(unclean_data$Flight.date)
 
-
-unclean_data$Satisfaction<-tolower(unclean_data$Satisfaction)
-
 data<-unclean_data
 
 sum(is.na(data$Satisfaction))
