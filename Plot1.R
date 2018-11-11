@@ -19,7 +19,7 @@ agesat<-ggplot(agemean,aes(Satisfaction,m1)) + geom_bar(stat="identity") + theme
 #Plotting Satisfaction against the Flight Date
 flightdate <- data %>%
   group_by(Flight.date) %>%
-  summarize(m2 = mean(Satisfaction))
+  summarize(m2 = mean(Satisfaction, na.rm=TRUE))
 
 str(flightdate)
 flightdate<-as.data.frame(flightdate)
