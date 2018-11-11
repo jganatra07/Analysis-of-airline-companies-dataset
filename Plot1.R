@@ -5,7 +5,7 @@ library(ggplot2)
 library(dplyr)
 #plot(data$Age, data$Satisfaction)
 
-data$Satisfaction<-tolower(data$Satisfaction)
+#data$Satisfaction<-tolower(data$Satisfaction)
 
 #Plot of Age vs Avg. Satisfaction
 satmean <- data %>%
@@ -19,7 +19,7 @@ agesat<-ggplot(agemean,aes(Satisfaction,m1)) + geom_bar(stat="identity") + theme
 
 #Plotting Satisfaction against the Flight Date
 data$Flight.date <- as.factor(data$Flight.date)
-data$Satisfaction <- as.numeric(data$Satisfaction)
+#data$Satisfaction <- as.numeric(data$Satisfaction)
 flightdate <- data %>%
   group_by(Flight.date) %>%
   summarize(m2 = mean(Satisfaction))
