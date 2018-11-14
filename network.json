@@ -390,6 +390,17 @@
             ],
             "source": "Plot3.R",
             "target": "airlinecode.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleaning_dataset.R",
+            "target": "plot4.R"
         }
     ],
     "nodes": [
@@ -547,6 +558,6 @@
             "name": "airlinecode.png"
         }
     ],
-    "updated_at": "2018-11-14 14:48:07",
+    "updated_at": "2018-11-14 14:58:03",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
