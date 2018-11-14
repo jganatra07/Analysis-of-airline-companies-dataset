@@ -403,7 +403,12 @@
             "target": "plot4.R"
         },
         {
-            "ports": [],
+            "ports": [
+                {
+                    "input": "unclean_data",
+                    "type": "csv"
+                }
+            ],
             "source": "satisfactionSurvey.csv",
             "target": "Cleaningdataset.R"
         }
@@ -567,6 +572,6 @@
             "name": "Cleaningdataset.R"
         }
     ],
-    "updated_at": "2018-11-14 15:00:19",
+    "updated_at": "2018-11-14 15:00:33",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
