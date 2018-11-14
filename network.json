@@ -198,16 +198,6 @@
         {
             "ports": [
                 {
-                    "input": "unclean_data",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "cleaning_dataset.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "departure_delay__plot",
                     "type": "png"
                 }
@@ -283,7 +273,7 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "cleaning_dataset.R",
+            "source": "clean_data.R",
             "target": "Plot3.R"
         },
         {
@@ -324,7 +314,7 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "cleaning_dataset.R",
+            "source": "clean_data.R",
             "target": "Plot2.R"
         },
         {
@@ -335,7 +325,7 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "cleaning_dataset.R",
+            "source": "clean_data.R",
             "target": "correlation.R"
         },
         {
@@ -346,7 +336,7 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "cleaning_dataset.R",
+            "source": "clean_data.R",
             "target": "Plot5.R"
         },
         {
@@ -358,17 +348,6 @@
             ],
             "source": "Plot2.R",
             "target": "eatdrinksat1.png"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleaning_dataset.R",
-            "target": "Plot1.R"
         },
         {
             "ports": [
@@ -388,7 +367,7 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "cleaning_dataset.R",
+            "source": "clean_data.R",
             "target": "plot4.R"
         },
         {
@@ -410,7 +389,98 @@
                 }
             ],
             "source": "Cleaningdataset.R",
-            "target": "cleaning_dataset.R"
+            "target": "clean_data.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "corrplot",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "corrplot.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "Plot1.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "bp_satisByGender",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "bp_satisByGender.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "bp_satisByFCancelled",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "bp_satisByFCancelled.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "bp_satisByGreater5",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "bp_satisByGreater5.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "class_satis",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "class_satis.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "bp_satisByClass",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "bp_satisByClass.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "bp_satisByStatus",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "bp_satisByStatus.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "bp_satisByTravel",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "bp_satisByTravel.png"
         }
     ],
     "nodes": [
@@ -505,12 +575,6 @@
             "name": "shopping_plot.png"
         },
         {
-            "assigned_to": "saramasa",
-            "desc": "Cleaning the dataset by replacing the NA values with appropriate values without disturbing the spread of the data.",
-            "name": "cleaning_dataset.R",
-            "task_status": "in progress"
-        },
-        {
             "assigned_to": "jganatra07",
             "desc": "analyze the clean data using different visualization tools and gain insight",
             "name": "analyze_data.R",
@@ -550,22 +614,54 @@
             "name": "plot20.png"
         },
         {
-            "assigned_to": "xzhan147",
-            "desc": "",
-            "name": "correlation.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "eatdrinksat1.png"
         },
         {
             "name": "airlinecode.png"
         },
         {
+            "assigned_to": "saramasa",
             "desc": "",
-            "name": "Cleaningdataset.R"
+            "name": "Cleaningdataset.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "corrplot.png"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "Cleaning the dataset by replacing the NA values with appropriate values without disturbing the spread of the data.",
+            "name": "clean_data.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "bp_satisByGender.png"
+        },
+        {
+            "name": "bp_satisByFCancelled.png"
+        },
+        {
+            "name": "bp_satisByGreater5.png"
+        },
+        {
+            "name": "class_satis.png"
+        },
+        {
+            "name": "bp_satisByClass.png"
+        },
+        {
+            "name": "bp_satisByStatus.png"
+        },
+        {
+            "name": "bp_satisByTravel.png"
+        },
+        {
+            "assigned_to": "xzhan147",
+            "desc": "This section will be exploring the variables which might be associated with satisfaction based on the graphs created by the team using T-tests, Anovas and ect. Based on the preliminary findings in this section, we will be able to know whether the differences or association are reaching the significant level in statistics or not. These findings will be helping us in making the decision of  considering these variables as potential predictors to satisfaction and including them in our model. lm is used for modelling. ",
+            "name": "correlation.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-14 15:01:14",
+    "updated_at": "2018-11-14 16:42:51",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
