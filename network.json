@@ -198,27 +198,6 @@
         {
             "ports": [
                 {
-                    "input": "unclean_data",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "cleaning_dataset.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleaning_dataset.R",
-            "target": "preliminaryDataAnalysis.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "departure_delay__plot",
                     "type": "png"
                 }
@@ -390,6 +369,48 @@
             ],
             "source": "Plot3.R",
             "target": "airlinecode.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "cleaning_dataset.R",
+            "target": "plot4.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "unclean_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "Cleaningdataset.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "Cleaningdataset.R",
+            "target": "cleaning_dataset.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "corrplot",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "corrplot.png"
         }
     ],
     "nodes": [
@@ -490,12 +511,6 @@
             "task_status": "in progress"
         },
         {
-            "assigned_to": "xzhan147",
-            "desc": "This section will be exploring the variables which might be associated with satisfaction based on the graphs created by the team using T-tests, Anovas and ect. Based on the preliminary findings in this section, we will be able to know whether the differences or association are reaching the significant level in statistics or not. These findings will be helping us in making the decision of  considering these variables as potential predictors to satisfaction and including them in our model.",
-            "name": "preliminaryDataAnalysis.R",
-            "task_status": "in progress"
-        },
-        {
             "assigned_to": "jganatra07",
             "desc": "analyze the clean data using different visualization tools and gain insight",
             "name": "analyze_data.R",
@@ -535,18 +550,27 @@
             "name": "plot20.png"
         },
         {
+            "name": "eatdrinksat1.png"
+        },
+        {
+            "name": "airlinecode.png"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "",
+            "name": "Cleaningdataset.R",
+            "task_status": "in progress"
+        },
+        {
             "assigned_to": "xzhan147",
             "desc": "",
             "name": "correlation.R",
             "task_status": "in progress"
         },
         {
-            "name": "eatdrinksat1.png"
-        },
-        {
-            "name": "airlinecode.png"
+            "name": "corrplot.png"
         }
     ],
-    "updated_at": "2018-11-14 14:48:07",
+    "updated_at": "2018-11-14 15:16:10",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
