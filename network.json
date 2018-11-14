@@ -198,16 +198,6 @@
         {
             "ports": [
                 {
-                    "input": "unclean_data",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "cleaning_dataset.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "departure_delay__plot",
                     "type": "png"
                 }
@@ -550,22 +540,24 @@
             "name": "plot20.png"
         },
         {
-            "assigned_to": "xzhan147",
-            "desc": "",
-            "name": "correlation.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "eatdrinksat1.png"
         },
         {
             "name": "airlinecode.png"
         },
         {
+            "assigned_to": "saramasa",
             "desc": "",
-            "name": "Cleaningdataset.R"
+            "name": "Cleaningdataset.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "xzhan147",
+            "desc": "",
+            "name": "correlation.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-14 15:01:14",
+    "updated_at": "2018-11-14 15:15:45",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
