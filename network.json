@@ -326,17 +326,6 @@
                 }
             ],
             "source": "clean_data.R",
-            "target": "correlation.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean_data.R",
             "target": "Plot5.R"
         },
         {
@@ -481,6 +470,17 @@
             ],
             "source": "correlation.R",
             "target": "bp_satisByTravel.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "correlation.R"
         }
     ],
     "nodes": [
@@ -662,6 +662,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-14 16:42:51",
+    "updated_at": "2018-11-14 16:57:33",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
