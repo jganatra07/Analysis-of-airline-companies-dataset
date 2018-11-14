@@ -421,6 +421,16 @@
             ],
             "source": "correlation.R",
             "target": "bp_satisByGender.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "bp_satisByFCancelled",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "bp_satisByFCancelled.png"
         }
     ],
     "nodes": [
@@ -599,6 +609,6 @@
             "name": "bp_satisByStatus.png"
         }
     ],
-    "updated_at": "2018-11-14 16:36:49",
+    "updated_at": "2018-11-14 16:37:05",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
