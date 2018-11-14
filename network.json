@@ -411,6 +411,16 @@
             ],
             "source": "clean_data.R",
             "target": "Plot1.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "bp_satisByGender",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "bp_satisByGender.png"
         }
     ],
     "nodes": [
@@ -589,6 +599,6 @@
             "name": "bp_satisByStatus.png"
         }
     ],
-    "updated_at": "2018-11-14 16:30:17",
+    "updated_at": "2018-11-14 16:36:49",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
