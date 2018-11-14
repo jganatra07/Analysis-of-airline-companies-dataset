@@ -424,13 +424,7 @@
             "name": "typetravelsat.png"
         },
         {
-            "name": "loyalcardsat.png"
-        },
-        {
             "name": "shoppingamtsat.png"
-        },
-        {
-            "name": "eatdrinksat.png"
         },
         {
             "name": "airlinenamesat.png"
@@ -488,9 +482,6 @@
         },
         {
             "name": "shopping_plot.png"
-        },
-        {
-            "name": "loyalcardsat2.png"
         },
         {
             "assigned_to": "saramasa",
@@ -556,6 +547,6 @@
             "name": "airlinecode.png"
         }
     ],
-    "updated_at": "2018-11-10 17:49:44",
+    "updated_at": "2018-11-14 14:48:07",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
