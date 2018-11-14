@@ -5,7 +5,12 @@ library(ggplot2)
 # exploring the 5 variables by using specific plots that fit in the each variable
 
 # make a scatter plot of independent variable : X..of.Flight.with.other.Airlines and dependent variable : Satisfaction 
-perflightsat <- ggplot(data, aes(x=jitter(data$X..of.Flight.with.other.Airlines), y=Satisfaction, colour= "red"))+ geom_point()
+perflightsat <- ggplot(unclean_data, aes(x = X..of.Flight.with.other.Airlines, fill = factor(Satisfaction))) +
+  geom_bar() +
+  xlab("X..of.Flight.with.other.Airlines") +
+  ylab("Total Count") +
+  labs(fill = "Satisfaction") 
+perflightsat
 
 # make a box plot of independent variable :Type.of.Travel and dependent variable : Satisfaction 
 typetravelsat <- ggplot(data, aes(x=Type.of.Travel, y=Satisfaction, colour= "red")) + geom_boxplot(fill="grey")
