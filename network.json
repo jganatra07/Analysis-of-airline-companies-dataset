@@ -569,8 +569,11 @@
             "desc": "Cleaning the dataset by replacing the NA values with appropriate values without disturbing the spread of the data.",
             "name": "clean_data.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "bp_satisByGender.png"
         }
     ],
-    "updated_at": "2018-11-14 15:27:42",
+    "updated_at": "2018-11-14 16:27:57",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
