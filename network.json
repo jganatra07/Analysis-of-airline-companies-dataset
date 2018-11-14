@@ -352,17 +352,6 @@
         {
             "ports": [
                 {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean_data.R",
-            "target": "Plot1.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "airlinecodesat",
                     "type": "png"
                 }
@@ -411,6 +400,17 @@
             ],
             "source": "correlation.R",
             "target": "corrplot.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "Plot1.R"
         }
     ],
     "nodes": [
@@ -571,6 +571,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-14 15:25:14",
+    "updated_at": "2018-11-14 15:27:23",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
