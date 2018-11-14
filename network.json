@@ -490,9 +490,6 @@
             "name": "shopping_plot.png"
         },
         {
-            "name": "loyalcardsat2.png"
-        },
-        {
             "assigned_to": "saramasa",
             "desc": "Cleaning the dataset by replacing the NA values with appropriate values without disturbing the spread of the data.",
             "name": "cleaning_dataset.R",
@@ -556,6 +553,6 @@
             "name": "airlinecode.png"
         }
     ],
-    "updated_at": "2018-11-10 17:49:44",
+    "updated_at": "2018-11-14 14:47:07",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
