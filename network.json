@@ -584,8 +584,11 @@
         },
         {
             "name": "bp_satisByClass.png"
+        },
+        {
+            "name": "bp_satisByStatus.png"
         }
     ],
-    "updated_at": "2018-11-14 16:29:40",
+    "updated_at": "2018-11-14 16:30:17",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
