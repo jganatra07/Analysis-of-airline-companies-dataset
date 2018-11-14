@@ -427,9 +427,6 @@
             "name": "shoppingamtsat.png"
         },
         {
-            "name": "eatdrinksat.png"
-        },
-        {
             "name": "airlinenamesat.png"
         },
         {
@@ -550,6 +547,6 @@
             "name": "airlinecode.png"
         }
     ],
-    "updated_at": "2018-11-14 14:47:58",
+    "updated_at": "2018-11-14 14:48:07",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
