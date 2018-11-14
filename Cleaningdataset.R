@@ -42,3 +42,4 @@ sum(is.na(data$Satisfaction))
 
 
 
+
