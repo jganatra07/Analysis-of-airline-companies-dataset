@@ -5,7 +5,7 @@ library(ggplot2)
 # exploring the 5 variables by using specific plots that fit in the each variable
 
 # make a scatter plot of independent variable : X..of.Flight.with.other.Airlines and dependent variable : Satisfaction 
-perflightsat <- ggplot(unclean_data, aes(x = X..of.Flight.with.other.Airlines, fill = factor(Satisfaction))) +
+perflightsat <- ggplot(data, aes(x = X..of.Flight.with.other.Airlines, fill = factor(Satisfaction))) +
   geom_bar() +
   xlab("X..of.Flight.with.other.Airlines") +
   ylab("Total Count") +
