@@ -451,6 +451,16 @@
             ],
             "source": "correlation.R",
             "target": "class_satis.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "bp_satisByClass",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "bp_satisByClass.png"
         }
     ],
     "nodes": [
@@ -629,6 +639,6 @@
             "name": "bp_satisByStatus.png"
         }
     ],
-    "updated_at": "2018-11-14 16:37:33",
+    "updated_at": "2018-11-14 16:38:18",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
