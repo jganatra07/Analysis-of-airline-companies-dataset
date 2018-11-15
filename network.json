@@ -492,6 +492,16 @@
             ],
             "source": "clean_data.R",
             "target": "monthBucket.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "monthBucketPlot",
+                    "type": "png"
+                }
+            ],
+            "source": "monthBucket.R",
+            "target": "monthBucket.png"
         }
     ],
     "nodes": [
@@ -682,6 +692,6 @@
             "name": "monthBucket.png"
         }
     ],
-    "updated_at": "2018-11-15 00:20:26",
+    "updated_at": "2018-11-15 00:22:44",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
