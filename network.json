@@ -299,16 +299,6 @@
         {
             "ports": [
                 {
-                    "output": "sdh",
-                    "type": "png"
-                }
-            ],
-            "source": "plot4.R",
-            "target": "plot20.png"
-        },
-        {
-            "ports": [
-                {
                     "input": "data",
                     "output": "data",
                     "type": "r_obj"
@@ -316,17 +306,6 @@
             ],
             "source": "clean_data.R",
             "target": "Plot2.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean_data.R",
-            "target": "correlation.R"
         },
         {
             "ports": [
@@ -481,6 +460,48 @@
             ],
             "source": "correlation.R",
             "target": "bp_satisByTravel.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "correlation.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "monthBucket.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "monthBucketPlot",
+                    "type": "png"
+                }
+            ],
+            "source": "monthBucket.R",
+            "target": "monthBucket.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "sdh",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "plot20.png"
         }
     ],
     "nodes": [
@@ -581,12 +602,6 @@
             "task_status": "not started"
         },
         {
-            "assigned_to": "woojinpark",
-            "desc": "creating models for predictive analysis",
-            "name": "analysis_model1.R",
-            "task_status": "not started"
-        },
-        {
             "assigned_to": "xzhan147",
             "desc": "creating models for predictive analysis",
             "name": "analysis_model3.R",
@@ -660,8 +675,23 @@
             "desc": "This section will be exploring the variables which might be associated with satisfaction based on the graphs created by the team using T-tests, Anovas and ect. Based on the preliminary findings in this section, we will be able to know whether the differences or association are reaching the significant level in statistics or not. These findings will be helping us in making the decision of  considering these variables as potential predictors to satisfaction and including them in our model. lm is used for modelling. ",
             "name": "correlation.R",
             "task_status": "in progress"
+        },
+        {
+            "assigned_to": "christysato",
+            "desc": "Satisfaction depending on Month Buckets (end, middle, beginning of month)",
+            "name": "monthBucket.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "woojinpark",
+            "desc": "creating SVM models for predictive analysis",
+            "name": "analysis_model1.R",
+            "task_status": "not started"
+        },
+        {
+            "name": "monthBucket.png"
         }
     ],
-    "updated_at": "2018-11-14 16:42:51",
+    "updated_at": "2018-11-15 01:57:00",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
