@@ -21,7 +21,7 @@ cor_2
 
 cor_m<-cor(nu_data)
 head(round(cor_m,2))
-corrplot(cor_m, type ="lower",order = "hclust", tl.col="black",tl.srt=45)
+cor <- corrplot(cor_m, type ="lower",order = "hclust", tl.col="black",tl.srt=45)
 
 # output-- plot_cor_m
 #from the correlation matrix, we can see that the below pairs of variables are 
