@@ -660,8 +660,12 @@
             "desc": "This section will be exploring the variables which might be associated with satisfaction based on the graphs created by the team using T-tests, Anovas and ect. Based on the preliminary findings in this section, we will be able to know whether the differences or association are reaching the significant level in statistics or not. These findings will be helping us in making the decision of  considering these variables as potential predictors to satisfaction and including them in our model. lm is used for modelling. ",
             "name": "correlation.R",
             "task_status": "in progress"
+        },
+        {
+            "desc": "Satisfaction depending on Month Buckets (end, middle, beginning of month)",
+            "name": "monthBucket.R"
         }
     ],
-    "updated_at": "2018-11-14 16:57:33",
+    "updated_at": "2018-11-15 00:17:27",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
