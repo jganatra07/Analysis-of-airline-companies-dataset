@@ -677,8 +677,11 @@
             "desc": "creating SVM models for predictive analysis",
             "name": "analysis_model1.R",
             "task_status": "not started"
+        },
+        {
+            "name": "monthBucket.png"
         }
     ],
-    "updated_at": "2018-11-15 00:19:28",
+    "updated_at": "2018-11-15 00:20:26",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
