@@ -21,6 +21,7 @@ airlinecodesat
 summary(data$Airline.Name)
 data$Airline.Name <- as.factor(data$Airline.Name)
 counts2 <- table(data$Satisfaction, data$Airline.Name)
+counts2 <- data.frame(data$Satisfaction, data$Airline.Name)
 
 airlinenamesat <- barplot(counts2, main="Satisfaction depending on Airline Name", col=c("darkblue","red", "yellow", "orange", "pink", "chartreuse", "brown1", "darkgoldenrod1", "burlywood3", "darkslategray2", "azure1", "bisque1", "blueviolet", "goldenrod4"), las=2, legend=rownames(counts2), args.legend = list(x = "top", ncol=2, inset=c(0, 0), cex=.4))
 airlinenamesat
