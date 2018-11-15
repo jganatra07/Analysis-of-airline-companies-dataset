@@ -502,6 +502,16 @@
             ],
             "source": "plot4.R",
             "target": "plot20.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "data",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "data_temp.csv"
         }
     ],
     "nodes": [
@@ -695,6 +705,6 @@
             "name": "data_temp.csv"
         }
     ],
-    "updated_at": "2018-11-15 17:18:22",
+    "updated_at": "2018-11-15 17:18:34",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
