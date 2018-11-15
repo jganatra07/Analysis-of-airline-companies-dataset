@@ -592,12 +592,6 @@
             "task_status": "not started"
         },
         {
-            "assigned_to": "woojinpark",
-            "desc": "creating models for predictive analysis",
-            "name": "analysis_model1.R",
-            "task_status": "not started"
-        },
-        {
             "assigned_to": "xzhan147",
             "desc": "creating models for predictive analysis",
             "name": "analysis_model3.R",
@@ -673,10 +667,18 @@
             "task_status": "in progress"
         },
         {
+            "assigned_to": "christysato",
             "desc": "Satisfaction depending on Month Buckets (end, middle, beginning of month)",
-            "name": "monthBucket.R"
+            "name": "monthBucket.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "woojinpark",
+            "desc": "creating SVM models for predictive analysis",
+            "name": "analysis_model1.R",
+            "task_status": "not started"
         }
     ],
-    "updated_at": "2018-11-15 00:17:56",
+    "updated_at": "2018-11-15 00:19:28",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
