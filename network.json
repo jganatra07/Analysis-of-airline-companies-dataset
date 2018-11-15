@@ -523,6 +523,16 @@
             ],
             "source": "clean_data.R",
             "target": "test.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "cor",
+                    "type": "png"
+                }
+            ],
+            "source": "test.R",
+            "target": "test_plot.png"
         }
     ],
     "nodes": [
@@ -723,6 +733,6 @@
             "name": "test_plot.png"
         }
     ],
-    "updated_at": "2018-11-15 17:44:10",
+    "updated_at": "2018-11-15 17:44:21",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
