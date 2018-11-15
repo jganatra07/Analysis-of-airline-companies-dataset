@@ -198,27 +198,6 @@
         {
             "ports": [
                 {
-                    "input": "unclean_data",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "cleaning_dataset.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleaning_dataset.R",
-            "target": "preliminaryDataAnalysis.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "departure_delay__plot",
                     "type": "png"
                 }
@@ -294,7 +273,7 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "cleaning_dataset.R",
+            "source": "clean_data.R",
             "target": "Plot3.R"
         },
         {
@@ -335,7 +314,7 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "cleaning_dataset.R",
+            "source": "clean_data.R",
             "target": "Plot2.R"
         },
         {
@@ -346,18 +325,7 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "cleaning_dataset.R",
-            "target": "correlation.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleaning_dataset.R",
+            "source": "clean_data.R",
             "target": "Plot5.R"
         },
         {
@@ -373,23 +341,167 @@
         {
             "ports": [
                 {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "cleaning_dataset.R",
-            "target": "Plot1.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "airlinecodesat",
                     "type": "png"
                 }
             ],
             "source": "Plot3.R",
             "target": "airlinecode.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "plot4.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "unclean_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "Cleaningdataset.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "Cleaningdataset.R",
+            "target": "clean_data.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "corrplot",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "corrplot.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "Plot1.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "bp_satisByGender",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "bp_satisByGender.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "bp_satisByFCancelled",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "bp_satisByFCancelled.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "bp_satisByGreater5",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "bp_satisByGreater5.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "class_satis",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "class_satis.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "bp_satisByClass",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "bp_satisByClass.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "bp_satisByStatus",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "bp_satisByStatus.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "bp_satisByTravel",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "bp_satisByTravel.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "correlation.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "monthBucket.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "monthBucketPlot",
+                    "type": "png"
+                }
+            ],
+            "source": "monthBucket.R",
+            "target": "monthBucket.png"
         }
     ],
     "nodes": [
@@ -424,13 +536,7 @@
             "name": "typetravelsat.png"
         },
         {
-            "name": "loyalcardsat.png"
-        },
-        {
             "name": "shoppingamtsat.png"
-        },
-        {
-            "name": "eatdrinksat.png"
         },
         {
             "name": "airlinenamesat.png"
@@ -490,30 +596,9 @@
             "name": "shopping_plot.png"
         },
         {
-            "name": "loyalcardsat2.png"
-        },
-        {
-            "assigned_to": "saramasa",
-            "desc": "Cleaning the dataset by replacing the NA values with appropriate values without disturbing the spread of the data.",
-            "name": "cleaning_dataset.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "xzhan147",
-            "desc": "This section will be exploring the variables which might be associated with satisfaction based on the graphs created by the team using T-tests, Anovas and ect. Based on the preliminary findings in this section, we will be able to know whether the differences or association are reaching the significant level in statistics or not. These findings will be helping us in making the decision of  considering these variables as potential predictors to satisfaction and including them in our model.",
-            "name": "preliminaryDataAnalysis.R",
-            "task_status": "in progress"
-        },
-        {
             "assigned_to": "jganatra07",
             "desc": "analyze the clean data using different visualization tools and gain insight",
             "name": "analyze_data.R",
-            "task_status": "not started"
-        },
-        {
-            "assigned_to": "woojinpark",
-            "desc": "creating models for predictive analysis",
-            "name": "analysis_model1.R",
             "task_status": "not started"
         },
         {
@@ -544,18 +629,69 @@
             "name": "plot20.png"
         },
         {
-            "assigned_to": "xzhan147",
-            "desc": "",
-            "name": "correlation.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "eatdrinksat1.png"
         },
         {
             "name": "airlinecode.png"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "",
+            "name": "Cleaningdataset.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "corrplot.png"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "Cleaning the dataset by replacing the NA values with appropriate values without disturbing the spread of the data.",
+            "name": "clean_data.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "bp_satisByGender.png"
+        },
+        {
+            "name": "bp_satisByFCancelled.png"
+        },
+        {
+            "name": "bp_satisByGreater5.png"
+        },
+        {
+            "name": "class_satis.png"
+        },
+        {
+            "name": "bp_satisByClass.png"
+        },
+        {
+            "name": "bp_satisByStatus.png"
+        },
+        {
+            "name": "bp_satisByTravel.png"
+        },
+        {
+            "assigned_to": "xzhan147",
+            "desc": "This section will be exploring the variables which might be associated with satisfaction based on the graphs created by the team using T-tests, Anovas and ect. Based on the preliminary findings in this section, we will be able to know whether the differences or association are reaching the significant level in statistics or not. These findings will be helping us in making the decision of  considering these variables as potential predictors to satisfaction and including them in our model. lm is used for modelling. ",
+            "name": "correlation.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "christysato",
+            "desc": "Satisfaction depending on Month Buckets (end, middle, beginning of month)",
+            "name": "monthBucket.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "woojinpark",
+            "desc": "creating SVM models for predictive analysis",
+            "name": "analysis_model1.R",
+            "task_status": "not started"
+        },
+        {
+            "name": "monthBucket.png"
         }
     ],
-    "updated_at": "2018-11-10 17:49:44",
+    "updated_at": "2018-11-15 00:22:44",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
