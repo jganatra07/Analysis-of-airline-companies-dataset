@@ -481,6 +481,17 @@
             ],
             "source": "clean_data.R",
             "target": "correlation.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "monthBucket.R"
         }
     ],
     "nodes": [
@@ -666,6 +677,6 @@
             "name": "monthBucket.R"
         }
     ],
-    "updated_at": "2018-11-15 00:17:27",
+    "updated_at": "2018-11-15 00:17:56",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
