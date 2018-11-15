@@ -299,16 +299,6 @@
         {
             "ports": [
                 {
-                    "output": "sdh",
-                    "type": "png"
-                }
-            ],
-            "source": "plot4.R",
-            "target": "plot20.png"
-        },
-        {
-            "ports": [
-                {
                     "input": "data",
                     "output": "data",
                     "type": "r_obj"
@@ -502,6 +492,16 @@
             ],
             "source": "monthBucket.R",
             "target": "monthBucket.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "sdh",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "plot20.png"
         }
     ],
     "nodes": [
@@ -692,6 +692,6 @@
             "name": "monthBucket.png"
         }
     ],
-    "updated_at": "2018-11-15 00:22:44",
+    "updated_at": "2018-11-15 01:56:59",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
