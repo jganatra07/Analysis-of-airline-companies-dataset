@@ -5,7 +5,6 @@ library(ggplot2)
 library(dplyr)
 #plot(data$Age, data$Satisfaction)
 
-data$Satisfaction<-tolower(data$Satisfaction)
 
 #Plot of Age vs Avg. Satisfaction
 satmean <- data %>%
@@ -23,7 +22,7 @@ flightdate <- data %>%
 
 flightdate<-as.data.frame(flightdate)
 
-flight_date<-ggplot(flightdate, aes(Flight.date,m2))+geom_line()+labs(x="From 1st Jan to 31st March 2014", y="Mean Satisfaction")
+flight_date<-ggplot(flightdate, aes(Flight.date,m2, group=1))+geom_line()+labs(x="From 1st Jan to 31st March 2014", y="Mean Satisfaction")
 
 
 #Plotting Airline Status against Satisfaction
