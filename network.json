@@ -512,6 +512,17 @@
             ],
             "source": "correlation.R",
             "target": "corrplot.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "test.R"
         }
     ],
     "nodes": [
@@ -709,6 +720,6 @@
             "name": "test.R"
         }
     ],
-    "updated_at": "2018-11-15 17:43:36",
+    "updated_at": "2018-11-15 17:43:52",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
