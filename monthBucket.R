@@ -49,7 +49,7 @@ prop.table(table(satisfactionBucket, monthBucket))
 
 #stacked bar graph:
 counts3 <- table(satisfactionBucket, monthBucket)
-barplot(counts3, main="Satisfaction depending Day of Month",
+monthBucketPlot <- barplot(counts3, main="Satisfaction depending Day of Month",
         col=c("darkblue","red", "yellow"),
         legend=rownames(counts3), args.legend = list(x = "topright", ncol=2, inset=c(0, 0), cex=.4))
 
