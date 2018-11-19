@@ -13,37 +13,6 @@
             "ports": [
                 {
                     "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "explore_dataset.R",
-            "target": "clean_dataset.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "unclean_data",
-                    "type": "csv"
-                }
-            ],
-            "source": "satisfactionSurvey.csv",
-            "target": "explore_dataset.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "data",
-                    "type": "csv"
-                }
-            ],
-            "source": "clean_dataset.R",
-            "target": "clean_dataset.csv"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
                     "type": "csv"
                 }
             ],
@@ -125,6 +94,445 @@
             ],
             "source": "perform_analysis.R",
             "target": "evaluation_matrix.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "agesat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot1.R",
+            "target": "agesat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "perflightsat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "perflightsat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "typetravelsat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "typetravelsat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "shoppingamtsat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "shoppingamtsat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "airlinenamesat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot3.R",
+            "target": "airlinenamesat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "dayofmonth",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot3.R",
+            "target": "dayofmonth.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "originCity",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "plot16.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "flight_date",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot1.R",
+            "target": "flight_date.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "air_status",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot1.R",
+            "target": "air_status.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "gender_sat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot1.R",
+            "target": "gender_sat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "departure_delay__plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "departure_delay__plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "loyalcardsat1",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "loyalcardsat1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "arrival_delay__plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "arrival_delay__plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "flight_time_plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "flight_time_plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "flight_cancel_plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "flight_cancel_plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "class_plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "class_plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "shopping_plot",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot5.R",
+            "target": "shopping_plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "Plot3.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "originState",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "plot17.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "destState",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "plot19.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "Plot2.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "Plot5.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "eatdrinksat1",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot2.R",
+            "target": "eatdrinksat1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "airlinecodesat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot3.R",
+            "target": "airlinecode.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "plot4.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "unclean_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "Cleaningdataset.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "Cleaningdataset.R",
+            "target": "clean_data.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "Plot1.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "bp_satisByGender",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "bp_satisByGender.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "bp_satisByFCancelled",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "bp_satisByFCancelled.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "bp_satisByGreater5",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "bp_satisByGreater5.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "class_satis",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "class_satis.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "bp_satisByClass",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "bp_satisByClass.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "bp_satisByStatus",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "bp_satisByStatus.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "bp_satisByTravel",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "bp_satisByTravel.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "correlation.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "monthBucket.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "monthBucketPlot",
+                    "type": "png"
+                }
+            ],
+            "source": "monthBucket.R",
+            "target": "monthBucket.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "sdh",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "plot20.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "data",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "data_temp.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "cor",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "corrplot.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "test.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "cor",
+                    "type": "png"
+                }
+            ],
+            "source": "test.R",
+            "target": "test_plot.png"
         }
     ],
     "nodes": [
@@ -138,48 +546,193 @@
             "name": "evaluation_matrix.csv"
         },
         {
-            "assigned_to": "agarge",
-            "desc": "After exploring, cleaning the dataset to remove any missing values or unnecessary columns",
-            "name": "clean_dataset.R",
-            "task_status": "proposed"
-        },
-        {
-            "assigned_to": "christysato",
-            "desc": "creating models for predictive analysis",
-            "name": "analysis_model2.R",
-            "task_status": "proposed"
-        },
-        {
-            "assigned_to": "woojinpark",
-            "desc": "creating models for predictive analysis",
-            "name": "analysis_model1.R",
-            "task_status": "proposed"
-        },
-        {
-            "assigned_to": "xzhan147",
-            "desc": "creating models for predictive analysis",
-            "name": "analysis_model3.R",
-            "task_status": "proposed"
+            "name": "agesat.png"
         },
         {
             "assigned_to": "saramasa",
-            "desc": "Explore the dataset and identify factors affecting the satisfaction of customers.\r\nDetermining the degree of impact of the independent variable on the dependent variable.",
-            "name": "explore_dataset.R",
-            "task_status": "proposed"
+            "desc": "Plots of the first five variables that would provide a pictorial representation of the data.",
+            "name": "Plot1.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "woojinpark",
+            "desc": "Plots of the five variables (% of Flight with other Airlines, Type of Travel,No. of other Loyalty Cards, Shopping Amount at Airport and Eating and Drinking at Airport) that would provide a pictorial representation of the data.",
+            "name": "Plot2.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "perflightsat.png"
+        },
+        {
+            "name": "typetravelsat.png"
+        },
+        {
+            "name": "shoppingamtsat.png"
+        },
+        {
+            "name": "airlinenamesat.png"
+        },
+        {
+            "assigned_to": "christysato",
+            "desc": "Plots of the four variables (day of month, flight date, airline code, and airline name) that provide a visualization of the data.",
+            "name": "Plot3.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "dayofmonth.png"
+        },
+        {
+            "assigned_to": "jganatra07",
+            "desc": "",
+            "name": "plot4.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "plot16.png"
+        },
+        {
+            "name": "flight_date.png"
+        },
+        {
+            "name": "air_status.png"
+        },
+        {
+            "name": "gender_sat.png"
+        },
+        {
+            "assigned_to": "agarge",
+            "desc": "Pictorial analysis of five variables present in the dataset.",
+            "name": "Plot5.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "departure_delay__plot.png"
+        },
+        {
+            "name": "loyalcardsat1.png"
+        },
+        {
+            "name": "arrival_delay__plot.png"
+        },
+        {
+            "name": "flight_time_plot.png"
+        },
+        {
+            "name": "flight_cancel_plot.png"
+        },
+        {
+            "name": "class_plot.png"
+        },
+        {
+            "name": "shopping_plot.png"
         },
         {
             "assigned_to": "jganatra07",
             "desc": "analyze the clean data using different visualization tools and gain insight",
             "name": "analyze_data.R",
-            "task_status": "proposed"
+            "task_status": "not started"
+        },
+        {
+            "assigned_to": "xzhan147",
+            "desc": "creating models for predictive analysis",
+            "name": "analysis_model3.R",
+            "task_status": "not started"
+        },
+        {
+            "assigned_to": "christysato",
+            "desc": "creating models for predictive analysis",
+            "name": "analysis_model2.R",
+            "task_status": "not started"
         },
         {
             "assigned_to": "saramasa",
             "desc": "performing predictive analysis based on different analysis models",
             "name": "perform_analysis.R",
-            "task_status": "proposed"
+            "task_status": "not started"
+        },
+        {
+            "name": "plot17.png"
+        },
+        {
+            "name": "plot19.png"
+        },
+        {
+            "name": "plot20.png"
+        },
+        {
+            "name": "eatdrinksat1.png"
+        },
+        {
+            "name": "airlinecode.png"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "",
+            "name": "Cleaningdataset.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "corrplot.png"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "Cleaning the dataset by replacing the NA values with appropriate values without disturbing the spread of the data.",
+            "name": "clean_data.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "bp_satisByGender.png"
+        },
+        {
+            "name": "bp_satisByFCancelled.png"
+        },
+        {
+            "name": "bp_satisByGreater5.png"
+        },
+        {
+            "name": "class_satis.png"
+        },
+        {
+            "name": "bp_satisByClass.png"
+        },
+        {
+            "name": "bp_satisByStatus.png"
+        },
+        {
+            "name": "bp_satisByTravel.png"
+        },
+        {
+            "assigned_to": "xzhan147",
+            "desc": "This section will be exploring the variables which might be associated with satisfaction based on the graphs created by the team using T-tests, Anovas and ect. Based on the preliminary findings in this section, we will be able to know whether the differences or association are reaching the significant level in statistics or not. These findings will be helping us in making the decision of  considering these variables as potential predictors to satisfaction and including them in our model. lm is used for modelling. ",
+            "name": "correlation.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "christysato",
+            "desc": "Satisfaction depending on Month Buckets (end, middle, beginning of month)",
+            "name": "monthBucket.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "woojinpark",
+            "desc": "creating SVM models for predictive analysis",
+            "name": "analysis_model1.R",
+            "task_status": "not started"
+        },
+        {
+            "name": "monthBucket.png"
+        },
+        {
+            "name": "data_temp.csv"
+        },
+        {
+            "desc": "",
+            "name": "test.R"
+        },
+        {
+            "name": "test_plot.png"
         }
     ],
-    "updated_at": "2018-10-16 23:06:26",
+    "updated_at": "2018-11-15 17:44:21",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
