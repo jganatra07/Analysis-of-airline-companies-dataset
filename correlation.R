@@ -68,7 +68,7 @@ TukeyHSD(aov1,conf.level=0.95)
 
 
 # significant difference in mean of satisfaction among customers with different airline status? --> Platinum-Gold not sig
-bp_satisByStatus <- ggplot(data, aes(Airline.Stauts,Satisfaction))+geom_boxplot(aes(col=Airline.Status))+labs(title="Boxplot of Satisfaction by Airline Status")
+bp_satisByStatus <- ggplot(data, aes(Airline.Status,Satisfaction))+geom_boxplot(aes(col=Airline.Status))+labs(title="Boxplot of Satisfaction by Airline Status")
 bp_satisByStatus
 aov2<- aov(data$Satisfaction~data$Airline.Status)
 summary(aov2)

@@ -373,16 +373,6 @@
         {
             "ports": [
                 {
-                    "output": "corrplot",
-                    "type": "png"
-                }
-            ],
-            "source": "correlation.R",
-            "target": "corrplot.png"
-        },
-        {
-            "ports": [
-                {
                     "input": "data",
                     "output": "data",
                     "type": "r_obj"
@@ -502,6 +492,47 @@
             ],
             "source": "plot4.R",
             "target": "plot20.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "data",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "data_temp.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "cor",
+                    "type": "png"
+                }
+            ],
+            "source": "correlation.R",
+            "target": "corrplot.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "test.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "cor",
+                    "type": "png"
+                }
+            ],
+            "source": "test.R",
+            "target": "test_plot.png"
         }
     ],
     "nodes": [
@@ -690,8 +721,18 @@
         },
         {
             "name": "monthBucket.png"
+        },
+        {
+            "name": "data_temp.csv"
+        },
+        {
+            "desc": "",
+            "name": "test.R"
+        },
+        {
+            "name": "test_plot.png"
         }
     ],
-    "updated_at": "2018-11-15 01:57:00",
+    "updated_at": "2018-11-15 17:44:21",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
