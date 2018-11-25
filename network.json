@@ -373,16 +373,6 @@
         {
             "ports": [
                 {
-                    "output": "corrplot",
-                    "type": "png"
-                }
-            ],
-            "source": "correlation.R",
-            "target": "corrplot.png"
-        },
-        {
-            "ports": [
-                {
                     "input": "data",
                     "output": "data",
                     "type": "r_obj"
@@ -398,7 +388,7 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "bp_satisByGender.png"
         },
         {
@@ -408,7 +398,7 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "bp_satisByFCancelled.png"
         },
         {
@@ -418,7 +408,7 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "bp_satisByGreater5.png"
         },
         {
@@ -428,7 +418,7 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "class_satis.png"
         },
         {
@@ -438,7 +428,7 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "bp_satisByClass.png"
         },
         {
@@ -448,7 +438,7 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "bp_satisByStatus.png"
         },
         {
@@ -458,7 +448,7 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "bp_satisByTravel.png"
         },
         {
@@ -470,7 +460,7 @@
                 }
             ],
             "source": "clean_data.R",
-            "target": "correlation.R"
+            "target": "modelTesting_lm.R"
         },
         {
             "ports": [
@@ -502,6 +492,47 @@
             ],
             "source": "plot4.R",
             "target": "plot20.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "data",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "data_temp.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "cor",
+                    "type": "png"
+                }
+            ],
+            "source": "modelTesting_lm.R",
+            "target": "corrplot.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "test.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "cor",
+                    "type": "png"
+                }
+            ],
+            "source": "test.R",
+            "target": "test_plot.png"
         }
     ],
     "nodes": [
@@ -516,18 +547,6 @@
         },
         {
             "name": "agesat.png"
-        },
-        {
-            "assigned_to": "saramasa",
-            "desc": "Plots of the first five variables that would provide a pictorial representation of the data.",
-            "name": "Plot1.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "woojinpark",
-            "desc": "Plots of the five variables (% of Flight with other Airlines, Type of Travel,No. of other Loyalty Cards, Shopping Amount at Airport and Eating and Drinking at Airport) that would provide a pictorial representation of the data.",
-            "name": "Plot2.R",
-            "task_status": "in progress"
         },
         {
             "name": "perflightsat.png"
@@ -569,12 +588,6 @@
             "name": "gender_sat.png"
         },
         {
-            "assigned_to": "agarge",
-            "desc": "Pictorial analysis of five variables present in the dataset.",
-            "name": "Plot5.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "departure_delay__plot.png"
         },
         {
@@ -596,30 +609,6 @@
             "name": "shopping_plot.png"
         },
         {
-            "assigned_to": "jganatra07",
-            "desc": "analyze the clean data using different visualization tools and gain insight",
-            "name": "analyze_data.R",
-            "task_status": "not started"
-        },
-        {
-            "assigned_to": "xzhan147",
-            "desc": "creating models for predictive analysis",
-            "name": "analysis_model3.R",
-            "task_status": "not started"
-        },
-        {
-            "assigned_to": "christysato",
-            "desc": "creating models for predictive analysis",
-            "name": "analysis_model2.R",
-            "task_status": "not started"
-        },
-        {
-            "assigned_to": "saramasa",
-            "desc": "performing predictive analysis based on different analysis models",
-            "name": "perform_analysis.R",
-            "task_status": "not started"
-        },
-        {
             "name": "plot17.png"
         },
         {
@@ -635,19 +624,7 @@
             "name": "airlinecode.png"
         },
         {
-            "assigned_to": "saramasa",
-            "desc": "",
-            "name": "Cleaningdataset.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "corrplot.png"
-        },
-        {
-            "assigned_to": "saramasa",
-            "desc": "Cleaning the dataset by replacing the NA values with appropriate values without disturbing the spread of the data.",
-            "name": "clean_data.R",
-            "task_status": "in progress"
         },
         {
             "name": "bp_satisByGender.png"
@@ -671,27 +648,91 @@
             "name": "bp_satisByTravel.png"
         },
         {
-            "assigned_to": "xzhan147",
-            "desc": "This section will be exploring the variables which might be associated with satisfaction based on the graphs created by the team using T-tests, Anovas and ect. Based on the preliminary findings in this section, we will be able to know whether the differences or association are reaching the significant level in statistics or not. These findings will be helping us in making the decision of  considering these variables as potential predictors to satisfaction and including them in our model. lm is used for modelling. ",
-            "name": "correlation.R",
-            "task_status": "in progress"
+            "name": "monthBucket.png"
+        },
+        {
+            "name": "data_temp.csv"
+        },
+        {
+            "desc": "",
+            "name": "test.R"
+        },
+        {
+            "name": "test_plot.png"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "Plots of the first five variables that would provide a pictorial representation of the data.",
+            "name": "Plot1.R",
+            "task_status": "validating"
         },
         {
             "assigned_to": "christysato",
             "desc": "Satisfaction depending on Month Buckets (end, middle, beginning of month)",
             "name": "monthBucket.R",
+            "task_status": "validating"
+        },
+        {
+            "assigned_to": "woojinpark",
+            "desc": "Plots of the five variables (% of Flight with other Airlines, Type of Travel,No. of other Loyalty Cards, Shopping Amount at Airport and Eating and Drinking at Airport) that would provide a pictorial representation of the data.",
+            "name": "Plot2.R",
+            "task_status": "validating"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "performing predictive analysis based on different analysis models",
+            "name": "perform_analysis.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "agarge",
+            "desc": "Pictorial analysis of five variables present in the dataset.",
+            "name": "Plot5.R",
+            "task_status": "validating"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "This is the resultant dataset after performing all the necessary cleaning. Which includes converting the variables into proper format, filling up missing values and removing unwanted observations.",
+            "name": "clean_data.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "In here we will be performing data cleaning. There are variables in a different incomprehensible format, NA's, missing values etc. All these are handles in this script.",
+            "name": "Cleaningdataset.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "jganatra07",
+            "desc": "analyze the clean data using different visualization tools and gain insight",
+            "name": "analyze_data.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "xzhan147",
+            "desc": "creating models for predictive analysis",
+            "name": "analysis_model3.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "christysato",
+            "desc": "creating models for predictive analysis",
+            "name": "analysis_model2.R",
             "task_status": "in progress"
         },
         {
             "assigned_to": "woojinpark",
             "desc": "creating SVM models for predictive analysis",
             "name": "analysis_model1.R",
-            "task_status": "not started"
+            "task_status": "validating"
         },
         {
-            "name": "monthBucket.png"
+            "assigned_to": "xzhan147",
+            "desc": "This section will be exploring the variables which might be associated with satisfaction based on the graphs created by the team using T-tests, Anovas and ect. Based on the preliminary findings in this section, we will be able to know whether the differences or association are reaching the significant level in statistics or not. These findings will be helping us in making the decision of  considering these variables as potential predictors to satisfaction and including them in our model. lm is used for modelling. ",
+            "name": "modelTesting_lm.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-15 01:57:00",
+    "updated_at": "2018-11-25 04:43:47",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
