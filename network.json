@@ -388,7 +388,7 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "bp_satisByGender.png"
         },
         {
@@ -398,7 +398,7 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "bp_satisByFCancelled.png"
         },
         {
@@ -408,7 +408,7 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "bp_satisByGreater5.png"
         },
         {
@@ -418,7 +418,7 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "class_satis.png"
         },
         {
@@ -428,7 +428,7 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "bp_satisByClass.png"
         },
         {
@@ -438,7 +438,7 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "bp_satisByStatus.png"
         },
         {
@@ -448,7 +448,7 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "bp_satisByTravel.png"
         },
         {
@@ -460,7 +460,7 @@
                 }
             ],
             "source": "clean_data.R",
-            "target": "correlation.R"
+            "target": "modelTesting_lm.R"
         },
         {
             "ports": [
@@ -510,7 +510,7 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "corrplot.png"
         },
         {
@@ -729,10 +729,10 @@
         {
             "assigned_to": "xzhan147",
             "desc": "This section will be exploring the variables which might be associated with satisfaction based on the graphs created by the team using T-tests, Anovas and ect. Based on the preliminary findings in this section, we will be able to know whether the differences or association are reaching the significant level in statistics or not. These findings will be helping us in making the decision of  considering these variables as potential predictors to satisfaction and including them in our model. lm is used for modelling. ",
-            "name": "correlation.R",
+            "name": "modelTesting_lm.R",
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-25 04:41:09",
+    "updated_at": "2018-11-25 04:43:47",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
