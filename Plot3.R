@@ -2,7 +2,6 @@
 library(ggplot2)
 library(plyr)
 library(scales)
-library(extrafont)
 library(dplyr)
 
 #day of month vs. satisfaction
