@@ -28,17 +28,6 @@
                 }
             ],
             "source": "analyze_data.R",
-            "target": "analysis_model1.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "analyze_data.R",
             "target": "analysis_model2.R"
         },
         {
@@ -673,14 +662,8 @@
             "desc": "This section will be exploring the variables which might be associated with satisfaction based on the graphs created by the team using T-tests, Anovas and ect. Based on the preliminary findings in this section, we will be able to know whether the differences or association are reaching the significant level in statistics or not. These findings will be helping us in making the decision of  considering these variables as potential predictors to satisfaction and including them in our model. lm is used for modelling. ",
             "name": "modelTesting_lm.R",
             "task_status": "in progress"
-        },
-        {
-            "assigned_to": "christysato",
-            "desc": "creating SVM models for predictive analysis",
-            "name": "analysis_model1.R",
-            "task_status": "validating"
         }
     ],
-    "updated_at": "2018-11-29 16:15:40",
+    "updated_at": "2018-11-29 16:15:47",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
