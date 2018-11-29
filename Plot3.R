@@ -2,6 +2,7 @@
 library(ggplot2)
 library(plyr)
 library(scales)
+library(ggthemes)
 
 #day of month vs. satisfaction
 summary(data$Day.of.Month)
