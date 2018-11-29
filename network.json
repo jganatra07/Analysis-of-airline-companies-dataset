@@ -454,9 +454,6 @@
             "name": "satisfactionSurvey.csv"
         },
         {
-            "name": "clean_dataset.csv"
-        },
-        {
             "name": "agesat.png"
         },
         {
@@ -614,6 +611,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-29 16:16:20",
+    "updated_at": "2018-11-29 16:16:26",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
