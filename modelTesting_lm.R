@@ -94,4 +94,4 @@ summary(model3)
 model4 <- lm(Satisfaction ~ . -Flight.time.in.minutes -Flight.Distance -Arrival.Delay.in.Minutes -Departure.Delay.in.Minutes -No..of.other.Loyalty.Cards -Flight.date -Day.of.Month -Airline.Code -Airline.Name -Year.of.First.Flight -Eating.and.Drinking.at.Airport -Orgin.City -Origin.State -Destination.City -Destination.State -X..of.Flight.with.other.Airlines, data = data)
 summary(model4)
 
-# ADJUSTED R-SUQRED 0.4077
+# ADJUSTED R-SUQRED 0.4443
