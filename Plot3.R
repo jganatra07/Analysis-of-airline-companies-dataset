@@ -13,7 +13,7 @@ summary(data$Airline.Code)
 
 counts <- table(data$Satisfaction, data$Airline.Code) 
 
-airlinecodesat <- barplot(counts, main="Satisfaction depending on Airline Code", col=c("darkblue","red", "yellow", "orange", "pink", "chartreuse", "brown1", "darkgoldenrod1", "burlywood3", "darkslategray2", "azure1", "bisque1", "blueviolet", "goldenrod4"), las=2, legend=rownames(counts), args.legend = list(x = "top", ncol=2, inset=c(0, 0), cex=.4))
+airlinecodesat <- barplot(counts, main="Satisfaction depending on Airline Code", col=c("darkblue","purple", "yellow", "orange", "pink", "chartreuse", "brown1", "darkgoldenrod1", "burlywood3", "darkslategray2", "azure1", "bisque1", "blueviolet", "goldenrod4"), las=2, legend=rownames(counts), args.legend = list(x = "top", ncol=2, inset=c(0, 0), cex=.4))
 airlinecodesat
 
 #airline name
