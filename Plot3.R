@@ -2,7 +2,6 @@
 library(ggplot2)
 library(plyr)
 library(scales)
-library(ggthemes)
 library(extrafont)
 library(dplyr)
 
