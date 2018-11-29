@@ -88,16 +88,6 @@
         {
             "ports": [
                 {
-                    "output": "data",
-                    "type": "csv"
-                }
-            ],
-            "source": "perform_analysis.R",
-            "target": "evaluation_matrix.csv"
-        },
-        {
-            "ports": [
-                {
                     "output": "agesat",
                     "type": "png"
                 }
@@ -543,9 +533,6 @@
             "name": "clean_dataset.csv"
         },
         {
-            "name": "evaluation_matrix.csv"
-        },
-        {
             "name": "agesat.png"
         },
         {
@@ -733,6 +720,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-25 04:43:47",
+    "updated_at": "2018-11-29 16:15:01",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
