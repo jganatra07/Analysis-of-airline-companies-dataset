@@ -32,7 +32,6 @@ corrplot(cor_m, type ="lower",order = "hclust", tl.col="black",tl.srt=45)
 #No..of.other.Loyalty.Cards vs Price.Sensitivity (-.45) / age -.45
 
 
-
 # significant difference in the mean of satisfaction by gender? --> yes
 hist(data$Satisfaction)
 bp_satisByGender <- ggplot(data, aes(Gender,Satisfaction))+geom_boxplot(aes(col=Gender))+labs(title="Boxplot of Satisfaction by Gender")
@@ -69,7 +68,7 @@ TukeyHSD(aov1,conf.level=0.95)
 
 
 # significant difference in mean of satisfaction among customers with different airline status? --> Platinum-Gold not sig
-bp_satisByStatus <- ggplot(data, aes(Airline.Stauts,Satisfaction))+geom_boxplot(aes(col=Airline.Status))+labs(title="Boxplot of Satisfaction by Airline Status")
+bp_satisByStatus <- ggplot(data, aes(Airline.Status,Satisfaction))+geom_boxplot(aes(col=Airline.Status))+labs(title="Boxplot of Satisfaction by Airline Status")
 bp_satisByStatus
 aov2<- aov(data$Satisfaction~data$Airline.Status)
 summary(aov2)
