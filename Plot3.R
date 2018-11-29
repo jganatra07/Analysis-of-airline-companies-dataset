@@ -4,6 +4,7 @@ library(plyr)
 library(scales)
 library(ggthemes)
 library(extrafont)
+library(dplyr)
 
 #day of month vs. satisfaction
 summary(data$Day.of.Month)
