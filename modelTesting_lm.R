@@ -3,6 +3,7 @@ library(ggplot2)
 library(dplyr)
 library(Hmisc)
 library(corrplot)
+library(ggcorrplot)
 
 ####### bivariate correlation for all numerical independent variables #########
 #If two of the independent variables are highly related, this leads to a problem called multicollinearity
@@ -21,7 +22,7 @@ cor_2
 
 cor_m<-cor(nu_data)
 head(round(cor_m,2))
-corrplot(cor_m, type ="lower",order = "hclust", tl.col="black",tl.srt=45)
+ggcorrplot(cor_m)
 
 # output-- plot_cor_m
 #from the correlation matrix, we can see that the below pairs of variables are 
