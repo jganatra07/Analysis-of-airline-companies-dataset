@@ -425,7 +425,7 @@
                 }
             ],
             "source": "modelTesting_lm.R",
-            "target": "corrplot.png"
+            "target": "ggcorrplot.png"
         },
         {
             "ports": [
@@ -526,7 +526,7 @@
             "name": "airlinecode.png"
         },
         {
-            "name": "corrplot.png"
+            "name": "ggcorrplot.png"
         },
         {
             "name": "bp_satisByGender.png"
@@ -611,6 +611,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-29 16:33:54",
+    "updated_at": "2018-11-30 17:23:57",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
