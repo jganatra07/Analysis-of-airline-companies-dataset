@@ -22,7 +22,7 @@ cor_2
 
 cor_m<-cor(nu_data)
 head(round(cor_m,2))
-ggcorrplot(cor_m)
+corPlot<- ggcorrplot(cor_m)
 
 # output-- plot_cor_m
 #from the correlation matrix, we can see that the below pairs of variables are 
