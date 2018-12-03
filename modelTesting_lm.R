@@ -3,6 +3,7 @@ library(ggplot2)
 library(dplyr)
 library(Hmisc)
 library(corrplot)
+library(ggcorrplot)
 
 ####### bivariate correlation for all numerical independent variables #########
 #If two of the independent variables are highly related, this leads to a problem called multicollinearity
@@ -21,7 +22,7 @@ cor_2
 
 cor_m<-cor(nu_data)
 head(round(cor_m,2))
-corrplot(cor_m, type ="lower",order = "hclust", tl.col="black",tl.srt=45)
+corPlot<- ggcorrplot(cor_m)
 
 # output-- plot_cor_m
 #from the correlation matrix, we can see that the below pairs of variables are 
@@ -68,7 +69,7 @@ TukeyHSD(aov1,conf.level=0.95)
 
 
 # significant difference in mean of satisfaction among customers with different airline status? --> Platinum-Gold not sig
-bp_satisByStatus <- ggplot(data, aes(Airline.Stauts,Satisfaction))+geom_boxplot(aes(col=Airline.Status))+labs(title="Boxplot of Satisfaction by Airline Status")
+bp_satisByStatus <- ggplot(data, aes(Airline.Status,Satisfaction))+geom_boxplot(aes(col=Airline.Status))+labs(title="Boxplot of Satisfaction by Airline Status")
 bp_satisByStatus
 aov2<- aov(data$Satisfaction~data$Airline.Status)
 summary(aov2)
@@ -94,4 +95,4 @@ summary(model3)
 model4 <- lm(Satisfaction ~ . -Flight.time.in.minutes -Flight.Distance -Arrival.Delay.in.Minutes -Departure.Delay.in.Minutes -No..of.other.Loyalty.Cards -Flight.date -Day.of.Month -Airline.Code -Airline.Name -Year.of.First.Flight -Eating.and.Drinking.at.Airport -Orgin.City -Origin.State -Destination.City -Destination.State -X..of.Flight.with.other.Airlines, data = data)
 summary(model4)
 
-# ADJUSTED R-SUQRED 0.4077
+# ADJUSTED R-SUQRED 0.4443
