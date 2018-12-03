@@ -563,12 +563,6 @@
             "task_status": "validating"
         },
         {
-            "assigned_to": "christysato",
-            "desc": "Satisfaction depending on Month Buckets (end, middle, beginning of month)",
-            "name": "monthBucket.R",
-            "task_status": "validating"
-        },
-        {
             "assigned_to": "woojinpark",
             "desc": "Plots of the five variables (% of Flight with other Airlines, Type of Travel,No. of other Loyalty Cards, Shopping Amount at Airport and Eating and Drinking at Airport) that would provide a pictorial representation of the data.",
             "name": "Plot2.R",
@@ -609,8 +603,14 @@
             "desc": "",
             "name": "plot4.R",
             "task_status": "validating"
+        },
+        {
+            "assigned_to": "christysato",
+            "desc": "Satisfaction depending on Month Buckets (end, middle, beginning of month)\r\n\r\nPlot does not show in MIDST correctly, but works in RSTUDIO",
+            "name": "monthBucket.R",
+            "task_status": "validating"
         }
     ],
-    "updated_at": "2018-12-03 16:42:08",
+    "updated_at": "2018-12-03 17:02:53",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
