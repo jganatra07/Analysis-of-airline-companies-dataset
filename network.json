@@ -198,7 +198,7 @@
                 }
             ],
             "source": "plot4.R",
-            "target": "Origin.png"
+            "target": "Origin_State.png"
         },
         {
             "ports": [
@@ -505,7 +505,7 @@
             "name": "shopping_plot.png"
         },
         {
-            "name": "Origin.png"
+            "name": "Origin_State.png"
         },
         {
             "name": "plot19.png"
@@ -611,6 +611,6 @@
             "task_status": "validating"
         }
     ],
-    "updated_at": "2018-12-04 18:27:30",
+    "updated_at": "2018-12-04 18:27:42",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
