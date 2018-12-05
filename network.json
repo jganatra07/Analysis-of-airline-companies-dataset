@@ -614,8 +614,11 @@
         },
         {
             "name": "rules25.png"
+        },
+        {
+            "name": "goodrulesplot.png"
         }
     ],
-    "updated_at": "2018-12-05 18:51:16",
+    "updated_at": "2018-12-05 18:52:20",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
