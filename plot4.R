@@ -30,6 +30,8 @@ originCity <- ggplot(us, aes(x=long, y=lat)) + expand_limits(x = us$long, y = us
 originCity <- originCity + geom_polygon() + coord_map()
 originCity <- originCity + geom_point(data=latlon, aes(x=lon, y=lat, size=0.05), color="orange")
 originCity
+
+
 #Calculating mean of satisfaction and grouping it by Origin state
 osmean <- data %>%
   group_by(Origin.State) %>%
@@ -59,7 +61,7 @@ destState
 schdepthr <- data %>%
   group_by(Scheduled.Departure.Hour) %>%
   summarize(m3 = mean(Satisfaction))
-
+#converting the scheduled departure hour variable into a data frame
 schdepthr <- as.data.frame(schdepthr)
 plotsdh<-ggplot(schdepthr, aes(Scheduled.Departure.Hour,m3))+geom_line(color="yellow", size = 1, linetype = "solid")+labs(x="Scheduled Departure Hour", y="Mean Satisfaction") + ylim(3.0,4.0)+ theme(
   panel.background = element_rect(fill = "black",
