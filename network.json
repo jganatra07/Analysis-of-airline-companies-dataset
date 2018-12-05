@@ -588,8 +588,11 @@
             "desc": "Arules on age, gender, and class (LHS) and satisfaction (RHS)",
             "name": "Arules.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "freqplot.png"
         }
     ],
-    "updated_at": "2018-12-05 18:50:06",
+    "updated_at": "2018-12-05 18:50:21",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
