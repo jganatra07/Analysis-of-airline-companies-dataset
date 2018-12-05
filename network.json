@@ -627,8 +627,12 @@
             "desc": "Arules on age, gender, and class (LHS) and satisfaction (RHS)\r\n\r\nThe plots work on RSTUDIO, it seems that cannot install arules package on MIDST",
             "name": "Arules.R",
             "task_status": "completed"
+        },
+        {
+            "desc": "",
+            "name": "SVMmodel.R"
         }
     ],
-    "updated_at": "2018-12-05 19:00:52",
+    "updated_at": "2018-12-05 19:19:29",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
