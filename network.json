@@ -389,16 +389,6 @@
         {
             "ports": [
                 {
-                    "output": "data",
-                    "type": "csv"
-                }
-            ],
-            "source": "clean_data.R",
-            "target": "data_temp.csv"
-        },
-        {
-            "ports": [
-                {
                     "input": "data",
                     "output": "data",
                     "type": "r_obj"
@@ -523,9 +513,6 @@
             "name": "monthBucket.png"
         },
         {
-            "name": "data_temp.csv"
-        },
-        {
             "name": "test_plot.png"
         },
         {
@@ -586,6 +573,6 @@
             "task_status": "completed"
         }
     ],
-    "updated_at": "2018-12-05 18:32:18",
+    "updated_at": "2018-12-05 18:36:35",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
