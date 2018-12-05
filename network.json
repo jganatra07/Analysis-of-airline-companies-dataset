@@ -389,16 +389,6 @@
         {
             "ports": [
                 {
-                    "output": "sdh",
-                    "type": "png"
-                }
-            ],
-            "source": "plot4.R",
-            "target": "Scheduled_departure_hour.png"
-        },
-        {
-            "ports": [
-                {
                     "output": "data",
                     "type": "csv"
                 }
@@ -511,9 +501,6 @@
             "name": "Destination_State.png"
         },
         {
-            "name": "Scheduled_departure_hour.png"
-        },
-        {
             "name": "eatdrinksat1.png"
         },
         {
@@ -611,6 +598,6 @@
             "task_status": "validating"
         }
     ],
-    "updated_at": "2018-12-04 18:29:06",
+    "updated_at": "2018-12-05 07:20:26",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
