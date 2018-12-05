@@ -447,6 +447,16 @@
             ],
             "source": "Arules.R",
             "target": "rules25.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "goodrulesplot",
+                    "type": "png"
+                }
+            ],
+            "source": "Arules.R",
+            "target": "goodrulesplot.png"
         }
     ],
     "nodes": [
@@ -619,6 +629,6 @@
             "name": "goodrulesplot.png"
         }
     ],
-    "updated_at": "2018-12-05 18:52:20",
+    "updated_at": "2018-12-05 18:52:36",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
