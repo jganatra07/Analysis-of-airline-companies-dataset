@@ -457,6 +457,17 @@
             ],
             "source": "Arules.R",
             "target": "goodrulesplot.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "answer",
+                    "output": "answer",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "SVMmodel.R"
         }
     ],
     "nodes": [
@@ -629,10 +640,12 @@
             "task_status": "completed"
         },
         {
+            "assigned_to": "woojinpark",
             "desc": "",
-            "name": "SVMmodel.R"
+            "name": "SVMmodel.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-12-05 19:19:29",
+    "updated_at": "2018-12-05 19:29:06",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
