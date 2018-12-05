@@ -31,13 +31,13 @@ inspect(head(rules_conf))
 
 #THE HIGHER THE LIFT THE MORE INTERESTING
 
-plot(ruleset)
+rules25 <- plot(ruleset)
 inspect(ruleset)
 
 #WANT HIGH SUPPORT AND HIGH CONFIDENCE
 
 goodrules <- ruleset[quality(ruleset)$lift > 1.3]
 
-plot(goodrules)
+goodrulesplot <- plot(goodrules)
 rules_lift <- sort(goodrules, by="lift", decreasing = TRUE)
 inspect(head(rules_lift))
