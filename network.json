@@ -601,8 +601,11 @@
         },
         {
             "name": "freqplot.png"
+        },
+        {
+            "name": "rules25.png"
         }
     ],
-    "updated_at": "2018-12-05 18:50:40",
+    "updated_at": "2018-12-05 18:50:58",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
