@@ -571,8 +571,12 @@
             "desc": "Plots of the five variables (% of Flight with other Airlines, Type of Travel,No. of other Loyalty Cards, Shopping Amount at Airport and Eating and Drinking at Airport) that would provide a pictorial representation of the data.",
             "name": "Plot2.R",
             "task_status": "completed"
+        },
+        {
+            "desc": "Arules on age, gender, and class (LHS) and satisfaction (RHS)",
+            "name": "Arules.R"
         }
     ],
-    "updated_at": "2018-12-05 18:36:35",
+    "updated_at": "2018-12-05 18:41:51",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
