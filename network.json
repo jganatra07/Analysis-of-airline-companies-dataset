@@ -596,8 +596,11 @@
             "desc": "Plots of 4 variables (Origin city, Origin State, Destination State and Scheduled Departure Hour) that showcases the pictorial analysis of the data",
             "name": "plot4.R",
             "task_status": "validating"
+        },
+        {
+            "name": "scheduled_departure_hour.png"
         }
     ],
-    "updated_at": "2018-12-05 07:20:26",
+    "updated_at": "2018-12-05 07:20:51",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
