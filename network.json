@@ -416,6 +416,17 @@
             ],
             "source": "plot4.R",
             "target": "scheduled_departure_hour.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "Arules.R"
         }
     ],
     "nodes": [
@@ -573,10 +584,12 @@
             "task_status": "completed"
         },
         {
+            "assigned_to": "christysato",
             "desc": "Arules on age, gender, and class (LHS) and satisfaction (RHS)",
-            "name": "Arules.R"
+            "name": "Arules.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-12-05 18:41:51",
+    "updated_at": "2018-12-05 18:43:56",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
