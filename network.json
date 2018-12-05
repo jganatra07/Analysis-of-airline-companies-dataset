@@ -427,6 +427,16 @@
             ],
             "source": "clean_data.R",
             "target": "Arules.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "freqplot",
+                    "type": "png"
+                }
+            ],
+            "source": "Arules.R",
+            "target": "freqplot.png"
         }
     ],
     "nodes": [
@@ -593,6 +603,6 @@
             "name": "freqplot.png"
         }
     ],
-    "updated_at": "2018-12-05 18:50:21",
+    "updated_at": "2018-12-05 18:50:40",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
