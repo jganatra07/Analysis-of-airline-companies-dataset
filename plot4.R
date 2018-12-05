@@ -57,10 +57,18 @@ destState <- destState + theme(axis.text.x = element_text(angle = 90, hjust = 1)
 destState
 
 #calculating mean of scheduled departure hour and grouping by Satisfaction
-satmean <- data %>%
-  group_by(Satisfaction) %>%
-  summarize(m1 = mean(Scheduled.Departure.Hour))
+schdepthr <- unclean_data %>%
+  group_by(Scheduled.Departure.Hour) %>%
+  summarize(m3 = mean(Satisfaction))
 
-sdhmean<-as.data.frame(satmean)
-#plotting mean of scheduled departure hour vs Satisfaction
-sdh <- ggplot(satmean,aes(Satisfaction,m1)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+schdepthr <- as.data.frame(schdepthr)
+plotsdh<-ggplot(schdepthr, aes(Scheduled.Departure.Hour,m3))+geom_line(color="yellow", size = 1, linetype = "solid")+labs(x="Scheduled Departure Hour", y="Mean Satisfaction") + ylim(3.0,4.0)+ theme(
+  panel.background = element_rect(fill = "black",
+                                  colour = "black",
+                                  size = 0.5, linetype = "solid"),
+  panel.grid.major = element_line(size = 0.5, linetype = 'solid',
+                                  colour = "black"), 
+  panel.grid.minor = element_line(size = 0.25, linetype = 'solid',
+                                  colour = "black")
+)
+plotsdh
