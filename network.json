@@ -624,11 +624,11 @@
         },
         {
             "assigned_to": "christysato",
-            "desc": "Arules on age, gender, and class (LHS) and satisfaction (RHS)",
+            "desc": "Arules on age, gender, and class (LHS) and satisfaction (RHS)\r\n\r\nThe plots work on RSTUDIO, it seems that cannot install arules package on MIDST",
             "name": "Arules.R",
             "task_status": "completed"
         }
     ],
-    "updated_at": "2018-12-05 18:56:31",
+    "updated_at": "2018-12-05 19:00:52",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
