@@ -626,9 +626,9 @@
             "assigned_to": "christysato",
             "desc": "Arules on age, gender, and class (LHS) and satisfaction (RHS)",
             "name": "Arules.R",
-            "task_status": "in progress"
+            "task_status": "completed"
         }
     ],
-    "updated_at": "2018-12-05 18:56:16",
+    "updated_at": "2018-12-05 18:56:31",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
