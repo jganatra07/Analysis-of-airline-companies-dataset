@@ -641,11 +641,11 @@
         },
         {
             "assigned_to": "woojinpark",
-            "desc": "",
+            "desc": "In this step, we used a supervised learning technique called a support vector machine (SVM).  First, I train the algorithm on an initial set of data (the supervised phase) and then test out on a brand-new set of data.\r\nSVM uses a technique called the kernel trick to transform my dataset and then based on these transformations it finds an optimal boundary between the possible outputs. So simply, it helps to separate our data based on the output have been defined.  Based-on T-test result, the 7 most important variables are used in SVM analysis, \u2018Age, Gender, Price.Sensitivity, No.of.Flights.p.a, Type.of.Travel, Class, Arrival.Delay.greater.5.Mins\u2018 .\r\nIn the SVM prediction model the percentage of mistakes explains the error rate, and we tried to detect the model having the error rate to be as low as possible. After all analysis work, we  found the best model with the smallest error rate to  distinguish our customer\u2019s Overall satisfaction. \r\n",
             "name": "SVMmodel.R",
-            "task_status": "in progress"
+            "task_status": "completed"
         }
     ],
-    "updated_at": "2018-12-05 19:29:06",
+    "updated_at": "2018-12-05 19:31:09",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
