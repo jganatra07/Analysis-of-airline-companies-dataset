@@ -57,7 +57,7 @@ destState <- destState + theme(axis.text.x = element_text(angle = 90, hjust = 1)
 destState
 
 #calculating mean of scheduled departure hour and grouping by Satisfaction
-schdepthr <- unclean_data %>%
+schdepthr <- data %>%
   group_by(Scheduled.Departure.Hour) %>%
   summarize(m3 = mean(Satisfaction))
 
