@@ -3,6 +3,7 @@ library(ggplot2)
 library(dplyr)
 library(Hmisc)
 library(corrplot)
+library(ggcorrplot)
 
 ####### bivariate correlation for all numerical independent variables #########
 #If two of the independent variables are highly related, this leads to a problem called multicollinearity
@@ -21,7 +22,7 @@ cor_2
 
 cor_m<-cor(nu_data)
 head(round(cor_m,2))
-corrplot(cor_m, type ="lower",order = "hclust", tl.col="black",tl.srt=45)
+corPlot<- ggcorrplot(cor_m)
 
 # output-- plot_cor_m
 #from the correlation matrix, we can see that the below pairs of variables are 
@@ -94,4 +95,52 @@ summary(model3)
 model4 <- lm(Satisfaction ~ . -Flight.time.in.minutes -Flight.Distance -Arrival.Delay.in.Minutes -Departure.Delay.in.Minutes -No..of.other.Loyalty.Cards -Flight.date -Day.of.Month -Airline.Code -Airline.Name -Year.of.First.Flight -Eating.and.Drinking.at.Airport -Orgin.City -Origin.State -Destination.City -Destination.State -X..of.Flight.with.other.Airlines, data = data)
 summary(model4)
 
-# ADJUSTED R-SUQRED 0.4077
+# ADJUSTED R-SUQRED 0.4069 with 11 predictors
+
+model5 <- lm(Satisfaction ~ . -Shopping.Amount.at.Airport -Flight.time.in.minutes -Flight.Distance -Arrival.Delay.in.Minutes -Departure.Delay.in.Minutes -No..of.other.Loyalty.Cards -Flight.date -Day.of.Month -Airline.Code -Airline.Name -Year.of.First.Flight -Eating.and.Drinking.at.Airport -Orgin.City -Origin.State -Destination.City -Destination.State -X..of.Flight.with.other.Airlines, data = data)
+summary(model5)
+# ADJUSTED R-SUQRED 0.4069 with 10 predictors
+
+model6 <- lm(Satisfaction ~ . -Flight.cancelled -Shopping.Amount.at.Airport -Flight.time.in.minutes -Flight.Distance -Arrival.Delay.in.Minutes -Departure.Delay.in.Minutes -No..of.other.Loyalty.Cards -Flight.date -Day.of.Month -Airline.Code -Airline.Name -Year.of.First.Flight -Eating.and.Drinking.at.Airport -Orgin.City -Origin.State -Destination.City -Destination.State -X..of.Flight.with.other.Airlines, data = data)
+summary(model6)
+# ADJUSTED R-SUQRED 0.4063 with 9 predictors
+
+model7 <- lm(Satisfaction ~ . -Price.Sensitivity -Flight.cancelled -Shopping.Amount.at.Airport -Flight.time.in.minutes -Flight.Distance -Arrival.Delay.in.Minutes -Departure.Delay.in.Minutes -No..of.other.Loyalty.Cards -Flight.date -Day.of.Month -Airline.Code -Airline.Name -Year.of.First.Flight -Eating.and.Drinking.at.Airport -Orgin.City -Origin.State -Destination.City -Destination.State -X..of.Flight.with.other.Airlines, data = data)
+summary(model7)
+# ADJUSTED R-SUQRED 0.4057 with 8 predictors
+
+
+model8 <- lm(Satisfaction ~ .-Arrival.Delay.greater.5.Mins -Price.Sensitivity -Flight.cancelled -Shopping.Amount.at.Airport -Flight.time.in.minutes -Flight.Distance -Arrival.Delay.in.Minutes -Departure.Delay.in.Minutes -No..of.other.Loyalty.Cards -Flight.date -Day.of.Month -Airline.Code -Airline.Name -Year.of.First.Flight -Eating.and.Drinking.at.Airport -Orgin.City -Origin.State -Destination.City -Destination.State -X..of.Flight.with.other.Airlines, data = data)
+summary(model8)
+# ADJUSTED R-SUQRED 0.4057 --> 0.3879 with 7 predictors, so I decided to keep arrival delay greater 5 mins
+
+model9 <- lm(Satisfaction ~ .-Scheduled.Departure.Hour -Price.Sensitivity -Flight.cancelled -Shopping.Amount.at.Airport -Flight.time.in.minutes -Flight.Distance -Arrival.Delay.in.Minutes -Departure.Delay.in.Minutes -No..of.other.Loyalty.Cards -Flight.date -Day.of.Month -Airline.Code -Airline.Name -Year.of.First.Flight -Eating.and.Drinking.at.Airport -Orgin.City -Origin.State -Destination.City -Destination.State -X..of.Flight.with.other.Airlines, data = data)
+summary(model9)
+
+# ADJUSTED R-SUQRED 0.4057 -->0.4054 with 7 predictors
+
+model10 <- lm(Satisfaction ~ .-No.of.Flights.p.a. -Scheduled.Departure.Hour -Price.Sensitivity -Flight.cancelled -Shopping.Amount.at.Airport -Flight.time.in.minutes -Flight.Distance -Arrival.Delay.in.Minutes -Departure.Delay.in.Minutes -No..of.other.Loyalty.Cards -Flight.date -Day.of.Month -Airline.Code -Airline.Name -Year.of.First.Flight -Eating.and.Drinking.at.Airport -Orgin.City -Origin.State -Destination.City -Destination.State -X..of.Flight.with.other.Airlines, data = data)
+summary(model10)
+
+# ADJUSTED R-SUQRED 0.4054 --->0.4029 with 6 predictors
+
+model11 <- lm(Satisfaction ~ .-Class -No.of.Flights.p.a. -Scheduled.Departure.Hour -Price.Sensitivity -Flight.cancelled -Shopping.Amount.at.Airport -Flight.time.in.minutes -Flight.Distance -Arrival.Delay.in.Minutes -Departure.Delay.in.Minutes -No..of.other.Loyalty.Cards -Flight.date -Day.of.Month -Airline.Code -Airline.Name -Year.of.First.Flight -Eating.and.Drinking.at.Airport -Orgin.City -Origin.State -Destination.City -Destination.State -X..of.Flight.with.other.Airlines, data = data)
+summary(model11)
+
+# ADJUSTED R-SUQRED 0.4029 --> 0.4023 with 5 predictors
+
+model12 <- lm(Satisfaction ~ .-Age -Class -No.of.Flights.p.a. -Scheduled.Departure.Hour -Price.Sensitivity -Flight.cancelled -Shopping.Amount.at.Airport -Flight.time.in.minutes -Flight.Distance -Arrival.Delay.in.Minutes -Departure.Delay.in.Minutes -No..of.other.Loyalty.Cards -Flight.date -Day.of.Month -Airline.Code -Airline.Name -Year.of.First.Flight -Eating.and.Drinking.at.Airport -Orgin.City -Origin.State -Destination.City -Destination.State -X..of.Flight.with.other.Airlines, data = data)
+summary(model12)
+
+# ADJUSTED R-SUQRED 0.4023 --> 0.4013 with 4 predictors
+
+model13 <- lm(Satisfaction ~ .-Gender -Age -Class -No.of.Flights.p.a. -Scheduled.Departure.Hour -Price.Sensitivity -Flight.cancelled -Shopping.Amount.at.Airport -Flight.time.in.minutes -Flight.Distance -Arrival.Delay.in.Minutes -Departure.Delay.in.Minutes -No..of.other.Loyalty.Cards -Flight.date -Day.of.Month -Airline.Code -Airline.Name -Year.of.First.Flight -Eating.and.Drinking.at.Airport -Orgin.City -Origin.State -Destination.City -Destination.State -X..of.Flight.with.other.Airlines, data = data)
+summary(model13)
+# ADJUSTED R-SUQRED 0.4013 -->39.46 with 3 predictors 
+
+# final model
+m <- lm(formula = Satisfaction ~ Airline.Status + Type.of.Travel + Arrival.Delay.greater.5.Mins, data = data)
+summary(m)
+# ADJUSTED R-SUQRED for final model was 39.46 
+
+
