@@ -66,5 +66,5 @@ table(comTable)
 
 # Calculate an error rate based on what you see in the confusion matrix.
 t<-table(comTable)
-sum(t[1,1]+t[2,2])/sum(t)
+answer <- sum(t[1,1]+t[2,2])/sum(t)
 # error rate : 0.2368755
