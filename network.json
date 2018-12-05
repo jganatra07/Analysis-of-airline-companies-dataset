@@ -405,27 +405,6 @@
                 }
             ],
             "source": "clean_data.R",
-            "target": "test.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "cor",
-                    "type": "png"
-                }
-            ],
-            "source": "test.R",
-            "target": "test_plot.png"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean_data.R",
             "target": "plot4.R"
         },
         {
@@ -547,10 +526,6 @@
             "name": "data_temp.csv"
         },
         {
-            "desc": "",
-            "name": "test.R"
-        },
-        {
             "name": "test_plot.png"
         },
         {
@@ -560,22 +535,10 @@
             "task_status": "validating"
         },
         {
-            "assigned_to": "woojinpark",
-            "desc": "Plots of the five variables (% of Flight with other Airlines, Type of Travel,No. of other Loyalty Cards, Shopping Amount at Airport and Eating and Drinking at Airport) that would provide a pictorial representation of the data.",
-            "name": "Plot2.R",
-            "task_status": "validating"
-        },
-        {
             "assigned_to": "saramasa",
             "desc": "In here we will be performing data cleaning. There are variables in a different incomprehensible format, NA's, missing values etc. All these are handles in this script.",
             "name": "Cleaningdataset.R",
             "task_status": "completed"
-        },
-        {
-            "assigned_to": "christysato",
-            "desc": "Satisfaction depending on Month Buckets (end, middle, beginning of month)\r\n\r\nPlot does not show in MIDST correctly, but works in RSTUDIO",
-            "name": "monthBucket.R",
-            "task_status": "validating"
         },
         {
             "name": "scheduled_departure_hour.png"
@@ -609,8 +572,20 @@
             "desc": "Plots of the four variables (day of month, flight date, airline code, and airline name) that provide a visualization of the data.\r\n\r\nAirline code and airline name plots are not working in MIDST, but it works in RStudio",
             "name": "Plot3.R",
             "task_status": "completed"
+        },
+        {
+            "assigned_to": "christysato",
+            "desc": "Satisfaction depending on Month Buckets (end, middle, beginning of month)\r\n\r\nPlot does not show in MIDST correctly, but works in RSTUDIO",
+            "name": "monthBucket.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "woojinpark",
+            "desc": "Plots of the five variables (% of Flight with other Airlines, Type of Travel,No. of other Loyalty Cards, Shopping Amount at Airport and Eating and Drinking at Airport) that would provide a pictorial representation of the data.",
+            "name": "Plot2.R",
+            "task_status": "completed"
         }
     ],
-    "updated_at": "2018-12-05 18:27:17",
+    "updated_at": "2018-12-05 18:32:18",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
