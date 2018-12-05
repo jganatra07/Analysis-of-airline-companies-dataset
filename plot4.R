@@ -44,6 +44,34 @@ originState <- originState + ggtitle("Bar chart of customer satisfaction per Ori
 originState <- originState + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 originState
 
+#calculating mean and discarding NA values
+mean(data$Satisfaction,na.rm=TRUE)
+data$Satisfaction[is.na(data$Satisfaction)] <- 3.5 #closest to mean
+fltmean1 <- data %>% group_by(Destination.City) %>% summarize(mean1 = mean(Satisfaction))
+fltmean1 <- as.data.frame(fltmean1)
+fltmean1$place <- toString(paste(data$Destination.City,",",data$Destination.State))
+fltmean1 <- as.data.frame(fltmean1)
+us <- map_data("states")
+
+lat <- data.frame()
+lon <- data.frame()
+#getting the latitude and longitude of NYC from the datasciencetoolkit
+for(i in 1:nrow(fltmean1)){
+  
+  x <- geocode(as.character(fltmean1[i,1]),source="dsk")
+  lon[i,1] <- x[1]
+  lat[i,1] <- x[2]
+}
+head(lat)
+head(lon)
+
+latlon <- as.data.frame(cbind(lon,lat,fltmean1))
+#plotting the map for mean of satisfaction in destination city
+DestCity <- ggplot(us, aes(x=long, y=lat)) + expand_limits(x = us$long, y = us$lat) 
+DestCity <- DestCity + geom_polygon() + coord_map()
+DestCity <- DestCity + geom_point(data=latlon, aes(x=lon, y=lat, size=0.5), color="yellow")
+DestCity
+
 
 #calculating mean of satisfaction and grouping by destination state
 dsmean <- data %>%
