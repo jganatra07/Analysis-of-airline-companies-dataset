@@ -437,6 +437,16 @@
             ],
             "source": "modelTesting_lm.R",
             "target": "corPlot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plotsdh",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "scheduled_departure_hour.png"
         }
     ],
     "nodes": [
@@ -601,6 +611,6 @@
             "name": "scheduled_departure_hour.png"
         }
     ],
-    "updated_at": "2018-12-05 07:20:51",
+    "updated_at": "2018-12-05 07:21:15",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
