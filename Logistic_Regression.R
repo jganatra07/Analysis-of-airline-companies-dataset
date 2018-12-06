@@ -31,6 +31,7 @@ str(data)
 #Removing the continuous version of the dependent variable
 data<-data[,-c(1)]
 
+#Removing few more variablle, that wouldn't play a significant role in determining the dependent variable
 data$Airline.Code<-NULL
 data$Airline.Name<-NULL
 data$Orgin.City<-NULL
@@ -38,3 +39,5 @@ data$Origin.State<-NULL
 data$Destination.City<-NULL
 data$Destination.State<-NULL
 
+model<-glm(Sat~., family=binomial(link="logit"),data=data)
+summary(model)
