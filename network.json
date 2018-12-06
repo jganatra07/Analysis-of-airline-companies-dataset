@@ -472,8 +472,8 @@
         {
             "ports": [
                 {
-                    "input": "mod_fit",
-                    "output": "mod_fit",
+                    "input": "model",
+                    "output": "model",
                     "type": "r_obj"
                 }
             ],
@@ -669,6 +669,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-12-06 03:49:22",
+    "updated_at": "2018-12-06 03:50:32",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
