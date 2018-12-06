@@ -57,12 +57,16 @@ traindata$Flight.date<-NULL
 traindata$Flight.time.in.minutes<-NULL
 traindata$Flight.Distance<-NULL
 traindata$EffectiveDelay<-NULL
+traindata$Eating.and.Drinking.at.Airport<-NULL
+
 
 testdata$Day.of.Month<-NULL
 testdata$Flight.date<-NULL
 testdata$Flight.time.in.minutes<-NULL
 testdata$Flight.Distance<-NULL
 testdata$EffectiveDelay<-NULL
+testdata$Eating.and.Drinking.at.Airport<-NULL
+
 
 #K-Fold Cross Validation
 ctrl <- trainControl(method = "repeatedcv", number = 10, savePredictions = TRUE)
