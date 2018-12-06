@@ -51,10 +51,15 @@ testdata<-data[rand[(cutpoint2_3+1):dim(data)[1]],]
 model<-glm(Sat~., family=binomial(link="logit"),data=traindata)
 summary(model)
 
-#Removing insignificant variables from the dataset
-data$Day.of.Month<-NULL
-data$Flight.date<-NULL
-data$Flight.time.in.minutes<-NULL
-data$Flight.Distance<-NULL
-data$EffectiveDelay<-NULL
+#Removing insignificant variables from the train and test dataset
+traindata$Day.of.Month<-NULL
+traindata$Flight.date<-NULL
+traindata$Flight.time.in.minutes<-NULL
+traindata$Flight.Distance<-NULL
+traindata$EffectiveDelay<-NULL
 
+testdata$Day.of.Month<-NULL
+testdata$Flight.date<-NULL
+testdata$Flight.time.in.minutes<-NULL
+testdata$Flight.Distance<-NULL
+testdata$EffectiveDelay<-NULL
