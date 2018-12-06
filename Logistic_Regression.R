@@ -83,5 +83,5 @@ pR2(model)
 summ(model, confint = TRUE, digits = 6)
 
 #Plotting the estimate of the coefficients. (Directionality)
-ploty<-plot_summs(model2, scale=TRUE)
+ploty<-plot_summs(model, scale=TRUE)
 plot_summs(model2, scale=TRUE)
