@@ -63,3 +63,5 @@ testdata$Flight.date<-NULL
 testdata$Flight.time.in.minutes<-NULL
 testdata$Flight.Distance<-NULL
 testdata$EffectiveDelay<-NULL
+
+
