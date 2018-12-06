@@ -1,3 +1,3 @@
 
 library(jtools)
-plot_summs(model2, scale=TRUE)
+plot_summs(model, scale=TRUE)
