@@ -77,5 +77,5 @@ However, there are a number of pseudo R2 metrics that could be of value.
 Most notable is McFadden’s R2, which is defined as 1−[ln(LM)/ln(L0)] where ln(LM) is the log likelihood value 
 for the fitted model and ln(L0) is the log likelihood for the null model with only an intercept as a predictor. 
 The measure ranges from 0 to just under 1, with values closer to zero indicating that the model has no predictive power."
-pR2(mod_fit)
+pR2(model)
 
