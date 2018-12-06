@@ -64,4 +64,10 @@ testdata$Flight.time.in.minutes<-NULL
 testdata$Flight.Distance<-NULL
 testdata$EffectiveDelay<-NULL
 
+#K-Fold Cross Validation
+ctrl <- trainControl(method = "repeatedcv", number = 10, savePredictions = TRUE)
+mod_fit <- train(Sat ~.,  data=traindata, method="glm", family="binomial",
+                 trControl = ctrl, tuneLength = 5)
+pred = predict(mod_fit, newdata=testdata)
+confusionMatrix(data=pred, testdata$Sat)
 
