@@ -478,6 +478,16 @@
             ],
             "source": "Logistic_Regression.R",
             "target": "LogReg_Summs.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "DestCity",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "Destination_City.png"
         }
     ],
     "nodes": [
@@ -668,6 +678,6 @@
             "name": "Destination_City.png"
         }
     ],
-    "updated_at": "2018-12-06 04:36:40",
+    "updated_at": "2018-12-06 04:37:15",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
