@@ -68,6 +68,8 @@ testdata$EffectiveDelay<-NULL
 ctrl <- trainControl(method = "repeatedcv", number = 10, savePredictions = TRUE)
 mod_fit <- train(Sat ~.,  data=traindata, method="glm", family="binomial",
                  trControl = ctrl, tuneLength = 5)
+
+#Predicting the dependent variable 
 pred = predict(mod_fit, newdata=testdata)
 confusionMatrix(data=pred, testdata$Sat)
 
