@@ -450,17 +450,6 @@
         {
             "ports": [
                 {
-                    "input": "answer",
-                    "output": "answer",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean_data.R",
-            "target": "SVMmodel.R"
-        },
-        {
-            "ports": [
-                {
                     "input": "data",
                     "output": "data",
                     "type": "r_obj"
@@ -673,11 +662,11 @@
         },
         {
             "assigned_to": "jganatra07",
-            "desc": "Plots of 4 variables (Origin city, Origin State, Destination City, Destination State and Scheduled Departure Hour) that showcases the pictorial analysis of the data",
+            "desc": "Plots of 5 variables (Origin city, Origin State, Destination City, Destination State and Scheduled Departure Hour) that showcases the pictorial analysis of the data",
             "name": "plot4.R",
             "task_status": "completed"
         }
     ],
-    "updated_at": "2018-12-06 05:25:33",
+    "updated_at": "2018-12-06 08:36:13",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
