@@ -71,5 +71,7 @@ mod_fit <- train(Sat ~.,  data=traindata, method="glm", family="binomial",
 
 #Predicting the dependent variable 
 pred = predict(mod_fit, newdata=testdata)
-confusionMatrix(data=pred, testdata$Sat)
+
+#Confusion Matrix
+cm<-table(confusionMatrix(data=pred, testdata$Sat))
 
