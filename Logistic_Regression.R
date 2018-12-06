@@ -39,5 +39,14 @@ data$Origin.State<-NULL
 data$Destination.City<-NULL
 data$Destination.State<-NULL
 
+rand<-sample(1:dim(data)[1])
+cutpoint2_3<-floor(2*dim(data)[1]/3)
+cutpoint2_3
+
+traindata<-data[rand[1:cutpoint2_3],]
+testdata<-data[rand[(cutpoint2_3+1):dim(data)[1]],]
+
+
+#
 model<-glm(Sat~., family=binomial(link="logit"),data=data)
 summary(model)
