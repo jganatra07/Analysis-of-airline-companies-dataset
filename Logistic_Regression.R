@@ -22,4 +22,9 @@ data$EffectiveDelay<-abs(data$Departure.Delay.in.Minutes-data$Arrival.Delay.in.M
 data$Departure.Delay.in.Minutes<-NULL
 data$Arrival.Delay.in.Minutes<-NULL
 
+data$Sat<-replicate(length(data$Satisfaction),0)
+data$Sat[data$Satisfaction>3]<-1
+data$Sat<-as.factor(data$Sat)
+str(data)
+
 
