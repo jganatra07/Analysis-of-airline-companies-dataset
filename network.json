@@ -472,33 +472,12 @@
         {
             "ports": [
                 {
-                    "input": "model",
-                    "output": "model",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "Logistic_Regression.R",
-            "target": "Regrssion_Model_Plots.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "ploty",
                     "type": "png"
                 }
             ],
             "source": "Logistic_Regression.R",
             "target": "LogReg_Summs.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "plot",
-                    "type": "png"
-                }
-            ],
-            "source": "Regrssion_Model_Plots.R",
-            "target": "Plot.png"
         }
     ],
     "nodes": [
@@ -683,18 +662,12 @@
             "task_status": "completed"
         },
         {
-            "assigned_to": "saramasa",
-            "desc": "Plotting the effects of the logistic regression.",
-            "name": "Regrssion_Model_Plots.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "LogReg_Summs.png"
         },
         {
             "name": "Plot.png"
         }
     ],
-    "updated_at": "2018-12-06 04:19:11",
+    "updated_at": "2018-12-06 04:20:50",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
