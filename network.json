@@ -652,17 +652,17 @@
         },
         {
             "assigned_to": "saramasa",
-            "desc": "This is the resultant dataset after performing all the necessary cleaning. Which includes converting the variables into proper format, filling up missing values and removing unwanted observations.",
-            "name": "clean_data.R",
-            "task_status": "completed"
-        },
-        {
-            "assigned_to": "saramasa",
             "desc": "Performing logistic regression on the final dependent variable into a categorical variable.",
             "name": "Logistic_Regression.R",
             "task_status": "in progress"
+        },
+        {
+            "assigned_to": "agarge",
+            "desc": "This is the resultant dataset after performing all the necessary cleaning. Which includes converting the variables into proper format, filling up missing values and removing unwanted observations.",
+            "name": "clean_data.R",
+            "task_status": "completed"
         }
     ],
-    "updated_at": "2018-12-06 01:35:11",
+    "updated_at": "2018-12-06 01:36:28",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
