@@ -79,4 +79,5 @@ for the fitted model and ln(L0) is the log likelihood for the null model with on
 The measure ranges from 0 to just under 1, with values closer to zero indicating that the model has no predictive power."
 pR2(model)
 
-#Much more elaborate summary of the model
+#Much more elaborate summary of the model with t-statistic value and other stats
+summ(model2, confint = TRUE, digits = 6)
