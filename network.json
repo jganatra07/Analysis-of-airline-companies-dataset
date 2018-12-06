@@ -477,6 +477,17 @@
             ],
             "source": "plot4.R",
             "target": "Destination_City.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "SVMmodel.R"
         }
     ],
     "nodes": [
@@ -667,6 +678,6 @@
             "task_status": "completed"
         }
     ],
-    "updated_at": "2018-12-06 15:20:41",
+    "updated_at": "2018-12-06 15:22:27",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
