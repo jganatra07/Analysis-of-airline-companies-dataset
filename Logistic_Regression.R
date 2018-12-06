@@ -60,6 +60,7 @@ traindata$EffectiveDelay<-NULL
 traindata$Eating.and.Drinking.at.Airport<-NULL
 traindata$X..of.Flight.with.other.Airlines<-NULL
 traindata$Shopping.Amount.at.Airport <-NULL
+
 testdata$Day.of.Month<-NULL
 testdata$Flight.date<-NULL
 testdata$Flight.time.in.minutes<-NULL
@@ -67,6 +68,7 @@ testdata$Flight.Distance<-NULL
 testdata$EffectiveDelay<-NULL
 testdata$Eating.and.Drinking.at.Airport<-NULL
 testdata$X..of.Flight.with.other.Airlines<-NULL
+testdata$Shopping.Amount.at.Airport<-NULL
 
 #K-Fold Cross Validation
 ctrl <- trainControl(method = "repeatedcv", number = 10, savePredictions = TRUE)
@@ -77,6 +79,6 @@ mod_fit <- train(Sat ~.,  data=traindata, method="glm", family="binomial",
 pred = predict(mod_fit, newdata=testdata)
 
 #Confusion Matrix
-cm<-table(confusionMatrix(data=pred, testdata$Sat))
+confusionMatrix(data=pred, testdata$Sat)
 
 
