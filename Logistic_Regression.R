@@ -50,3 +50,4 @@ testdata<-data[rand[(cutpoint2_3+1):dim(data)[1]],]
 #Training the logistic regression model
 model<-glm(Sat~., family=binomial(link="logit"),data=traindata)
 summary(model)
+
