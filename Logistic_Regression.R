@@ -51,3 +51,8 @@ testdata<-data[rand[(cutpoint2_3+1):dim(data)[1]],]
 model<-glm(Sat~., family=binomial(link="logit"),data=traindata)
 summary(model)
 
+data$Day.of.Month<-NULL
+data$Flight.date<-NULL
+data$Flight.time.in.minutes<-NULL
+data$Flight.Distance<-NULL
+data$EffectiveDelay<-NULL
