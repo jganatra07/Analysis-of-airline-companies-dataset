@@ -680,12 +680,8 @@
         },
         {
             "name": "LogReg_Summs.png"
-        },
-        {
-            "desc": "Plotting the effects of the regression.",
-            "name": "Logistic_Reg_Plot.R"
         }
     ],
-    "updated_at": "2018-12-06 04:14:30",
+    "updated_at": "2018-12-06 04:14:56",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
