@@ -7,13 +7,16 @@ library(dplyr)
 
 
 #Plot of Age vs Avg. Satisfaction
+#Mean satisfaction for Age
 satmean <- data %>%
-  group_by(Satisfaction) %>%
-  summarize(m1 = mean(Age))
+  group_by(Age) %>%
+  summarize(m1 = mean(Satisfaction))
 
 agemean<-as.data.frame(satmean)
 
-agesat<-ggplot(agemean,aes(Satisfaction,m1)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+#Plotting average Satisfaction Score against Age
+agesat<-ggplot(agemean,aes(Age,m1)) + geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 75, hjust = 1))+labs(y="Average Satisfaction Score")
+
 
 #Plotting Satisfaction against the Flight Date
 flightdate <- data %>%
