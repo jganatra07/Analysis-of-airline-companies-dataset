@@ -12,92 +12,6 @@
         {
             "ports": [
                 {
-                    "input": "data",
-                    "type": "csv"
-                }
-            ],
-            "source": "clean_dataset.csv",
-            "target": "analyze_data.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "analyze_data.R",
-            "target": "analysis_model1.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "analyze_data.R",
-            "target": "analysis_model2.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "analyze_data.R",
-            "target": "analysis_model3.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "analysis_model2.R",
-            "target": "perform_analysis.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "analysis_model1.R",
-            "target": "perform_analysis.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "analysis_model3.R",
-            "target": "perform_analysis.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "data",
-                    "type": "csv"
-                }
-            ],
-            "source": "perform_analysis.R",
-            "target": "evaluation_matrix.csv"
-        },
-        {
-            "ports": [
-                {
                     "output": "agesat",
                     "type": "png"
                 }
@@ -163,7 +77,7 @@
                 }
             ],
             "source": "plot4.R",
-            "target": "plot16.png"
+            "target": "Origin_City.png"
         },
         {
             "ports": [
@@ -284,7 +198,7 @@
                 }
             ],
             "source": "plot4.R",
-            "target": "plot17.png"
+            "target": "Origin_State.png"
         },
         {
             "ports": [
@@ -294,7 +208,7 @@
                 }
             ],
             "source": "plot4.R",
-            "target": "plot19.png"
+            "target": "Destination_State.png"
         },
         {
             "ports": [
@@ -341,17 +255,6 @@
         {
             "ports": [
                 {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean_data.R",
-            "target": "plot4.R"
-        },
-        {
-            "ports": [
-                {
                     "input": "unclean_data",
                     "type": "csv"
                 }
@@ -388,7 +291,7 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "bp_satisByGender.png"
         },
         {
@@ -398,7 +301,7 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "bp_satisByFCancelled.png"
         },
         {
@@ -408,7 +311,7 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "bp_satisByGreater5.png"
         },
         {
@@ -418,7 +321,7 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "class_satis.png"
         },
         {
@@ -428,7 +331,7 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "bp_satisByClass.png"
         },
         {
@@ -438,7 +341,7 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "bp_satisByStatus.png"
         },
         {
@@ -448,19 +351,8 @@
                     "type": "png"
                 }
             ],
-            "source": "correlation.R",
+            "source": "modelTesting_lm.R",
             "target": "bp_satisByTravel.png"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data",
-                    "output": "data",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean_data.R",
-            "target": "correlation.R"
         },
         {
             "ports": [
@@ -486,32 +378,33 @@
         {
             "ports": [
                 {
-                    "output": "sdh",
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "plot4.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "corPlot",
+                    "type": "png"
+                }
+            ],
+            "source": "modelTesting_lm.R",
+            "target": "corPlot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plotsdh",
                     "type": "png"
                 }
             ],
             "source": "plot4.R",
-            "target": "plot20.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "data",
-                    "type": "csv"
-                }
-            ],
-            "source": "clean_data.R",
-            "target": "data_temp.csv"
-        },
-        {
-            "ports": [
-                {
-                    "output": "cor",
-                    "type": "png"
-                }
-            ],
-            "source": "correlation.R",
-            "target": "corrplot.png"
+            "target": "scheduled_departure_hour.png"
         },
         {
             "ports": [
@@ -522,17 +415,79 @@
                 }
             ],
             "source": "clean_data.R",
-            "target": "test.R"
+            "target": "Arules.R"
         },
         {
             "ports": [
                 {
-                    "output": "cor",
+                    "output": "freqplot",
                     "type": "png"
                 }
             ],
-            "source": "test.R",
-            "target": "test_plot.png"
+            "source": "Arules.R",
+            "target": "freqplot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "rules25",
+                    "type": "png"
+                }
+            ],
+            "source": "Arules.R",
+            "target": "rules25.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "goodrulesplot",
+                    "type": "png"
+                }
+            ],
+            "source": "Arules.R",
+            "target": "goodrulesplot.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "Logistic_Regression.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "ploty",
+                    "type": "png"
+                }
+            ],
+            "source": "Logistic_Regression.R",
+            "target": "LogReg_Summs.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "DestCity",
+                    "type": "png"
+                }
+            ],
+            "source": "plot4.R",
+            "target": "Destination_City.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "SVMmodel.R"
         }
     ],
     "nodes": [
@@ -540,25 +495,7 @@
             "name": "satisfactionSurvey.csv"
         },
         {
-            "name": "clean_dataset.csv"
-        },
-        {
-            "name": "evaluation_matrix.csv"
-        },
-        {
             "name": "agesat.png"
-        },
-        {
-            "assigned_to": "saramasa",
-            "desc": "Plots of the first five variables that would provide a pictorial representation of the data.",
-            "name": "Plot1.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "woojinpark",
-            "desc": "Plots of the five variables (% of Flight with other Airlines, Type of Travel,No. of other Loyalty Cards, Shopping Amount at Airport and Eating and Drinking at Airport) that would provide a pictorial representation of the data.",
-            "name": "Plot2.R",
-            "task_status": "in progress"
         },
         {
             "name": "perflightsat.png"
@@ -573,22 +510,10 @@
             "name": "airlinenamesat.png"
         },
         {
-            "assigned_to": "christysato",
-            "desc": "Plots of the four variables (day of month, flight date, airline code, and airline name) that provide a visualization of the data.",
-            "name": "Plot3.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "dayofmonth.png"
         },
         {
-            "assigned_to": "jganatra07",
-            "desc": "",
-            "name": "plot4.R",
-            "task_status": "in progress"
-        },
-        {
-            "name": "plot16.png"
+            "name": "Origin_City.png"
         },
         {
             "name": "flight_date.png"
@@ -598,12 +523,6 @@
         },
         {
             "name": "gender_sat.png"
-        },
-        {
-            "assigned_to": "agarge",
-            "desc": "Pictorial analysis of five variables present in the dataset.",
-            "name": "Plot5.R",
-            "task_status": "in progress"
         },
         {
             "name": "departure_delay__plot.png"
@@ -627,37 +546,10 @@
             "name": "shopping_plot.png"
         },
         {
-            "assigned_to": "jganatra07",
-            "desc": "analyze the clean data using different visualization tools and gain insight",
-            "name": "analyze_data.R",
-            "task_status": "not started"
+            "name": "Origin_State.png"
         },
         {
-            "assigned_to": "xzhan147",
-            "desc": "creating models for predictive analysis",
-            "name": "analysis_model3.R",
-            "task_status": "not started"
-        },
-        {
-            "assigned_to": "christysato",
-            "desc": "creating models for predictive analysis",
-            "name": "analysis_model2.R",
-            "task_status": "not started"
-        },
-        {
-            "assigned_to": "saramasa",
-            "desc": "performing predictive analysis based on different analysis models",
-            "name": "perform_analysis.R",
-            "task_status": "not started"
-        },
-        {
-            "name": "plot17.png"
-        },
-        {
-            "name": "plot19.png"
-        },
-        {
-            "name": "plot20.png"
+            "name": "Destination_State.png"
         },
         {
             "name": "eatdrinksat1.png"
@@ -666,19 +558,7 @@
             "name": "airlinecode.png"
         },
         {
-            "assigned_to": "saramasa",
-            "desc": "",
-            "name": "Cleaningdataset.R",
-            "task_status": "in progress"
-        },
-        {
-            "name": "corrplot.png"
-        },
-        {
-            "assigned_to": "saramasa",
-            "desc": "Cleaning the dataset by replacing the NA values with appropriate values without disturbing the spread of the data.",
-            "name": "clean_data.R",
-            "task_status": "in progress"
+            "name": "corPlot.png"
         },
         {
             "name": "bp_satisByGender.png"
@@ -702,37 +582,102 @@
             "name": "bp_satisByTravel.png"
         },
         {
-            "assigned_to": "xzhan147",
-            "desc": "This section will be exploring the variables which might be associated with satisfaction based on the graphs created by the team using T-tests, Anovas and ect. Based on the preliminary findings in this section, we will be able to know whether the differences or association are reaching the significant level in statistics or not. These findings will be helping us in making the decision of  considering these variables as potential predictors to satisfaction and including them in our model. lm is used for modelling. ",
-            "name": "correlation.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "christysato",
-            "desc": "Satisfaction depending on Month Buckets (end, middle, beginning of month)",
-            "name": "monthBucket.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "woojinpark",
-            "desc": "creating SVM models for predictive analysis",
-            "name": "analysis_model1.R",
-            "task_status": "not started"
-        },
-        {
             "name": "monthBucket.png"
         },
         {
-            "name": "data_temp.csv"
-        },
-        {
-            "desc": "",
-            "name": "test.R"
-        },
-        {
             "name": "test_plot.png"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "Plots of the first five variables that would provide a pictorial representation of the data.",
+            "name": "Plot1.R",
+            "task_status": "validating"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "In here we will be performing data cleaning. There are variables in a different incomprehensible format, NA's, missing values etc. All these are handles in this script.",
+            "name": "Cleaningdataset.R",
+            "task_status": "completed"
+        },
+        {
+            "name": "scheduled_departure_hour.png"
+        },
+        {
+            "assigned_to": "xzhan147",
+            "desc": "This section will be exploring the variables which might be associated with satisfaction based on the graphs created by the team using T-tests, Anovas and ect. Based on the preliminary findings in this section, we will be able to know whether the differences or association are reaching the significant level in statistics or not. These findings will be helping us in making the decision of  considering these variables as potential predictors to satisfaction and including them in our model. lm is used for modelling. ",
+            "name": "modelTesting_lm.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "agarge",
+            "desc": "Pictorial analysis of five variables present in the dataset (departure delay, arrival delay, shopping at the airport, Class, Flight Time, Flight Cancellation). All the plots are using satisfaction rate as the dependent variable (Y).",
+            "name": "Plot5.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "christysato",
+            "desc": "Plots of the four variables (day of month, flight date, airline code, and airline name) that provide a visualization of the data.\r\n\r\nAirline code and airline name plots are not working in MIDST, but it works in RStudio",
+            "name": "Plot3.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "christysato",
+            "desc": "Satisfaction depending on Month Buckets (end, middle, beginning of month)\r\n\r\nPlot does not show in MIDST correctly, but works in RSTUDIO",
+            "name": "monthBucket.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "woojinpark",
+            "desc": "Plots of the five variables (% of Flight with other Airlines, Type of Travel,No. of other Loyalty Cards, Shopping Amount at Airport and Eating and Drinking at Airport) that would provide a pictorial representation of the data.",
+            "name": "Plot2.R",
+            "task_status": "completed"
+        },
+        {
+            "name": "freqplot.png"
+        },
+        {
+            "name": "rules25.png"
+        },
+        {
+            "name": "goodrulesplot.png"
+        },
+        {
+            "assigned_to": "christysato",
+            "desc": "Arules on age, gender, and class (LHS) and satisfaction (RHS)\r\n\r\nThe plots work on RSTUDIO, it seems that cannot install arules package on MIDST",
+            "name": "Arules.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "woojinpark",
+            "desc": "In this step, we used a supervised learning technique called a support vector machine (SVM).  First, I train the algorithm on an initial set of data (the supervised phase) and then test out on a brand-new set of data.\r\nSVM uses a technique called the kernel trick to transform my dataset and then based on these transformations it finds an optimal boundary between the possible outputs. So simply, it helps to separate our data based on the output have been defined.  Based-on T-test result, the 7 most important variables are used in SVM analysis, \u2018Age, Gender, Price.Sensitivity, No.of.Flights.p.a, Type.of.Travel, Class, Arrival.Delay.greater.5.Mins\u2018 .\r\nIn the SVM prediction model the percentage of mistakes explains the error rate, and we tried to detect the model having the error rate to be as low as possible. After all analysis work, we  found the best model with the smallest error rate to  distinguish our customer\u2019s Overall satisfaction. \r\n\r\n************************************\r\n I did a pair work with 'Aniruddh Garge' when I did a SVM sampling and exploration approach\r\n. \r\n",
+            "name": "SVMmodel.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "Performing logistic regression on the final dependent variable into a categorical variable.",
+            "name": "Logistic_Regression.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "agarge",
+            "desc": "This is the resultant dataset after performing all the necessary cleaning. Which includes converting the variables into proper format, filling up missing values and removing unwanted observations.",
+            "name": "clean_data.R",
+            "task_status": "completed"
+        },
+        {
+            "name": "LogReg_Summs.png"
+        },
+        {
+            "name": "Destination_City.png"
+        },
+        {
+            "assigned_to": "jganatra07",
+            "desc": "Plots of 4 variables (Origin city, Origin State, Destination State and Scheduled Departure Hour) that showcases the pictorial analysis of the data",
+            "name": "plot4.R",
+            "task_status": "completed"
         }
     ],
-    "updated_at": "2018-11-15 17:44:21",
+    "updated_at": "2018-12-06 15:22:27",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
