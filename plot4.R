@@ -45,7 +45,6 @@ originState <- originState + theme(axis.text.x = element_text(angle = 90, hjust 
 originState
 
 #calculating mean and discarding NA values
-maps:::statesMapEnv
 mean(data$Satisfaction,na.rm=TRUE)
 data$Satisfaction[is.na(data$Satisfaction)] <- 3.5 #closest to mean
 fltmean2 <- data %>% group_by(Destination.City) %>% summarize(mean2 = mean(Satisfaction))
