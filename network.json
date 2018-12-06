@@ -663,10 +663,12 @@
             "task_status": "completed"
         },
         {
+            "assigned_to": "saramasa",
             "desc": "Plotting the effects of the logistic regression.",
-            "name": "Regrssion_Model_Plots.R"
+            "name": "Regrssion_Model_Plots.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-12-06 03:13:44",
+    "updated_at": "2018-12-06 03:49:22",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
