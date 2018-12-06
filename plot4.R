@@ -62,8 +62,8 @@ for(i in 1:nrow(fltmean2)){
   lon[i,1] <- x[1]
   lat[i,1] <- x[2]
 }
-head(lat)
-head(lon)
+#head(lat)
+#head(lon)
 
 latlon <- as.data.frame(cbind(lon,lat,fltmean2))
 #plotting the map for mean of satisfaction in destination city
