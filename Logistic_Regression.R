@@ -14,6 +14,7 @@ library(caret)
 #install.packages("e1071")
 library(e1071)
 
+str(data)
 #Creating a single variable that can show the absolute value of the delay, instead of having two variable.
 data$EffectiveDelay<-abs(data$Departure.Delay.in.Minutes-data$Arrival.Delay.in.Minutes)
 
