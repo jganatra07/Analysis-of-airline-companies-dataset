@@ -38,6 +38,15 @@ data$Orgin.City<-NULL
 data$Origin.State<-NULL
 data$Destination.City<-NULL
 data$Destination.State<-NULL
+data$Day.of.Month<-NULL
+data$Flight.date<-NULL
+data$Flight.time.in.minutes<-NULL
+data$Flight.Distance<-NULL
+data$EffectiveDelay<-NULL
+data$Eating.and.Drinking.at.Airport<-NULL
+data$X..of.Flight.with.other.Airlines<-NULL
+data$Shopping.Amount.at.Airport <-NULL
+
 
 #SPlitting the data into training and test data.
 rand<-sample(1:dim(data)[1])
@@ -50,25 +59,6 @@ testdata<-data[rand[(cutpoint2_3+1):dim(data)[1]],]
 #Training the logistic regression model
 model<-glm(Sat~., family=binomial(link="logit"),data=traindata)
 summary(model)
-
-#Removing insignificant variables from the train and test dataset
-traindata$Day.of.Month<-NULL
-traindata$Flight.date<-NULL
-traindata$Flight.time.in.minutes<-NULL
-traindata$Flight.Distance<-NULL
-traindata$EffectiveDelay<-NULL
-traindata$Eating.and.Drinking.at.Airport<-NULL
-traindata$X..of.Flight.with.other.Airlines<-NULL
-traindata$Shopping.Amount.at.Airport <-NULL
-
-testdata$Day.of.Month<-NULL
-testdata$Flight.date<-NULL
-testdata$Flight.time.in.minutes<-NULL
-testdata$Flight.Distance<-NULL
-testdata$EffectiveDelay<-NULL
-testdata$Eating.and.Drinking.at.Airport<-NULL
-testdata$X..of.Flight.with.other.Airlines<-NULL
-testdata$Shopping.Amount.at.Airport<-NULL
 
 #K-Fold Cross Validation
 ctrl <- trainControl(method = "repeatedcv", number = 10, savePredictions = TRUE)
