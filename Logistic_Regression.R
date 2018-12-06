@@ -81,3 +81,6 @@ pR2(model)
 
 #Much more elaborate summary of the model with t-statistic value and other stats
 summ(model, confint = TRUE, digits = 6)
+
+#Plotting the estimate of the coefficients. (Directionality)
+plot_summs(model2, scale=TRUE)
