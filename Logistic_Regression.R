@@ -59,7 +59,7 @@ traindata$Flight.Distance<-NULL
 traindata$EffectiveDelay<-NULL
 traindata$Eating.and.Drinking.at.Airport<-NULL
 traindata$X..of.Flight.with.other.Airlines<-NULL
-
+traindata$Shopping.Amount.at.Airport <-NULL
 testdata$Day.of.Month<-NULL
 testdata$Flight.date<-NULL
 testdata$Flight.time.in.minutes<-NULL
@@ -78,4 +78,5 @@ pred = predict(mod_fit, newdata=testdata)
 
 #Confusion Matrix
 cm<-table(confusionMatrix(data=pred, testdata$Sat))
+
 
