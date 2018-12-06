@@ -29,3 +29,12 @@ data$Sat<-as.factor(data$Sat)
 str(data)
 
 #Removing the continuous version of the dependent variable
+data<-data[,-c(1)]
+
+data$Airline.Code<-NULL
+data$Airline.Name<-NULL
+data$Orgin.City<-NULL
+data$Origin.State<-NULL
+data$Destination.City<-NULL
+data$Destination.State<-NULL
+
