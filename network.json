@@ -468,6 +468,17 @@
             ],
             "source": "clean_data.R",
             "target": "SVMmodel.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "Logistic_Regression.R"
         }
     ],
     "nodes": [
@@ -650,6 +661,6 @@
             "name": "Logistic_Regression.R"
         }
     ],
-    "updated_at": "2018-12-06 01:33:30",
+    "updated_at": "2018-12-06 01:34:01",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
