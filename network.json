@@ -644,8 +644,12 @@
             "desc": "This is the resultant dataset after performing all the necessary cleaning. Which includes converting the variables into proper format, filling up missing values and removing unwanted observations.",
             "name": "clean_data.R",
             "task_status": "completed"
+        },
+        {
+            "desc": "Performing logistic regression on the final dependent variable into a categorical variable.",
+            "name": "Logistic_Regression.R"
         }
     ],
-    "updated_at": "2018-12-06 01:31:09",
+    "updated_at": "2018-12-06 01:33:30",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
