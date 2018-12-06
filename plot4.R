@@ -51,7 +51,7 @@ fltmean2 <- data %>% group_by(Destination.City) %>% summarize(mean2 = mean(Satis
 fltmean2 <- as.data.frame(fltmean2)
 fltmean2$place <- toString(paste(data$Destination.City,",",data$Destination.State))
 fltmean2 <- as.data.frame(fltmean2)
-us <- map_data("states")
+us <- map_data("state")
 
 lat <- data.frame()
 lon <- data.frame()
