@@ -80,4 +80,4 @@ The measure ranges from 0 to just under 1, with values closer to zero indicating
 pR2(model)
 
 #Much more elaborate summary of the model with t-statistic value and other stats
-summ(model2, confint = TRUE, digits = 6)
+summ(model, confint = TRUE, digits = 6)
