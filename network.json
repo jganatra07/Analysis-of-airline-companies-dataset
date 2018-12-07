@@ -488,6 +488,16 @@
             ],
             "source": "clean_data.R",
             "target": "SVMmodel.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "flightsat",
+                    "type": "png"
+                }
+            ],
+            "source": "Plot1.R",
+            "target": "no_of_flightsat.png"
         }
     ],
     "nodes": [
@@ -681,6 +691,6 @@
             "name": "no_of_flightsat.png"
         }
     ],
-    "updated_at": "2018-12-07 21:31:24",
+    "updated_at": "2018-12-07 21:31:40",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
