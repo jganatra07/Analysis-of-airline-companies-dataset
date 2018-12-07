@@ -450,17 +450,6 @@
         {
             "ports": [
                 {
-                    "input": "answer",
-                    "output": "answer",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean_data.R",
-            "target": "SVMmodel.R"
-        },
-        {
-            "ports": [
-                {
                     "input": "data",
                     "output": "data",
                     "type": "r_obj"
@@ -488,6 +477,17 @@
             ],
             "source": "plot4.R",
             "target": "Destination_City.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "SVMmodel.R"
         }
     ],
     "nodes": [
@@ -589,12 +589,6 @@
         },
         {
             "assigned_to": "saramasa",
-            "desc": "Plots of the first five variables that would provide a pictorial representation of the data.",
-            "name": "Plot1.R",
-            "task_status": "validating"
-        },
-        {
-            "assigned_to": "saramasa",
             "desc": "In here we will be performing data cleaning. There are variables in a different incomprehensible format, NA's, missing values etc. All these are handles in this script.",
             "name": "Cleaningdataset.R",
             "task_status": "completed"
@@ -673,11 +667,17 @@
         },
         {
             "assigned_to": "jganatra07",
-            "desc": "Plots of 4 variables (Origin city, Origin State, Destination City, Destination State and Scheduled Departure Hour) that showcases the pictorial analysis of the data",
+            "desc": "Plots of 4 variables (Origin city, Origin State, Destination State and Scheduled Departure Hour) that showcases the pictorial analysis of the data",
             "name": "plot4.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "Plots of the first five variables that would provide a pictorial representation of the data.",
+            "name": "Plot1.R",
             "task_status": "completed"
         }
     ],
-    "updated_at": "2018-12-06 05:25:33",
+    "updated_at": "2018-12-07 16:45:35",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
