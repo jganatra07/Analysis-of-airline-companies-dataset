@@ -595,9 +595,6 @@
             "name": "monthBucket.png"
         },
         {
-            "name": "test_plot.png"
-        },
-        {
             "assigned_to": "saramasa",
             "desc": "In here we will be performing data cleaning. There are variables in a different incomprehensible format, NA's, missing values etc. All these are handles in this script.",
             "name": "Cleaningdataset.R",
@@ -691,6 +688,6 @@
             "name": "no_of_flightsat.png"
         }
     ],
-    "updated_at": "2018-12-07 21:31:40",
+    "updated_at": "2018-12-08 03:11:16",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
