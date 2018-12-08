@@ -633,12 +633,6 @@
             "task_status": "completed"
         },
         {
-            "assigned_to": "christysato",
-            "desc": "Satisfaction depending on Month Buckets (end, middle, beginning of month)\r\n\r\nPlot does not show in MIDST correctly, but works in RSTUDIO",
-            "name": "monthBucket.R",
-            "task_status": "completed"
-        },
-        {
             "assigned_to": "woojinpark",
             "desc": "Plots of the five variables (% of Flight with other Airlines, Type of Travel,No. of other Loyalty Cards, Shopping Amount at Airport and Eating and Drinking at Airport) that would provide a pictorial representation of the data.",
             "name": "Plot2.R",
@@ -658,12 +652,6 @@
             "desc": "Arules on age, gender, and class (LHS) and satisfaction (RHS)\r\n\r\nThe plots work on RSTUDIO, it seems that cannot install arules package on MIDST",
             "name": "Arules.R",
             "task_status": "completed"
-        },
-        {
-            "assigned_to": "saramasa",
-            "desc": "Performing logistic regression on the final dependent variable into a categorical variable.",
-            "name": "Logistic_Regression.R",
-            "task_status": "in progress"
         },
         {
             "assigned_to": "agarge",
@@ -697,8 +685,20 @@
             "desc": "In this step, we used a supervised learning technique called a support vector machine (SVM).  First, I train the algorithm on an initial set of data (the supervised phase) and then test out on a brand-new set of data.\r\nSVM uses a technique called the kernel trick to transform my dataset and then based on these transformations it finds an optimal boundary between the possible outputs. So simply, it helps to separate our data based on the output have been defined.  Based-on T-test result, the 7 most important variables are used in SVM analysis, \u2018Age, Gender, Price.Sensitivity, No.of.Flights.p.a, Type.of.Travel, Class, Arrival.Delay.greater.5.Mins\u2018 .\r\nIn the SVM prediction model the percentage of mistakes explains the error rate, and we tried to detect the model having the error rate to be as low as possible. After all analysis work, we  found the best model with the smallest error rate to  distinguish our customer\u2019s Overall satisfaction. \r\n\r\n************************************\r\n I did a pair work with 'Aniruddh Garge' when I did a SVM sampling and exploration approach\r\n. \r\n\r\n*Plots do not work on MIDST, they work on RSTUDIO",
             "name": "SVMmodel.R",
             "task_status": "completed"
+        },
+        {
+            "assigned_to": "saramasa",
+            "desc": "Performing logistic regression on the final dependent variable into a categorical variable.",
+            "name": "Logistic_Regression.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "christysato",
+            "desc": "Satisfaction depending on Month Buckets (end, middle, beginning of month)\r\n\r\nPlot does not show in MIDST correctly, but works in RSTUDIO",
+            "name": "monthBucket.R",
+            "task_status": "completed"
         }
     ],
-    "updated_at": "2018-12-08 03:31:49",
+    "updated_at": "2018-12-08 03:34:03",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
