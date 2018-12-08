@@ -498,6 +498,17 @@
             ],
             "source": "Plot1.R",
             "target": "no_of_flightsat.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "output": "data",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean_data.R",
+            "target": "modelTesting_lm.R"
         }
     ],
     "nodes": [
@@ -688,6 +699,6 @@
             "name": "no_of_flightsat.png"
         }
     ],
-    "updated_at": "2018-12-08 03:11:16",
+    "updated_at": "2018-12-08 03:21:32",
     "url": "https://github.com/fall2018-saltz/cs_project1"
 }
